@@ -4,6 +4,24 @@
         <title>TurnOver</title>
         <item>
             <title>1.0</title>
+            <pubDate>Mon, 05 Oct 2026 11:37:51 +0100</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 4
+
+- Fixed: macOS could say it "could not verify" TurnOver and refuse to open it, depending on how the download was unzipped. (reported by a tester)
+- Word: the question "TurnOver wants to control Microsoft Word" no longer disappears after five seconds. It now waits for your answer, and TurnOver tells you what is being asked. (reported by a tester)
+- Word: next and previous spelling error (TurnOver E) now search the whole document, not just the pages near the cursor. (reported by a tester)
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-4.zip" length="7109242" type="application/octet-stream" sparkle:edSignature="YIdXGAQmB5WDC//k+7ZI4xlMw8yxT8zF+qW4b0TM658GLjk2hDluLKt74nL5Whge+wARDQaASUfwjJjw3f6hDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver4-3.delta" sparkle:deltaFrom="3" length="256542" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="XqlRDLcF4SQ2YnqrfS+qlwV7+uUMYqAxlHHJ2/zQgDIy+9rocqpG1TIm6vkkzRfwtQr1Os+FBbgMgBULGAzpCw=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver4-2.delta" sparkle:deltaFrom="2" length="542302" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9Nii0Ja4rF7eeEOGzkprWgEG/mkS+LsJVkZpsqB3j2xJ9tKDha3XPMfqGR4K3hUns+kfjGXvNclg4RX5cHLzAw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Mon, 05 Oct 2026 09:22:34 +0100</pubDate>
             <sparkle:version>3</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
@@ -34,20 +52,6 @@
             <sparkle:deltas>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver2-1.delta" sparkle:deltaFrom="1" length="831298" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="UMrFLB7O1WmcUk3faAZDWlp7/YeBP7iG0yuSOZelrOx41hzlB6lmBTquQmyc/pH1EyXQp9f1XnI3Qgf4du1vBg=="/>
             </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Mon, 05 Oct 2026 07:43:29 +0100</pubDate>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 1
-
-- The first beta. TurnOver leads in Mail, Safari and Terminal, with Microsoft Word as a preview you can turn on (TurnOver menu, Applications).
-- Updates arrive by themselves; TurnOver menu, Updates, to check now or to install them automatically.
-- Send feedback is in the TurnOver menu.
-]]></description>
-            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-1.zip" length="7154971" type="application/octet-stream" sparkle:edSignature="PcZ7yxHDzv2ofqSJkAdjCubQ9r+lLBzC7gZv95jwBpjseRkNmUNrH3I/4Z13IgDz17bDGzZ6CTE+VGFB1My0BA=="/>
         </item>
     </channel>
 </rss>
