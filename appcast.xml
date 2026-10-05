@@ -4,6 +4,17 @@
         <title>TurnOver</title>
         <item>
             <title>1.0</title>
+            <pubDate>Mon, 05 Oct 2026 05:09:15 +0100</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-2.zip" length="7130796" type="application/octet-stream" sparkle:edSignature="D2o/EgKOQW5/i6UYLtp9IAXAruOQk1zqDetG7J94ayWywKge72O7/ppvbVQZEFW0g/P16bvxVho/ZTg7DGIzBQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver2-1.0.delta" sparkle:deltaFrom="1.0" length="612426" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="bcw0zDvxrK9SOcBUYBTmOnsIZF4K53ax1bpJXNi9kFoVvtDVRwnWhd56DAyROQeKp4/NXNOukoMru/dXDwggCg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Mon, 05 Oct 2026 05:03:40 +0100</pubDate>
             <sparkle:version>1.0</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
