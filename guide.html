@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><title>TurnOver beta guide</title>
+<style>body{font:1rem/1.5 -apple-system,system-ui,sans-serif;max-width:46rem;margin:0 auto;padding:1rem;color:#111;background:#fff}
+@media (prefers-color-scheme:dark){body{color:#eee;background:#111}a{color:#8ab4ff}}</style></head>
+<body><main>
+<h1>TurnOver beta guide</h1>
+<p>TurnOver is a screen reader for the Mac, built in the shape of NVDA, that works alongside VoiceOver. This beta supports three applications: Mail, Safari and Terminal, with Microsoft Word as an early preview that you turn on if you want to try it (see MICROSOFT WORD below). When one of them comes to the front, TurnOver switches VoiceOver off and takes over; when you leave it, VoiceOver comes back. Every other application stays with VoiceOver. It runs on macOS 14 or later, on Apple silicon and Intel Macs.</p>
+<p>This is a proof of concept. Thank you for testing it. Please tell us what goes wrong (see SENDING FEEDBACK below).</p>
+<h2>Getting started</h2>
+<ol>
+<li>Copy TurnOver to your Applications folder and open it. A welcome message explains the permissions.</li>
+<li>macOS asks for two permissions. In System Settings, Privacy and Security, turn TurnOver on under Accessibility (called Device Control and Data Access on macOS 27), and under Input Monitoring.</li>
+<li>Switch to Mail, Safari or Terminal. VoiceOver goes off, TurnOver says &quot;TurnOver on&quot;, and reads.</li>
+</ol>
+<p>TurnOver updates itself: once a day it checks for a new build, says &quot;A TurnOver update is available&quot;, and opens a window where you choose Install Update or Skip. TurnOver menu, Updates: check now, turn the daily check off, or turn on &quot;Download and install updates automatically&quot; (the update then installs next time TurnOver quits, or straight away from that menu). Your permissions carry over to each update.</p>
+<p>TurnOver can open when you log in: TurnOver menu, Preferences, General, Open TurnOver at login. While it is running it has an item in the menu bar, called TurnOver.</p>
+<h2>The keys that matter</h2>
+<p>The TurnOver key is Caps Lock, or Control and Option together (VoiceOver&#x27;s VO keys): hold either and press another key. (Pressed twice on its own, Caps Lock still turns capitals on and off.) In the lists below, &quot;TurnOver&quot; means Caps Lock or VO.</p>
+<ul>
+<li><strong>TurnOver N</strong>: The TurnOver menu: preferences, feedback, quit. Up and Down move; Right or Return opens a submenu; on a setting (rate, a choice, on or off), Right and Left change it; elsewhere Left goes back a level; Escape closes the menu.</li>
+<li><strong>TurnOver slash</strong>: Every shortcut that works where you are, grouped. Enter runs one.</li>
+<li><strong>TurnOver V</strong>: Hands this application back to VoiceOver.</li>
+<li><strong>Control</strong>: Stops speech.</li>
+<li><strong>TurnOver 1</strong>: Input help: every key says what it does, without doing it. Press again to stop.</li>
+<li><strong>TurnOver Tab</strong>: Says what has focus.</li>
+<li><strong>TurnOver L</strong>: Reads the current line.</li>
+<li><strong>TurnOver A</strong>: Reads from here to the end (say all).</li>
+<li><strong>TurnOver Command C</strong>: Copies the last thing TurnOver said to the clipboard.</li>
+<li><strong>TurnOver Q</strong>: Quits TurnOver.</li>
+<li><strong>Command Control T</strong>: Starts TurnOver, or quits it, from anywhere. Quitting turns VoiceOver on. A rising or a falling chime says which. It works even if TurnOver is stuck: the way out that always works (a small helper, TurnOver Key, listens for it from login; you will see it in System Settings, General, Login Items).</li>
+</ul>
+<p>VoiceOver&#x27;s commands. TurnOver uses VoiceOver&#x27;s own commands (VO is Control and Option together), so what you already know works. The TurnOver key is either Caps Lock or VO to start with; to keep only one: TurnOver menu, Preferences, Keyboard, TurnOver key.</p>
+<ul>
+<li><strong>VO M</strong>: The application&#x27;s menus. VO M twice: the status menus at the right.</li>
+<li><strong>VO D</strong>: The Dock.</li>
+<li><strong>VO Shift M</strong>: The context menu.</li>
+<li><strong>VO F3</strong>: Describes the item with focus.</li>
+<li><strong>Right Option T</strong>: The date and time (VO F7 also works).</li>
+<li><strong>VO F</strong>: Find, in any application TurnOver leads: type the text and press Return. TurnOver goes to the next match and leaves you there (a message in Mail&#x27;s list, a line in a page or a message, text in a document or Terminal). Escape cancels. VO G and VO Shift G: the next and previous match.</li>
+<li><strong>VO T</strong>: The formatting at the caret (font, size, style).</li>
+<li><strong>VO I</strong>: The Item Chooser: everything in the window, or every line of a page or message. Type to narrow the list; Backspace widens it; Enter goes there.</li>
+<li><strong>VO U</strong>: The rotor. Left and Right choose a kind: on a page or message, headings, links, form controls, landmarks, tables; in a window, buttons, text fields, tabs, lists and so on; in Word, headings and comments. Up and Down move through that kind, typing narrows it, Enter goes there.</li>
+<li><strong>VO Command H, L, J, T, X, G</strong>: Next heading, link, form control, table, list, graphic (add Shift: previous).</li>
+<li><strong>VO Space</strong>: Presses the item.</li>
+</ul>
+<p>(A Windows layout, Alt for the menus and so on, is set aside for now; it will come back later.)</p>
+<p>Moving through anything, even what the keyboard cannot reach (object navigation):</p>
+<ul>
+<li><strong>TurnOver Shift Right / Left</strong>: Next or previous item in the window.</li>
+<li><strong>TurnOver Shift Down / Up</strong>: Into an item, or out to what holds it.</li>
+<li><strong>TurnOver Enter</strong>: Presses the item (or puts you in it to type).</li>
+</ul>
+<h2>Safari (and Mail messages): browse mode</h2>
+<p>Web pages and email messages are read as a document, like NVDA&#x27;s browse mode.</p>
+<ul>
+<li><strong>Up / Down arrows</strong>: Line by line.        Option arrows: word by word.</li>
+<li><strong>H / Shift H</strong>: Next / previous heading. 1 to 6: headings of that level.</li>
+<li><strong>K, B, E, F, L, T, D</strong>: Link, button, edit field, form field, list, table, landmark (Shift goes back).</li>
+<li><strong>Enter</strong>: Activates a link or button.</li>
+<li><strong>TurnOver Space</strong>: Switches between browse mode and typing into the page (focus mode).</li>
+<li><strong>Shift with arrows</strong>: Selects text; Command C copies it.</li>
+</ul>
+<p>Back in Safari returns you to where you were on the previous page. Find (Command F): Return reads the line of each match; Escape puts you on it in the page. Safari&#x27;s sidebar (Reading List, bookmarks) is not reached by Tab: TurnOver Shift Up to the window, TurnOver Shift Down, then TurnOver Right to the list, and TurnOver Enter. Return opens an item; the context menu (VO Shift M, or Right Option) has Delete.</p>
+<h2>Mail</h2>
+<p>Up and Down move through the message list; Home and End go to the first and last message. The message itself is read in browse mode (above). Settings windows: Up and Down move between the tabs at the top, Tab goes into the page, Shift Tab comes back to the tab.</p>
+<h2>Terminal</h2>
+<p>New output is read as it arrives; your own typing is not read twice. After cd, the new folder is said. Tab completions and the Up arrow&#x27;s history are read.</p>
+<ul>
+<li><strong>TurnOver Up / Down</strong>: Reads earlier lines without disturbing the shell; TurnOver Home / End: top, bottom.</li>
+<li><strong>Delete, Option Delete</strong>: Says what was deleted.</li>
+<li><strong>Left / Right</strong>: Reads the character at the cursor; Option Left / Right: word by word.</li>
+<li><strong>TurnOver Command C</strong>: Copies the last output TurnOver read.</li>
+</ul>
+<p>Not yet: full-screen programs such as less, man, vim and top.</p>
+<h2>Microsoft Word (preview)</h2>
+<p>Word support is an early preview, off to start with, as it is still changing day to day. To try it: TurnOver menu (Caps Lock N), Applications, Microsoft Word, set to &quot;TurnOver leads&quot;. (Word is only listed when it is installed.) Your reports on Word are very welcome.</p>
+<p>The document reads as you move, with page and line where Word gives them.</p>
+<ul>
+<li><strong>TurnOver H / Shift H</strong>: Next / previous heading.</li>
+<li><strong>TurnOver M / Shift M</strong>: Next / previous comment. TurnOver Option C reads the comment at the caret.</li>
+<li><strong>TurnOver E / Shift E</strong>: Next / previous spelling error.</li>
+<li><strong>TurnOver R / Shift R</strong>: Next / previous tracked change.</li>
+<li><strong>TurnOver Page Down / Up</strong>: Next / previous page.</li>
+<li><strong>TurnOver F7</strong>: The elements list: headings and comments.</li>
+<li><strong>Control F2</strong>: Word&#x27;s menus. Command B, I, U, E, L, R, J, Command Option 1 to 3 (headings), Command Shift N (Normal) say what changed.</li>
+</ul>
+<p>With the VoiceOver keyboard style, where VO M is the menu bar and VO F7 the time:</p>
+<ul>
+<li><strong>VO Command M / R / E</strong>: Next comment / tracked change / spelling error (add Shift for previous).</li>
+<li><strong>VO Command H</strong>: Next heading.     VO U   The elements list.</li>
+</ul>
+<p>Tables: arrowing into a table says its size, then the row, column and text; moving says what changed, with the column&#x27;s title (from the first row) and the row&#x27;s title (from the first column). Empty cells say &quot;blank&quot;.</p>
+<ul>
+<li><strong>Tab / Shift Tab</strong>: Next / previous cell (Word selects it: &quot;selected&quot; means typing replaces it).</li>
+<li><strong>TurnOver arrows</strong>: Cell to cell without selecting; &quot;edge of table&quot; at the edges.</li>
+</ul>
+<p>The ribbon: F6 moves between the ribbon, sidebar, status bar and toolbar. On a ribbon tab (Home, Insert...), Left and Right change tab; Down or Tab goes into its commands; Tab and Shift Tab move through them. Escape, from the ribbon, sidebar, status bar or toolbar, goes back to the document. If you end up in Word&#x27;s sidebar, TurnOver menu, Microsoft Word, &quot;Show or hide the sidebar&quot; takes you back.</p>
+<h2>If something goes wrong</h2>
+<p>If TurnOver stops responding, VoiceOver comes back by itself within a few seconds, and your keys work again. If it is still stuck after that, TurnOver restarts itself. TurnOver V always hands the application to VoiceOver. Quitting TurnOver (TurnOver Q, or the TurnOver menu, or the menu bar item) leaves VoiceOver in charge everywhere.</p>
+<h2>Sending feedback</h2>
+<p>TurnOver menu (TurnOver N), Send feedback:</p>
+<ul>
+<li><strong>Save a report, leaving out what TurnOver said</strong>: (recommended)</li>
+<li><strong>Save a report, including what TurnOver said</strong>: (helps with reading problems; may include the text of your emails and pages)</li>
+</ul>
+<p>A zip file is saved on your Desktop. Attach it to your message, and say in a sentence what you were doing and what you expected.</p>
+<p>TurnOver keeps its own logs for 30 days, on your Mac only: ~/Library/Application Support/TurnOver/logs/</p>
+<h2>Removing TurnOver</h2>
+<p>Quit TurnOver, then move it from Applications to the Bin. Its settings and logs are in ~/Library/Application Support/TurnOver/.</p>
+<p><a href=".">Back to the download page</a></p>
+</main></body></html>
