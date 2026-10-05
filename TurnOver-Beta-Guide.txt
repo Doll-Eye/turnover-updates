@@ -45,6 +45,9 @@ another key. (Pressed twice on its own, Caps Lock still turns capitals on and of
   TurnOver A            Reads from here to the end (say all).
   TurnOver Command C    Copies the last thing TurnOver said to the clipboard.
   TurnOver Q            Quits TurnOver.
+  TurnOver Shift Escape Screen Curtain on or off (the screen goes black; TurnOver carries on as normal). VO Shift
+                        Underscore also works. If VoiceOver's curtain is on, TurnOver keeps it on when it takes
+                        over. To choose: TurnOver menu, Preferences, Speech, Screen Curtain while TurnOver leads.
   Command Control T      Starts TurnOver, or quits it, from anywhere. Quitting turns VoiceOver on. A
                          rising or a falling chime says which. It works even if TurnOver is stuck:
                          the way out that always works (a small helper, TurnOver Key, listens for it

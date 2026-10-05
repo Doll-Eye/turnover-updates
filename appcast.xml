@@ -4,6 +4,28 @@
         <title>TurnOver</title>
         <item>
             <title>1.0</title>
+            <pubDate>Mon, 05 Oct 2026 13:28:11 +0100</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 6
+
+- Mail: Shift Tab from the message list goes to the mailbox list, and Tab comes back. Mail only lets Tab reach its mailboxes while VoiceOver runs.
+- Mail: writing a message, Tab now reaches the Priority, From and Signature pop-ups after the subject, so you can change which address you send from.
+- Menus: in Mail's Move To list, each account's name is read as you move into its mailboxes. Submenus Mail opens by itself are no longer announced at every step, and nothing is read twice. Right Arrow into a submenu now always works, and the edge of a menu gives a bump.
+- Mail's context menu: the "Ask Siri" box at the top is now read.
+- Typing: with word echo on, an apostrophe is no longer read separately ("I've", not "apostrophe, I've").
+- Screen Curtain: when VoiceOver's Screen Curtain is on, TurnOver keeps the screen black while it is in charge. Before, the curtain ended when TurnOver took over. (raised on AppleVis)
+- Turn the curtain on or off for now with TurnOver Shift Escape (or VoiceOver's own VO Shift Underscore). To choose always, never, or the same as VoiceOver: TurnOver menu, Preferences, Speech, Screen Curtain while TurnOver leads.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-6.zip" length="7178242" type="application/octet-stream" sparkle:edSignature="l3LR0Bl8FtixNCAhia14Fn5hYTJ/YKgvIA/Tec6R3MLhQBnqBvf5UATN/+odypeXkQAQ0p/1WdUn2JUSCstrBw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver6-5.delta" sparkle:deltaFrom="5" length="1032814" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Oal0xSsfP+q6Eo3DZ4R4kZWLL36lAKc9AVlAPJ57KVUxlHR3SX+L0Xy3wan6k6XL0Iv20ytFj6LKHhnYRkHyBw=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver6-4.delta" sparkle:deltaFrom="4" length="1067566" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="MKjZd6sONQ9tdeR/UADxq2YkuTB24Zo8moTIGZQxBpPH2M0QIXmBEsR+ugS+P/5lqTa2GrVou8JLdyT2ys1XCg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Mon, 05 Oct 2026 12:09:52 +0100</pubDate>
             <sparkle:version>5</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
@@ -34,23 +56,6 @@
             <sparkle:deltas>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver4-3.delta" sparkle:deltaFrom="3" length="256542" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="XqlRDLcF4SQ2YnqrfS+qlwV7+uUMYqAxlHHJ2/zQgDIy+9rocqpG1TIm6vkkzRfwtQr1Os+FBbgMgBULGAzpCw=="/>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver4-2.delta" sparkle:deltaFrom="2" length="542302" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9Nii0Ja4rF7eeEOGzkprWgEG/mkS+LsJVkZpsqB3j2xJ9tKDha3XPMfqGR4K3hUns+kfjGXvNclg4RX5cHLzAw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Mon, 05 Oct 2026 09:22:34 +0100</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 3
-
-- When an app is slow to answer, TurnOver now says "please wait" instead of "not responding". It is usually just busy, such as a page still loading.
-- Mail: Command Shift N now says "checking for new mail".
-]]></description>
-            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-3.zip" length="7172153" type="application/octet-stream" sparkle:edSignature="HqEvHLfR00kJIfAok8EeTEe/+bTnCgJTAt6PQ43PJXWEwp9I9X7+qHTIpIIFd2XTs8nFfkW9Tf/1j0MtPwxTAg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver3-2.delta" sparkle:deltaFrom="2" length="486574" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="dwV+sP2gOoFi+8UT+pCJSiRvLpP71qE8Rb2sN9SxEBVyXUZBi7cPKXd4aKhgltIxBYQ/k7IJzGJxLMmVNWzfBA=="/>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver3-1.delta" sparkle:deltaFrom="1" length="925262" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Q1768Mn81dYoEkjm0i7SvuvopkCv5igx5Deb+lKlgw0qSOAPgs41gcMKJ6uxM17sW1RNTEpYPERobc0WcOoxDg=="/>
             </sparkle:deltas>
         </item>
     </channel>
