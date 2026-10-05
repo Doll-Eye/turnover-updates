@@ -4,55 +4,17 @@
         <title>TurnOver</title>
         <item>
             <title>1.0</title>
-            <pubDate>Mon, 05 Oct 2026 07:31:17 +0100</pubDate>
-            <sparkle:version>10</sparkle:version>
+            <pubDate>Mon, 05 Oct 2026 07:43:29 +0100</pubDate>
+            <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 10
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 1
 
-- Mail's empty lines are now read as "blank", not "non breaking space". A non-breaking space read character by character is now just "space".
-- A "What's new" item in the TurnOver menu, under Updates, opens this list.
+- The first beta. TurnOver leads in Mail, Safari and Terminal, with Microsoft Word as a preview you can turn on (TurnOver menu, Applications).
+- Updates arrive by themselves; TurnOver menu, Updates, to check now or to install them automatically.
+- Send feedback is in the TurnOver menu.
 ]]></description>
-            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-10.zip" length="7164387" type="application/octet-stream" sparkle:edSignature="eSG0oEeqsCEs6X33OItfq5rgmYk6UXB8CfQ12gaC31Y+JQUx1y1yhAudwkMwpyK8a2lPdgCgfKGsrx29c6Z0AQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver10-9.delta" sparkle:deltaFrom="9" length="402942" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="++mkU9ct59TaPTSY6gJdDkBUiCbHCYj/eNhxUoAfnb9fu1bF0if9BZoAocoMvizvsL0LPMudqaqBAlZvdkXWCQ=="/>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver10-8.delta" sparkle:deltaFrom="8" length="706550" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="6dIMAdKBgxCs+arHrWbrofGOAvtbV/KCtCGR6qZn5rS6Wp/JX0VRRJArf84Io8TBA6wauzrMVSS1o2MUP323CQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Mon, 05 Oct 2026 07:11:51 +0100</pubDate>
-            <sparkle:version>9</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 9
-
-- Writing in Mail: Up and Down now read the right line every time, including after you delete text. Before, a caret at the end of a line was read as the empty line below, and lines were skipped.
-- Password safety: if a password box appears but macOS leaves the keyboard in the app behind it, TurnOver now holds your typing back and says so, instead of letting it go into your document.
-- Privacy: TurnOver's logs no longer record anything you type.
-]]></description>
-            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-9.zip" length="7163884" type="application/octet-stream" sparkle:edSignature="EcNwtcrPRC74XjTTlRshGNVtc7GepudILYtTX0GAKU+Rv+k+H7bDMlQDxs2HWZEr0G53aF5fmMAyLmztnwOTCA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver9-8.delta" sparkle:deltaFrom="8" length="641622" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="4l8ATmXuhwLxDMKnoDfoeBEeCHByU6+/XKd70TIht17h5NLrLf0SdlLvRrF/zUcv3s5rvcdfjfFSqIaB4zfcBw=="/>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver9-7.delta" sparkle:deltaFrom="7" length="725642" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="o+uOY5WlB3qPoZDCkF6djOAnElcKZuSM6QPECO4JmP1LuQjK8sc4bfAVg20gEXPM8kbnrCiuvnytIC8wsVU/Bw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Mon, 05 Oct 2026 06:49:20 +0100</pubDate>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 8
-
-- Writing an email in Mail: TurnOver now reads each whole line as you arrow through. Before, words at the ends of long lines were skipped.
-- Option Right now says the word you moved over, as VoiceOver does, instead of "blank" or "comma".
-]]></description>
-            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-8.zip" length="7149679" type="application/octet-stream" sparkle:edSignature="WNYwfJ7zwby+lSW2OSx1j9+X448oGVvdTdheU+geFfB0+OWV61x7Zm5J2ySmNZeMvR5hHWV8rAAgL5+cD4HYCg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver8-7.delta" sparkle:deltaFrom="7" length="559438" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="F1fJYvW96GsvvpZJ1etBdo41HEdaxXNrwdkl5/vq+yS3G/Nn4PHHctUgG6XakJpkcWsKL3qQOlWPlv4p4hR0CQ=="/>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver8-6.delta" sparkle:deltaFrom="6" length="637202" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="olqwBTFz6bpgDCuZzoNHySPgChZklrORk6EvTVTLNQHO5LUCaMdIUEUOcR0TIpthHH5JXNcmdU/UMw25AJnEAg=="/>
-            </sparkle:deltas>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-1.zip" length="7180778" type="application/octet-stream" sparkle:edSignature="CYebhRp6OKu+xB4cPTbyw8wYfV4Yb3g0O8RNnrMq1e+bmd4CybMH7bIFjih8HZDLL+Sife+m62u8Jz5o6Mc0CQ=="/>
         </item>
     </channel>
 </rss>
