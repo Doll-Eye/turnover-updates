@@ -4,6 +4,24 @@
         <title>TurnOver</title>
         <item>
             <title>1.0</title>
+            <pubDate>Mon, 05 Oct 2026 05:25:57 +0100</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 3
+
+- VoiceOver now comes back reliably on Macs that use VoiceOver's standard shortcut, Command F5.
+- When you turn on Input Monitoring, TurnOver notices straight away, says "TurnOver is ready", and takes over in Mail, Safari and Terminal, with no restart.
+- The Updates menu starts working as soon as TurnOver opens, before the permissions are set.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-3.zip" length="7134189" type="application/octet-stream" sparkle:edSignature="G9qBAUmKor4421CgvVaxDLmie+YcGptyEX2az1QKnK722scplhftQo46MSt4JHnS7tDEmKKZPC07q12Cg6b9CQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver3-2.delta" sparkle:deltaFrom="2" length="269782" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hQ7jkUN9bX2zW99w/gsPPBOPpx+ZPs5Opvgy6jkJge2QRgZZVYjcI39ZCAHPGznsysf7mZjr03E5I+mhiL8kBw=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver3-1.0.delta" sparkle:deltaFrom="1.0" length="650762" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="uTkqvowdUOAzLT9BlY584pAYH0gk5iHIc11LtPWuz9uoPVkkyEkIPRKRATj9pDaY/BPDS1g0uR0IjMX6N0dbBA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Mon, 05 Oct 2026 05:09:15 +0100</pubDate>
             <sparkle:version>2</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
