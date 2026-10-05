@@ -4,6 +4,22 @@
         <title>TurnOver</title>
         <item>
             <title>1.0</title>
+            <pubDate>Mon, 05 Oct 2026 12:09:52 +0100</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 5
+
+- Word: a document opened while Word is still starting up is now read. Before, Word kept the page from TurnOver, and you heard nothing until you switched away and back. TurnOver now does that switch for you, without VoiceOver coming on.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-5.zip" length="7119951" type="application/octet-stream" sparkle:edSignature="1Ap0nligVqG4ubTve/xDjmJnyhjKYXElwse8tQly/jpPH1ey85sKbo/OZ630/IWR9Zgp9vaAUmFT2rlIJC3+BQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver5-4.delta" sparkle:deltaFrom="4" length="294066" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="n4pxBjO3An11d24NCwu9B4aZ8iFBMj7a4XyeC0M4YGzDbrVqVRroIW1ZXedKeZwqvQ1uecT/nKthtOcljWPLAQ=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver5-3.delta" sparkle:deltaFrom="3" length="314946" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="3rHhMHvTdnehP3p+el/Ux3QdKpnU2FqddKnq087O3eeFiK2fh6b+XQcEKyS2SJ8tlN/TZOCweqz0wHumc+iWBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Mon, 05 Oct 2026 11:37:51 +0100</pubDate>
             <sparkle:version>4</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
@@ -35,22 +51,6 @@
             <sparkle:deltas>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver3-2.delta" sparkle:deltaFrom="2" length="486574" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="dwV+sP2gOoFi+8UT+pCJSiRvLpP71qE8Rb2sN9SxEBVyXUZBi7cPKXd4aKhgltIxBYQ/k7IJzGJxLMmVNWzfBA=="/>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver3-1.delta" sparkle:deltaFrom="1" length="925262" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Q1768Mn81dYoEkjm0i7SvuvopkCv5igx5Deb+lKlgw0qSOAPgs41gcMKJ6uxM17sW1RNTEpYPERobc0WcOoxDg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Mon, 05 Oct 2026 08:37:37 +0100</pubDate>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 2
-
-- TurnOver's speech was quieter than VoiceOver's. It now matches VoiceOver at the same Mac volume.
-- A speech volume setting: TurnOver menu, Preferences, Speech, Volume (Left and Right change it, 10 to 200 percent).
-]]></description>
-            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-2.zip" length="7170207" type="application/octet-stream" sparkle:edSignature="WdvtuhdFH8Mw4DhHVel/areR7T1ym4od/oTe+1W540FFEWmwxC4GfAHU88Yqg06uR1HEElX0ZhCgc8lbYaRpAA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver2-1.delta" sparkle:deltaFrom="1" length="831298" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="UMrFLB7O1WmcUk3faAZDWlp7/YeBP7iG0yuSOZelrOx41hzlB6lmBTquQmyc/pH1EyXQp9f1XnI3Qgf4du1vBg=="/>
             </sparkle:deltas>
         </item>
     </channel>
