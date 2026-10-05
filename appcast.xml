@@ -4,6 +4,24 @@
         <title>TurnOver</title>
         <item>
             <title>1.0</title>
+            <pubDate>Mon, 05 Oct 2026 06:30:56 +0100</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 7
+
+- TurnOver's own windows, such as this update window, are now handed to VoiceOver to read automatically.
+- Only one copy of the TurnOver Key helper runs now. Before, two could start, and both answered Command Control T.
+- The TurnOver key is now Caps Lock or Control Option to start with, so VoiceOver's VO keys work straight away.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-7.zip" length="7143355" type="application/octet-stream" sparkle:edSignature="M07IeUGybM3XM10rBlUwR9u0LkRmBon7hlKJXrRmxIcAcxOBWLs6kX50LMJsr6Hy9zcloewjr78fMcjVO7YpBg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver7-6.delta" sparkle:deltaFrom="6" length="204458" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wgV35VS3b/iHMDXSkNqtIhvuxBNuxFpF57de9PK36s/ym4KwSqrOrVUq8bVlmkwvjLS3+9CldpD9cJD6G8ieCg=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver7-5.delta" sparkle:deltaFrom="5" length="216214" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="2/lt2vevgL1crDQ8Q+OSE74zSyZg5UX9XGpiJRWhcGKEifi7ia6ujMv66BKIykOBUKxWk6NnR5XWokkvTGqxDQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Mon, 05 Oct 2026 06:29:03 +0100</pubDate>
             <sparkle:version>6</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
@@ -35,24 +53,6 @@
             <sparkle:deltas>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver5-4.delta" sparkle:deltaFrom="4" length="238826" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="EN6ZkuXJBeBvBPSwInLrvo7c9BFIDksH1XquzEd6YQPEKigZmgECKgeTO/IDXb04zpJwnBXGXhz/cK05oUjsDQ=="/>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver5-3.delta" sparkle:deltaFrom="3" length="497354" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="vwuH7k9ygXycm4e6qZfGqacc3vKg+CeOTqoxu93PVRrvvHy6s3H1xjo8DG4baokHsj6XI/kF78rZe4JTxnM8BA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Mon, 05 Oct 2026 06:11:47 +0100</pubDate>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 4
-
-- TurnOver menu: on a setting such as the speech rate, Left now turns it down as Right turns it up. Elsewhere Left goes back a level, and Escape closes the whole menu.
-- Input Monitoring: TurnOver checks the permission directly, so it no longer keeps asking after you have turned it on. It asks only once each time it runs.
-- The "Background Items Added" notice for TurnOver Key no longer comes back each time TurnOver starts.
-]]></description>
-            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-4.zip" length="7135755" type="application/octet-stream" sparkle:edSignature="Kf/ny4CvStAN16RqkAwWM8jxbE2ebKUeC/sXaiqh//kycu3tmAETUqW2TVVLJpBIIn0/qcGU177xaccbhVtHBQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver4-3.delta" sparkle:deltaFrom="3" length="458574" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="1g7Hhw+Da7HtGxSHTD5lTEA+Lgn/6AmMbLgjZc9SG7ukTcItEzdDLqFwxnVwPrhUTjiRTm7LpbywgiCrwt2WAQ=="/>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver4-2.delta" sparkle:deltaFrom="2" length="518682" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="RgRPrFCcnSvqdzE4wKD8QmwaRM7MfzdN6m81hqimq0Un9Ulr2zc1+LQeKGhvvwucamEiphSRhZ/ZaA//Q9idAA=="/>
             </sparkle:deltas>
         </item>
     </channel>
