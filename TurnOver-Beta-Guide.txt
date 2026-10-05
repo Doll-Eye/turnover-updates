@@ -20,7 +20,8 @@ GETTING STARTED
 TurnOver updates itself: once a day it checks for a new build, says "A TurnOver update is available", and
 opens a window where you choose Install Update or Skip. TurnOver menu, Updates: check now, turn the daily
 check off, or turn on "Download and install updates automatically" (the update then installs next time TurnOver
-quits, or straight away from that menu). Your permissions carry over to each update.
+quits, or straight away from that menu). Your permissions carry over to each update. Updates, What's new, lists
+every build's changes, including which reported problems are fixed.
 
 TurnOver can open when you log in: TurnOver menu, Preferences, General, Open TurnOver at login. While it is
 running it has an item in the menu bar, called TurnOver.
