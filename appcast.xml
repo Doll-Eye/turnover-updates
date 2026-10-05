@@ -4,6 +4,23 @@
         <title>TurnOver</title>
         <item>
             <title>1.0</title>
+            <pubDate>Mon, 05 Oct 2026 09:22:34 +0100</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 3
+
+- When an app is slow to answer, TurnOver now says "please wait" instead of "not responding". It is usually just busy, such as a page still loading.
+- Mail: Command Shift N now says "checking for new mail".
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-3.zip" length="7172153" type="application/octet-stream" sparkle:edSignature="HqEvHLfR00kJIfAok8EeTEe/+bTnCgJTAt6PQ43PJXWEwp9I9X7+qHTIpIIFd2XTs8nFfkW9Tf/1j0MtPwxTAg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver3-2.delta" sparkle:deltaFrom="2" length="486574" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="dwV+sP2gOoFi+8UT+pCJSiRvLpP71qE8Rb2sN9SxEBVyXUZBi7cPKXd4aKhgltIxBYQ/k7IJzGJxLMmVNWzfBA=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver3-1.delta" sparkle:deltaFrom="1" length="925262" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Q1768Mn81dYoEkjm0i7SvuvopkCv5igx5Deb+lKlgw0qSOAPgs41gcMKJ6uxM17sW1RNTEpYPERobc0WcOoxDg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Mon, 05 Oct 2026 08:37:37 +0100</pubDate>
             <sparkle:version>2</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
