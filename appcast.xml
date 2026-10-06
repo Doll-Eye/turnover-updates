@@ -4,6 +4,23 @@
         <title>TurnOver</title>
         <item>
             <title>1.0</title>
+            <pubDate>Tue, 06 Oct 2026 09:59:08 +0100</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 10
+
+### Fixed
+- Sleep and the lock screen: if the Mac slept or locked while TurnOver was in charge, VoiceOver stayed off and the login screen had no speech. TurnOver now turns VoiceOver on as the Mac sleeps or locks, and takes over again once you're back in.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-10.zip" length="8194717" type="application/octet-stream" sparkle:edSignature="g5UCmVhOmfhMYcaBb/ZyuU0Fx20G2L+GM8KH2+JfIcv6OtSvaaZDL1ELip0BHctHkhMlmZyJIejQMuhLhwOsAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver10-9.delta" sparkle:deltaFrom="9" length="329886" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="XNQZAYaToZ9PJVOvZnZ1T2fu7Tz0AyxSayHT/Ilnk83zEU3tWrSBGL73sJQyiDSrJupoHi04hgpYTbS9NBsOAw=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver10-8.delta" sparkle:deltaFrom="8" length="1026382" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ar1+cWHis4azVUkeLHb87yg++EhiNYtx3gM8N1FWDXsGxJ9VRAXz+r/PRrDC2ucSt3SXVJXUpZKEntOGUMSsBg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Tue, 06 Oct 2026 09:24:23 +0100</pubDate>
             <sparkle:version>9</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
@@ -52,26 +69,6 @@
             <sparkle:deltas>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver8-7.delta" sparkle:deltaFrom="7" length="2496214" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gYGKVbhMO/Hbi+AJvyV0awFUdv2etuch8FiLG019NwY1VjlbJ6QplHvANMgDOjbWjzOkTPeJnJxi91SOXzH4AA=="/>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver8-6.delta" sparkle:deltaFrom="6" length="2568002" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="YYI9L7RlhKtYa+VxG2aQXysbUT38FZGPr4BAfVgaW5iabLz/q5skpttEQIACt9xE+zmwPvg3dkIygebtSjukDw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Tue, 06 Oct 2026 04:09:47 +0100</pubDate>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 7
-
-- Long paragraphs are now read in full. Before, speech often stopped after the first sentence or so of a long paragraph and moved on to the next: Say All in Word skipped most of each long paragraph, and long lines on web pages and in Mail were cut short too. (reported by a tester)
-- Moved TurnOver from Downloads to Applications? TurnOver Control T and the TurnOver Key login item now follow the copy you open, rather than looking for the old one. (reported by a tester)
-- TurnOver menu: Left goes back a level from any submenu, including one made only of settings. Left and Right still turn a number up and down (rate, volume); Shift Up and Shift Down step a choice back. (reported by a tester)
-- Safari: video players switch to focus mode by themselves, so YouTube's own keys work (K plays and pauses, J and L skip). Escape goes back to browse mode. (reported by a tester)
-- TurnOver menu, Uninstall TurnOver: removes TurnOver, its settings, logs, login items and permissions, and turns VoiceOver on. Handy for starting clean.
-]]></description>
-            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-7.zip" length="7216986" type="application/octet-stream" sparkle:edSignature="X7lTqn7eCVyafMxbASWcwLWRt4QJmj0T/Syk3avH69EdVPsSGk0+BJ9lJYwFm+wpbNH6shHm8xX6FQEC0qVICw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver7-6.delta" sparkle:deltaFrom="6" length="1032418" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jW9NNW0Fguv51gd1OcJcct0Z+w0gwZK3YVRK5pYcVelBL/ng9Eyga2v4q0bKXwfPvwHU3VD/U0chBr6kdyfhCA=="/>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver7-5.delta" sparkle:deltaFrom="5" length="1272018" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="tkfIT7kIhlZnm83So6+jHRZG7FkvWbmNn9v3ZhYJc0H7tksrqZlA+XTP52dEaAn1Wu63Sg2nt7CpqoNTloX/CQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
