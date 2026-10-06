@@ -161,6 +161,24 @@ FINDER, CLAUDE AND TEXTEDIT (PREVIEWS)
 All three are off to start with: TurnOver menu, Preferences, Applications, then "TurnOver leads" for each.
 
 
+APPLICATION CHOOSER
+
+Every app with a window, including system alerts that Command Tab doesn't show (macOS asking to allow Screen Recording, a password prompt). Arrow to one and press Return to switch to it; an app with several windows has them in a submenu.
+- Mac style: TurnOver F1 twice (VoiceOver's VO F1 F1).
+- Windows style: Option Tab (Windows+Tab).
+
+SCREEN RECOGNITION (OCR)
+
+For apps that don't tell a screen reader what's in them (games, Steam, a picture of text), TurnOver can read the window from the screen, as NVDA's NVDA+R does.
+- TurnOver R where TurnOver leads, or Command Control R anywhere, even where VoiceOver leads.
+- Up and Down: rows. Left and Right: characters; with Option or Control, words. Home and End: the row's start and end.
+- Tab and Shift Tab: the next and previous column or section (a sidebar, the main text).
+- Return or Space clicks the word you're on. Shift Return right-clicks, Option Return double-clicks. M moves the mouse there without clicking.
+- TurnOver R again reads the window again. Escape closes.
+- On a braille display, a routing key moves to that word; press it again to click.
+- The first time, macOS asks for Screen Recording for TurnOver: switch it on in Privacy and Security, then quit and reopen TurnOver. macOS may ask again now and then.
+- Preferences, Screen recognition: read new text as it appears, and read the whole result as it opens.
+
 BRAILLE
 
 TurnOver drives a braille display while it is in charge, using macOS's own braille drivers and tables, the

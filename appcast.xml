@@ -4,6 +4,28 @@
         <title>TurnOver</title>
         <item>
             <title>1.0</title>
+            <pubDate>Tue, 06 Oct 2026 11:51:17 +0100</pubDate>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 12
+
+### New to try
+- Screen recognition (OCR), as NVDA's TurnOver R: TurnOver reads the text in the window from the screen, for apps that don't tell a screen reader what's in them (games, Steam, pictures of text). Press TurnOver R where TurnOver leads, or Command Control R anywhere, even where VoiceOver leads. Up and Down move through rows; Left and Right by character, with Option or Control by word; Tab jumps between columns and sections; Return or Space clicks the word you're on, Shift Return right-clicks, Option Return double-clicks; M moves the mouse there without clicking; TurnOver R again re-reads; Escape closes. Columns, like a sidebar beside the main text, are read one after the other, and lists and tables row by row. It works on a braille display too: routing keys move to a word, and pressed again click it. The first time, macOS asks for Screen Recording permission for TurnOver. Options are in Preferences, Screen recognition.
+- Application chooser: every app with a window, including system alerts that Command Tab leaves out (such as macOS asking to allow Screen Recording), with each app's windows under it. Return switches there. Mac style: TurnOver F1 twice, as in VoiceOver. Windows style: Option Tab, as Windows+Tab is Task View.
+
+### Fixed
+- Safari: after reloading a page, the arrows could say "nothing on this page yet" while the page was there (Tab reached it). Safari had swapped the page for a new one; TurnOver now moves to it.
+- Context menus say "context menu" as they open, from VO Shift M, the right Option key or Shift F10.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-12.zip" length="8691486" type="application/octet-stream" sparkle:edSignature="40uYZwWEAhVSnxsV+DZNdcZzh9/QMGK2DacX2xQ1wNr35Dy/9hx8/UQbn/3kBkBCuzmH7DEMJD/BBPdmP/HmDQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver12-11.delta" sparkle:deltaFrom="11" length="1921354" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="eIul+q/UzuhILSRvRNq8RtVL6nPirAdd2TW+uCLTUk02QP6ZtldNfB5SipjBBGQUN3CYjhcdSPp98NxO1ik6AQ=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver12-10.delta" sparkle:deltaFrom="10" length="2048898" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jBzKdOR2y0cllv+1yBLTlXETLnptt6OOSNyIjrhgqRSbbtm2Cllf9zOxkuJDWevUIHnjeavW3w+e7kpeFnmCDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Tue, 06 Oct 2026 10:55:11 +0100</pubDate>
             <sparkle:version>11</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
@@ -41,28 +63,6 @@
             <sparkle:deltas>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver10-9.delta" sparkle:deltaFrom="9" length="329886" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="XNQZAYaToZ9PJVOvZnZ1T2fu7Tz0AyxSayHT/Ilnk83zEU3tWrSBGL73sJQyiDSrJupoHi04hgpYTbS9NBsOAw=="/>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver10-8.delta" sparkle:deltaFrom="8" length="1026382" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ar1+cWHis4azVUkeLHb87yg++EhiNYtx3gM8N1FWDXsGxJ9VRAXz+r/PRrDC2ucSt3SXVJXUpZKEntOGUMSsBg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Tue, 06 Oct 2026 09:24:23 +0100</pubDate>
-            <sparkle:version>9</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 9
-
-### New to try
-- TextEdit joins the previews: TurnOver menu, Preferences, Applications, TextEdit, "TurnOver leads".
-
-### Fixed
-- First run: TurnOver never asked for Input Monitoring, so on a new install it could not take over until you found the setting yourself. It now asks straight after Accessibility, and if macOS doesn't show the question, TurnOver explains and opens the right page of System Settings.
-- Braille: plugging the display in by USB while it was connected over Bluetooth left it with nothing on it. TurnOver now moves to USB by itself, notices when a Bluetooth display stops answering, and keeps looking for a display after losing one.
-- Braille: with the TurnOver menu open, the display's joystick and keys moved through the application behind it (Mail's message list) instead of the menu. They now drive the menu: up and down move, the routing keys or joystick press choose, letters typed on the braille keyboard jump to items, and space with dots 1 2 closes it.
-]]></description>
-            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-9.zip" length="8181420" type="application/octet-stream" sparkle:edSignature="FC0uljGc0DpVj/zbA6M+amHmt0fzif3LqCDXekDz5smK5sjqNZ/YNP/T1+8DRoEACypABwV5+8tklGhYhrQ2Cw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver9-8.delta" sparkle:deltaFrom="8" length="987938" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Wo8gBW1+WfoYfBptab4afJzCITjkPNjBG+fjlrwVpfuA/MWyzUUQ21qjkrKZkhcRyImmwEypzzGHxwiOmYL6DA=="/>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver9-7.delta" sparkle:deltaFrom="7" length="2522794" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jJg2hyRPZm4kJCSejZdhLxTAmgfq9wiPlCa/g/FxUc0GcAMf9uhZm0zBZE1diyYDdhzxHublBy7aoE+1UwVDBA=="/>
             </sparkle:deltas>
         </item>
     </channel>
