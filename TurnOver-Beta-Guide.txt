@@ -34,8 +34,8 @@ another key. (Pressed twice on its own, Caps Lock still turns capitals on and of
 "TurnOver" means Caps Lock or VO.
 
   TurnOver N            The TurnOver menu: preferences, feedback, quit. Up and Down move; Right or Return opens
-                        a submenu; on a setting (rate, a choice, on or off), Right and Left change it; elsewhere
-                        Left goes back a level; Escape closes the menu.
+                        a submenu or changes a setting; on a number (rate, volume) Left turns it down; elsewhere
+                        Left goes back a level (Shift Up or Down steps a choice back); Escape closes the menu.
   TurnOver slash        Every shortcut that works where you are, grouped. Enter runs one.
   TurnOver V            Hands this application back to VoiceOver.
   Control            Stops speech.
@@ -91,6 +91,9 @@ Web pages and email messages are read as a document, like NVDA's browse mode.
   K, B, E, F, L, T, D    Link, button, edit field, form field, list, table, landmark (Shift goes back).
   Enter                  Activates a link or button.
   TurnOver Space            Switches between browse mode and typing into the page (focus mode).
+Video players (YouTube) switch to focus mode by themselves when you Tab into them or press Enter on Play, so
+their own keys work: on YouTube, K plays and pauses, J and L skip back and forward. Escape goes back to
+browse mode.
   Shift with arrows      Selects text; Command C copies it.
 Back in Safari returns you to where you were on the previous page.
 Find (Command F): Return reads the line of each match; Escape puts you on it in the page.
@@ -167,5 +170,7 @@ TurnOver keeps its own logs for 30 days, on your Mac only:
 
 REMOVING TURNOVER
 
-Quit TurnOver, then move it from Applications to the Bin. Its settings and logs are in
-~/Library/Application Support/TurnOver/.
+TurnOver menu, Uninstall TurnOver, Uninstall now. It removes TurnOver's login items, puts the app, its
+settings and its logs in the Bin, resets its Accessibility, Input Monitoring and Automation permissions, and
+turns VoiceOver on. This is also the cleanest way to start again if permissions get muddled: uninstall, then
+download TurnOver afresh.
