@@ -1,8 +1,8 @@
 TURNOVER 1.0 BETA 1: A GUIDE FOR TESTERS
 
 TurnOver is a screen reader for the Mac, built in the shape of NVDA, that works alongside VoiceOver.
-This beta supports three applications: Mail, Safari and Terminal, with Microsoft Word, Finder and Claude as
-early previews that you turn on if you want to try them (see MICROSOFT WORD below). When one of them comes to the front,
+This beta supports three applications: Mail, Safari and Terminal, with Microsoft Word, Finder, Claude and
+TextEdit as early previews that you turn on if you want to try them (see MICROSOFT WORD below). When one of them comes to the front,
 TurnOver switches VoiceOver off and takes over; when you leave it, VoiceOver comes back. Every other
 application stays with VoiceOver. It runs on macOS 14 or later, on Apple silicon and Intel Macs.
 
@@ -13,8 +13,9 @@ FEEDBACK below).
 GETTING STARTED
 
 1. Copy TurnOver to your Applications folder and open it. A welcome message explains the permissions.
-2. macOS asks for two permissions. In System Settings, Privacy and Security, turn TurnOver on under
-   Accessibility (called Device Control and Data Access on macOS 27), and under Input Monitoring.
+2. TurnOver needs two permissions. In System Settings, Privacy and Security, turn TurnOver on under
+   Accessibility (called Device Control and Data Access on macOS 27), and under Input Monitoring. macOS asks
+   for the first; if it doesn't ask for the second, TurnOver shows you where it is.
 3. Switch to Mail, Safari or Terminal. VoiceOver goes off, TurnOver says "TurnOver on", and reads.
 
 TurnOver updates itself: once a day it checks for a new build, says "A TurnOver update is available", and
@@ -155,9 +156,9 @@ ribbon, sidebar, status bar or toolbar, goes back to the document.
 If you end up in Word's sidebar, TurnOver menu, Microsoft Word, "Show or hide the sidebar" takes you back.
 
 
-FINDER AND CLAUDE (PREVIEWS)
+FINDER, CLAUDE AND TEXTEDIT (PREVIEWS)
 
-Both are off to start with: TurnOver menu, Preferences, Applications, then "TurnOver leads" for either.
+All three are off to start with: TurnOver menu, Preferences, Applications, then "TurnOver leads" for each.
 
 
 BRAILLE

@@ -4,6 +4,28 @@
         <title>TurnOver</title>
         <item>
             <title>1.0</title>
+            <pubDate>Tue, 06 Oct 2026 09:24:23 +0100</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 9
+
+### New to try
+- TextEdit joins the previews: TurnOver menu, Preferences, Applications, TextEdit, "TurnOver leads".
+
+### Fixed
+- First run: TurnOver never asked for Input Monitoring, so on a new install it could not take over until you found the setting yourself. It now asks straight after Accessibility, and if macOS doesn't show the question, TurnOver explains and opens the right page of System Settings.
+- Braille: plugging the display in by USB while it was connected over Bluetooth left it with nothing on it. TurnOver now moves to USB by itself, notices when a Bluetooth display stops answering, and keeps looking for a display after losing one.
+- Braille: with the TurnOver menu open, the display's joystick and keys moved through the application behind it (Mail's message list) instead of the menu. They now drive the menu: up and down move, the routing keys or joystick press choose, letters typed on the braille keyboard jump to items, and space with dots 1 2 closes it.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-9.zip" length="8181420" type="application/octet-stream" sparkle:edSignature="FC0uljGc0DpVj/zbA6M+amHmt0fzif3LqCDXekDz5smK5sjqNZ/YNP/T1+8DRoEACypABwV5+8tklGhYhrQ2Cw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver9-8.delta" sparkle:deltaFrom="8" length="987938" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Wo8gBW1+WfoYfBptab4afJzCITjkPNjBG+fjlrwVpfuA/MWyzUUQ21qjkrKZkhcRyImmwEypzzGHxwiOmYL6DA=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver9-7.delta" sparkle:deltaFrom="7" length="2522794" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jJg2hyRPZm4kJCSejZdhLxTAmgfq9wiPlCa/g/FxUc0GcAMf9uhZm0zBZE1diyYDdhzxHublBy7aoE+1UwVDBA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Tue, 06 Oct 2026 08:36:54 +0100</pubDate>
             <sparkle:version>8</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
@@ -50,28 +72,6 @@
             <sparkle:deltas>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver7-6.delta" sparkle:deltaFrom="6" length="1032418" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jW9NNW0Fguv51gd1OcJcct0Z+w0gwZK3YVRK5pYcVelBL/ng9Eyga2v4q0bKXwfPvwHU3VD/U0chBr6kdyfhCA=="/>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver7-5.delta" sparkle:deltaFrom="5" length="1272018" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="tkfIT7kIhlZnm83So6+jHRZG7FkvWbmNn9v3ZhYJc0H7tksrqZlA+XTP52dEaAn1Wu63Sg2nt7CpqoNTloX/CQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Mon, 05 Oct 2026 13:28:11 +0100</pubDate>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 6
-
-- Mail: Shift Tab from the message list goes to the mailbox list, and Tab comes back. Mail only lets Tab reach its mailboxes while VoiceOver runs.
-- Mail: writing a message, Tab now reaches the Priority, From and Signature pop-ups after the subject, so you can change which address you send from.
-- Menus: in Mail's Move To list, each account's name is read as you move into its mailboxes. Submenus Mail opens by itself are no longer announced at every step, and nothing is read twice. Right Arrow into a submenu now always works, and the edge of a menu gives a bump.
-- Mail's context menu: the "Ask Siri" box at the top is now read.
-- Typing: with word echo on, an apostrophe is no longer read separately ("I've", not "apostrophe, I've").
-- Screen Curtain: when VoiceOver's Screen Curtain is on, TurnOver keeps the screen black while it is in charge. Before, the curtain ended when TurnOver took over. (raised on AppleVis)
-- Turn the curtain on or off for now with TurnOver Shift Escape (or VoiceOver's own VO Shift Underscore). To choose always, never, or the same as VoiceOver: TurnOver menu, Preferences, Speech, Screen Curtain while TurnOver leads.
-]]></description>
-            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-6.zip" length="7178242" type="application/octet-stream" sparkle:edSignature="l3LR0Bl8FtixNCAhia14Fn5hYTJ/YKgvIA/Tec6R3MLhQBnqBvf5UATN/+odypeXkQAQ0p/1WdUn2JUSCstrBw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver6-5.delta" sparkle:deltaFrom="5" length="1032814" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Oal0xSsfP+q6Eo3DZ4R4kZWLL36lAKc9AVlAPJ57KVUxlHR3SX+L0Xy3wan6k6XL0Iv20ytFj6LKHhnYRkHyBw=="/>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver6-4.delta" sparkle:deltaFrom="4" length="1067566" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="MKjZd6sONQ9tdeR/UADxq2YkuTB24Zo8moTIGZQxBpPH2M0QIXmBEsR+ugS+P/5lqTa2GrVou8JLdyT2ys1XCg=="/>
             </sparkle:deltas>
         </item>
     </channel>

@@ -5,12 +5,12 @@
 @media (prefers-color-scheme:dark){body{color:#eee;background:#111}a{color:#8ab4ff}}</style></head>
 <body><main>
 <h1>TurnOver beta guide</h1>
-<p>TurnOver is a screen reader for the Mac, built in the shape of NVDA, that works alongside VoiceOver. This beta supports three applications: Mail, Safari and Terminal, with Microsoft Word, Finder and Claude as early previews that you turn on if you want to try them (see MICROSOFT WORD below). When one of them comes to the front, TurnOver switches VoiceOver off and takes over; when you leave it, VoiceOver comes back. Every other application stays with VoiceOver. It runs on macOS 14 or later, on Apple silicon and Intel Macs.</p>
+<p>TurnOver is a screen reader for the Mac, built in the shape of NVDA, that works alongside VoiceOver. This beta supports three applications: Mail, Safari and Terminal, with Microsoft Word, Finder, Claude and TextEdit as early previews that you turn on if you want to try them (see MICROSOFT WORD below). When one of them comes to the front, TurnOver switches VoiceOver off and takes over; when you leave it, VoiceOver comes back. Every other application stays with VoiceOver. It runs on macOS 14 or later, on Apple silicon and Intel Macs.</p>
 <p>This is a proof of concept. Thank you for testing it. Please tell us what goes wrong (see SENDING FEEDBACK below).</p>
 <h2>Getting started</h2>
 <ol>
 <li>Copy TurnOver to your Applications folder and open it. A welcome message explains the permissions.</li>
-<li>macOS asks for two permissions. In System Settings, Privacy and Security, turn TurnOver on under Accessibility (called Device Control and Data Access on macOS 27), and under Input Monitoring.</li>
+<li>TurnOver needs two permissions. In System Settings, Privacy and Security, turn TurnOver on under Accessibility (called Device Control and Data Access on macOS 27), and under Input Monitoring. macOS asks for the first; if it doesn&#x27;t ask for the second, TurnOver shows you where it is.</li>
 <li>Switch to Mail, Safari or Terminal. VoiceOver goes off, TurnOver says &quot;TurnOver on&quot;, and reads.</li>
 </ol>
 <p>TurnOver updates itself: once a day it checks for a new build, says &quot;A TurnOver update is available&quot;, and opens a window where you choose Install Update or Skip. TurnOver menu, Updates: check now, turn the daily check off, or turn on &quot;Download and install updates automatically&quot; (the update then installs next time TurnOver quits, or straight away from that menu). Your permissions carry over to each update. Updates, What&#x27;s new, lists every build&#x27;s changes, including which reported problems are fixed. After an update, TurnOver tells you how many new things there are to try, and lists them in the TurnOver menu under New to try.</p>
@@ -98,8 +98,8 @@
 <li><strong>TurnOver arrows</strong>: Cell to cell without selecting; &quot;edge of table&quot; at the edges.</li>
 </ul>
 <p>The ribbon: F6 moves between the ribbon, sidebar, status bar and toolbar. On a ribbon tab (Home, Insert...), Left and Right change tab; Down or Tab goes into its commands; Tab and Shift Tab move through them. Escape, from the ribbon, sidebar, status bar or toolbar, goes back to the document. If you end up in Word&#x27;s sidebar, TurnOver menu, Microsoft Word, &quot;Show or hide the sidebar&quot; takes you back.</p>
-<h2>Finder and claude (previews)</h2>
-<p>Both are off to start with: TurnOver menu, Preferences, Applications, then &quot;TurnOver leads&quot; for either.</p>
+<h2>Finder, claude and textedit (previews)</h2>
+<p>All three are off to start with: TurnOver menu, Preferences, Applications, then &quot;TurnOver leads&quot; for each.</p>
 <h2>Braille</h2>
 <p>TurnOver drives a braille display while it is in charge, using macOS&#x27;s own braille drivers and tables, the ones VoiceOver uses, so any display VoiceOver supports should work. When TurnOver hands back, VoiceOver takes the display again. Three rising notes: TurnOver has the display; three falling: it has let it go. USB: plug it in; nothing to set up. Bluetooth: pair the display with VoiceOver first (VoiceOver Utility, VO F8, Braille, Displays, Add). Then TurnOver menu, Preferences, Braille, &quot;Use a braille display paired over Bluetooth&quot;, and allow Bluetooth when macOS asks. TurnOver takes the display from VoiceOver&#x27;s braille server when it leads; it can take a few seconds. What it shows: the line you are on (in browse mode and in text), or the item in focus (the selected message in Mail&#x27;s list), and what TurnOver says by itself (messages, live updates such as Claude&#x27;s progress).</p>
 <ul>
