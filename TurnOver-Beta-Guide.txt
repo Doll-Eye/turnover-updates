@@ -1,8 +1,8 @@
 TURNOVER 1.0 BETA 1: A GUIDE FOR TESTERS
 
 TurnOver is a screen reader for the Mac, built in the shape of NVDA, that works alongside VoiceOver.
-This beta supports three applications: Mail, Safari and Terminal, with Microsoft Word as an early preview
-that you turn on if you want to try it (see MICROSOFT WORD below). When one of them comes to the front,
+This beta supports three applications: Mail, Safari and Terminal, with Microsoft Word, Finder and Claude as
+early previews that you turn on if you want to try them (see MICROSOFT WORD below). When one of them comes to the front,
 TurnOver switches VoiceOver off and takes over; when you leave it, VoiceOver comes back. Every other
 application stays with VoiceOver. It runs on macOS 14 or later, on Apple silicon and Intel Macs.
 
@@ -21,7 +21,8 @@ TurnOver updates itself: once a day it checks for a new build, says "A TurnOver 
 opens a window where you choose Install Update or Skip. TurnOver menu, Updates: check now, turn the daily
 check off, or turn on "Download and install updates automatically" (the update then installs next time TurnOver
 quits, or straight away from that menu). Your permissions carry over to each update. Updates, What's new, lists
-every build's changes, including which reported problems are fixed.
+every build's changes, including which reported problems are fixed. After an update, TurnOver tells you how
+many new things there are to try, and lists them in the TurnOver menu under New to try.
 
 TurnOver can open when you log in: TurnOver menu, Preferences, General, Open TurnOver at login. While it is
 running it has an item in the menu bar, called TurnOver.
@@ -38,7 +39,8 @@ another key. (Pressed twice on its own, Caps Lock still turns capitals on and of
                         Left goes back a level (Shift Up or Down steps a choice back); Escape closes the menu.
   TurnOver slash        Every shortcut that works where you are, grouped. Enter runs one.
   TurnOver V            Hands this application back to VoiceOver.
-  Control            Stops speech.
+  TurnOver Shift J      "That was wrong": marks this moment for your next feedback report. Press twice to send.
+  Control               Pauses speech; press again to carry on. Any other key stops it.
   TurnOver 1            Input help: every key says what it does, without doing it. Press again to stop.
   TurnOver Tab          Says what has focus.
   TurnOver L            Reads the current line.
@@ -48,6 +50,8 @@ another key. (Pressed twice on its own, Caps Lock still turns capitals on and of
   TurnOver Shift Escape Screen Curtain on or off (the screen goes black; TurnOver carries on as normal). VO Shift
                         Underscore also works. If VoiceOver's curtain is on, TurnOver keeps it on when it takes
                         over. To choose: TurnOver menu, Preferences, Speech, Screen Curtain while TurnOver leads.
+  Command Control N      The TurnOver menu from anywhere, even in an application VoiceOver leads: TurnOver
+                         steps in for the menu and hands back to VoiceOver when you close it.
   Command Control T      Starts TurnOver, or quits it, from anywhere. Quitting turns VoiceOver on. A
                          rising or a falling chime says which. It works even if TurnOver is stuck:
                          the way out that always works (a small helper, TurnOver Key, listens for it
@@ -90,13 +94,16 @@ Web pages and email messages are read as a document, like NVDA's browse mode.
   H / Shift H            Next / previous heading. 1 to 6: headings of that level.
   K, B, E, F, L, T, D    Link, button, edit field, form field, list, table, landmark (Shift goes back).
   Enter                  Activates a link or button.
-  TurnOver Space            Switches between browse mode and typing into the page (focus mode).
+  TurnOver Space         Switches between browse mode and typing into the page (focus mode).
+  Shift with arrows      Selects text; Command C copies it.
 Video players (YouTube) switch to focus mode by themselves when you Tab into them or press Enter on Play, so
 their own keys work: on YouTube, K plays and pauses, J and L skip back and forward. Escape goes back to
 browse mode.
-  Shift with arrows      Selects text; Command C copies it.
 Back in Safari returns you to where you were on the previous page.
 Find (Command F): Return reads the line of each match; Escape puts you on it in the page.
+Pages in other languages are read with a voice for that language, when the page says which language it is
+in and a voice for it is installed (System Settings, Accessibility, Spoken Content, System voice, Manage
+Voices). To choose the voice for a language, or turn this off: TurnOver menu, Preferences, Speech.
 Safari's sidebar (Reading List, bookmarks) is not reached by Tab: TurnOver Shift Up to the window, TurnOver
 Shift Down, then TurnOver Right to the list, and TurnOver Enter. Return opens an item; the context menu
 (VO Shift M, or Right Option) has Delete.
@@ -125,7 +132,8 @@ MICROSOFT WORD (PREVIEW)
 Word support is an early preview, off to start with, as it is still changing day to day. To try it: TurnOver
 menu (Caps Lock N), Applications, Microsoft Word, set to "TurnOver leads". (Word is only listed when it is installed.) Your reports on Word are very welcome.
 
-The document reads as you move, with page and line where Word gives them.
+The document reads as you move, and says the page as you arrive on a new one. TurnOver Shift L (or TurnOver
+Delete) says the page and line.
   TurnOver H / Shift H      Next / previous heading.
   TurnOver M / Shift M      Next / previous comment. TurnOver Option C reads the comment at the caret.
   TurnOver E / Shift E      Next / previous spelling error.
@@ -147,6 +155,40 @@ ribbon, sidebar, status bar or toolbar, goes back to the document.
 If you end up in Word's sidebar, TurnOver menu, Microsoft Word, "Show or hide the sidebar" takes you back.
 
 
+FINDER AND CLAUDE (PREVIEWS)
+
+Both are off to start with: TurnOver menu, Preferences, Applications, then "TurnOver leads" for either.
+
+
+BRAILLE
+
+TurnOver drives a braille display while it is in charge, using macOS's own braille drivers and tables, the
+ones VoiceOver uses, so any display VoiceOver supports should work. When TurnOver hands back, VoiceOver takes
+the display again. Three rising notes: TurnOver has the display; three falling: it has let it go.
+USB: plug it in; nothing to set up.
+Bluetooth: pair the display with VoiceOver first (VoiceOver Utility, VO F8, Braille, Displays, Add). Then
+TurnOver menu, Preferences, Braille, "Use a braille display paired over Bluetooth", and allow Bluetooth when
+macOS asks. TurnOver takes the display from VoiceOver's braille server when it leads; it can take a few
+seconds.
+What it shows: the line you are on (in browse mode and in text), or the item in focus (the selected message
+in Mail's list), and what TurnOver says by itself (messages, live updates such as Claude's progress).
+  Panning keys, joystick left and right   Read along the line; at the ends, the previous or next line.
+  Joystick up and down                    Previous or next line, or item in a list; spoken too.
+  Routing keys                            The cursor to that character; on a link or button, press it.
+  Joystick pressed in                     Activates the item.
+  Dots                                    Type, contracted a word at a time by default (space translates).
+  Dot 7 / dot 8                           Backspace (hold to keep deleting) / Return.
+  Space with dots                         VoiceOver's braille commands, for example: 1 and 4 previous and
+                                          next item, 3 and 6 up and down, 1 2 3 and 4 5 6 first and last,
+                                          1 2 Escape, 2 3 4 5 Tab, 1 2 3 4 pause speech, 2 and 5 pan, 1 7
+                                          Command for the next key (1 8 locks it; 2 7 Option, 3 7 Control,
+                                          4 7 Shift), 1 3 4 5 announcement history.
+TurnOver 1 (input help) covers the display too: each key and chord says what it does. TurnOver slash (the
+shortcuts list) lists your display's keys and every chord while a display is connected.
+Settings: TurnOver menu, Preferences, Braille: the table (Unified English contracted to start with), typing,
+what is spoken while typing, messages and how long they stay, word wrap, the cursor, and more.
+
+
 IF SOMETHING GOES WRONG
 
 If TurnOver stops responding, VoiceOver comes back by itself within a few seconds, and your keys work
@@ -157,10 +199,19 @@ the menu bar item) leaves VoiceOver in charge everywhere.
 
 SENDING FEEDBACK
 
+The quickest way: the moment TurnOver gets something wrong, press TurnOver Shift J. It marks the moment and
+you carry on. When you're ready, TurnOver menu, Send feedback, Send your marked moments: one report with them
+all, and an email listing when and where each was, to add a line to if you can. Press TurnOver Shift J twice
+to send straight away.
+
+To ask for an app to be supported: switch to it, then TurnOver menu, Applications, Request support for it.
+An email opens with a description of how the app is built for accessibility (kinds of item and counts, never
+its content). Add a line about what you use it for, and send it. The apps most asked for come first.
+
 TurnOver menu (TurnOver N), Send feedback:
-  Save a report, leaving out what TurnOver said        (recommended)
-  Save a report, including what TurnOver said          (helps with reading problems; may include the
-                                                     text of your emails and pages)
+  Save a report, including what TurnOver said          (recommended: shows what you heard; it may include
+                                                     the text of your emails and pages)
+  Save a report, leaving out what TurnOver said        (when what was on screen is private)
 A zip file is saved on your Desktop. Attach it to your message, and say in a sentence what you were
 doing and what you expected.
 
@@ -170,7 +221,11 @@ TurnOver keeps its own logs for 30 days, on your Mac only:
 
 REMOVING TURNOVER
 
-TurnOver menu, Uninstall TurnOver, Uninstall now. It removes TurnOver's login items, puts the app, its
+TurnOver menu, Uninstall TurnOver, then either:
+  Remove the app only        puts the app in the Bin and keeps your settings and permissions, so a copy
+                             installed again, wherever you put it, carries on as before.
+  Uninstall completely       as below.
+Uninstall completely removes TurnOver's login items, puts the app, its
 settings and its logs in the Bin, resets its Accessibility, Input Monitoring and Automation permissions, and
 turns VoiceOver on. This is also the cleanest way to start again if permissions get muddled: uninstall, then
 download TurnOver afresh.

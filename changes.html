@@ -6,10 +6,29 @@
 <body><main>
 <h1>What's new in TurnOver</h1>
 <p>The newest build is first. &quot;Reported by a tester&quot; marks a fix for something a tester sent in. Thank you.</p>
+<h2>1.0, build 8</h2>
+<h3>New to try</h3>
+<ul>
+<li>Braille: TurnOver now drives your braille display while it leads, using the same drivers and braille tables as VoiceOver, so any display VoiceOver supports should just work. It shows the line you&#x27;re on (contracted, with the word at the cursor uncontracted), the item in focus, and what TurnOver says by itself, such as live updates. Panning, routing and the display&#x27;s keys work as with VoiceOver, and you can type on its braille keyboard, contracted or letter by letter. USB displays need nothing setting up; for Bluetooth, pair the display in VoiceOver Utility, then turn on &quot;Use a braille display paired over Bluetooth&quot; in TurnOver menu, Preferences, Braille, where you&#x27;ll also find the table, typing and display settings. TurnOver 1 and TurnOver slash cover the display&#x27;s keys and chords. Please tell us which display you have and how it goes.</li>
+<li>Pages in other languages are read with a voice for that language, as in NVDA. TurnOver menu, Preferences, Speech: turn it off, or choose the voice for each language.</li>
+<li>&quot;That was wrong&quot;: press TurnOver Shift J the moment TurnOver gets something wrong. It quietly marks the moment and you carry on. Send all your marked moments together later from the TurnOver menu, Send feedback, or press the key twice to send straight away.</li>
+<li>Want TurnOver to support an app? Switch to it, then TurnOver menu, Preferences, Applications, Request support (at the end of the list). An email to us opens with a description of how the app is built (no content); add a line about what you use it for. The most-asked apps come first.</li>
+<li>The TurnOver menu from anywhere: Command Control N opens it even in apps VoiceOver leads, as does &quot;TurnOver menu&quot; in the menu bar. TurnOver steps in for the menu and hands back when you close it.</li>
+<li>Word says the page number as you arrow onto a new page; TurnOver Shift L says the page and line.</li>
+<li>Finder and Claude are in the Applications list as previews, off until you turn them on (TurnOver menu, Preferences, Applications).</li>
+<li>Control now pauses speech, and pressing it again carries on, as in VoiceOver.</li>
+<li>After each update, TurnOver tells you what&#x27;s new to try, and lists it in the TurnOver menu under New to try.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Safari: a page that was still loading, or stopped answering, could leave TurnOver with nothing to read, and every arrow said &quot;top&quot; or &quot;bottom&quot;. TurnOver now says the page has nothing on it yet, keeps looking, and reads it as soon as it arrives. (reported by a tester)</li>
+<li>Menus: moving along the menu bar quickly, a menu&#x27;s name (&quot;Edit menu&quot;) could be cut off as the menu opened. It is now always said.</li>
+<li>Uninstall now offers to remove just the app, keeping your settings and permissions for when you install it again.</li>
+</ul>
 <h2>1.0, build 7</h2>
 <ul>
 <li>Long paragraphs are now read in full. Before, speech often stopped after the first sentence or so of a long paragraph and moved on to the next: Say All in Word skipped most of each long paragraph, and long lines on web pages and in Mail were cut short too. (reported by a tester)</li>
-<li>Moved TurnOver from Downloads to Applications? TurnOver Control T and the TurnOver Key login item now follow the copy you open, rather than looking for the old one. (reported by a tester)</li>
+<li>Moved TurnOver from Downloads to Applications? Command Control T and the TurnOver Key login item now follow the copy you open, rather than looking for the old one. (reported by a tester)</li>
 <li>TurnOver menu: Left goes back a level from any submenu, including one made only of settings. Left and Right still turn a number up and down (rate, volume); Shift Up and Shift Down step a choice back. (reported by a tester)</li>
 <li>Safari: video players switch to focus mode by themselves, so YouTube&#x27;s own keys work (K plays and pauses, J and L skip). Escape goes back to browse mode. (reported by a tester)</li>
 <li>TurnOver menu, Uninstall TurnOver: removes TurnOver, its settings, logs, login items and permissions, and turns VoiceOver on. Handy for starting clean.</li>
