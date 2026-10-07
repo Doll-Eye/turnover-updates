@@ -29,6 +29,11 @@ TurnOver can open when you log in: TurnOver menu, Preferences, General, Open Tur
 running it has an item in the menu bar, called TurnOver.
 
 
+YOUR TESTER KEY
+
+TurnOver is a closed beta. Each tester has a personal key, sent by email. The first time TurnOver starts, it asks for it: open the link in the email (TurnOver takes the key by itself), or copy the key and paste it into the box with Command V. Until then VoiceOver carries on as usual.
+Each beta build works for 90 days from the day it was made; every update starts that again. TurnOver menu, Tester key says whose key it is and until when this build works. Please keep your key to yourself.
+
 THE KEYS THAT MATTER
 
 The TurnOver key is Caps Lock, or Control and Option together (VoiceOver's VO keys): hold either and press
@@ -82,8 +87,11 @@ TurnOver menu, Preferences, Keyboard, TurnOver key.
 (A Windows layout, Alt for the menus and so on, is set aside for now; it will come back later.)
 
 Moving through anything, even what the keyboard cannot reach (object navigation):
-  TurnOver Shift Right / Left   Next or previous item in the window.
+  TurnOver Right / Left         Next or previous item in the window, in reading order, going in and out of
+                                groups by itself (as Narrator's Caps Lock arrows; in the Mac style, as VoiceOver's).
+  TurnOver Shift Right / Left   The same.
   TurnOver Shift Down / Up      Into an item, or out to what holds it.
+  TurnOver W                    The current word (TurnOver Control S: the sentence).
   TurnOver Enter                Presses the item (or puts you in it to type).
 
 
@@ -160,6 +168,17 @@ FINDER, CLAUDE AND TEXTEDIT (PREVIEWS)
 
 All three are off to start with: TurnOver menu, Preferences, Applications, then "TurnOver leads" for each.
 
+
+THE APP STORE (PREVIEW)
+
+Turn it on in the TurnOver menu, Applications, App Store.
+- Up and Down: every app, heading and button on the page, including the whole of each shelf.
+- Left and Right: the previous and next shelf. Home and End: the top and bottom.
+- Return opens an app's page or presses a button. Escape goes back.
+- Space presses the app's own button: Open, Get, Update or Re-download. A price needs Space twice.
+- Tab and Shift Tab: the sidebar (Search, Discover, Arcade, Updates, your account) and the page.
+- Command F goes to search; type, press Return, and the results are read.
+- A letter jumps to the next item starting with it.
 
 APPLICATION CHOOSER
 

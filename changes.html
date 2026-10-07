@@ -6,6 +6,40 @@
 <body><main>
 <h1>What's new in TurnOver</h1>
 <p>The newest build is first. &quot;Reported by a tester&quot; marks a fix for something a tester sent in. Thank you.</p>
+<h2>1.0, build 13</h2>
+<h3>New to try</h3>
+<ul>
+<li>Your own tester key: the first time this build starts, TurnOver asks for the personal key in your email from Oliver. Open the link in that email, or paste the key into the box. Each beta build now works for 90 days, and every update starts that again. TurnOver menu, Tester key says whose key it is and until when this build works.</li>
+<li>Hints, as in VoiceOver: pause on an item and TurnOver says what you can do with it (&quot;Space presses it&quot;, &quot;Return opens its page&quot;), with hints of their own in Mail, Safari, Terminal, Word, Finder, Claude, TextEdit and the App Store. Turn them off in the TurnOver menu, Preferences, Presentation, Hints.</li>
+<li>The App Store (preview, off until you turn it on in the TurnOver menu, Applications). Up and Down go through every app on the page, the whole of each shelf rather than three at a time; Left and Right jump between shelves, saying each one&#x27;s name and size. Return opens an app&#x27;s page, which reads in order: the app and its price, its rating, age rating, chart place, developer and size, the description, reviews, What&#x27;s New, privacy, the developer&#x27;s accessibility notes and more. Space presses the app&#x27;s button (Open, Get, Update, Re-download), and so does Return on the app&#x27;s own page; a price needs two presses, so nothing is bought by accident. Tab moves to the sidebar (Search, Discover, Arcade, Updates…); Command F searches and reads the results; Escape goes back.</li>
+<li>Quick keys wrap round the page: after the last heading, H goes on from the top and says &quot;wrapped to the top&quot; (Shift H: &quot;wrapped to the bottom&quot;). Turn it off in the TurnOver menu, Preferences, Browse mode.</li>
+<li>VoiceOver&#x27;s way of moving, in the Mac style: VO Left and Right move within a group (a toolbar, a sidebar, a list, a pane) in the order things are on screen, and stop at its end; a group says how many items it holds (&quot;tool bar, 9 items&quot;), VO Shift Down goes into it and VO Shift Up comes back out. Tab and the arrows are unchanged. Turn it off in the TurnOver menu, Preferences, Keyboard.</li>
+<li>TurnOver Left and Right now move through everything in the window, item by item, going in and out of groups by themselves, as Narrator&#x27;s Caps Lock arrows do. Handy in alerts and dialogs where Tab misses things. TurnOver Shift with the arrows still works as before. The current word is TurnOver W, and the current sentence TurnOver Control S.</li>
+<li>Mail: Escape leaves the message you&#x27;re reading, as in Outlook on Windows: a message in its own window closes, and you&#x27;re back in the message list.</li>
+<li>Music, Podcasts and TV (previews, off until you turn them on in the TurnOver menu, Applications). Up and Down now go through the whole page, every shelf and every item on it, reading further down as you go; End goes to the very last item. Left and Right jump between shelves, Tab moves between the sidebar, the page and the player, Return opens or plays, and Escape goes back, landing on the item you opened. A video from Music&#x27;s Radio page plays in its own player; Space plays and pauses, Escape leaves it.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Braille tables in every language macOS has, not only your Mac&#x27;s own: TurnOver menu, Preferences, Braille, Braille table, Other languages (Slovenian, Italian, Arabic and many more). (reported by a tester)</li>
+<li>Finder&#x27;s sidebar: move TurnOver&#x27;s cursor into it (TurnOver Right in the Windows style, VO Shift Down in the Mac style), then Up and Down go through it, Return or Space opens that place, and Left and Right close and open its sections; Escape goes back. Finder never gives its sidebar the keyboard, so TurnOver works it for you. Tab and Shift Tab go round the window as in Windows Explorer: files, sidebar, toolbar, search, and back to the files. Elsewhere, when the cursor lands on something that can take the keyboard, the keyboard now goes there too, as in VoiceOver and Narrator. The toolbar&#x27;s Back and Forward and its four view buttons are now items of their own.</li>
+<li>More of VoiceOver&#x27;s keys in the Mac style: VO Home and End (first and last item), VO Command Home and End (top and bottom of the window), VO Up and Down, VO Shift Escape, VO J (jump to the linked item), VO Return (select), VO Backslash (disclosure triangle), VO Shift Space (click), VO Shift H (help tag), VO Shift N (hint), VO Shift W (read the window), VO Shift U (link address), VO Command Space (actions) and VO F2 twice (window chooser).</li>
+<li>The list of shortcuts (TurnOver Slash) shows the keys for the style you&#x27;re using: in the Windows style, the VoiceOver keys were hiding some Windows ones.</li>
+<li>Return on a button you&#x27;ve tabbed to in an alert now presses that button. macOS sends Return to the alert&#x27;s default button whatever has the focus, so &quot;Open System Settings&quot; could press &quot;Deny&quot;.</li>
+<li>Claude: a summary line that stayed the same (&quot;Ran 23 commands, compacted the session…&quot;) was read again every few seconds while Claude worked. A name is now read only when it changes.</li>
+<li>Hints are only spoken for where you still are: a hint for the message list was said as a message window came up.</li>
+<li>Mail: quoted text says its level as you read into it (&quot;quote level 1&quot;, &quot;quote level 2&quot;), as VoiceOver does; and a message opened in its own window (with the preview pane hidden) starts reading in the message, not on the toolbar (reported by a tester).</li>
+<li>Pages in two languages: TurnOver&#x27;s own words (&quot;link&quot;, &quot;heading&quot;) are said by your main voice, not the other language&#x27;s; text in another script is read by that language&#x27;s voice even when the page doesn&#x27;t say which language it is; and each language can have its own speech rate (TurnOver menu, Preferences, Speech, the language, Rate) (reported by a tester).</li>
+<li>Hints are no longer spoken over a page being read out, and edit fields no longer get the obvious &quot;Type to enter text&quot;.</li>
+<li>Typing: after deleting a letter, the word is said as it now is (&quot;think&quot;, Backspace, Space says &quot;thin&quot;), and Option Backspace says &quot;deleted&quot; and the word (reported by a tester).</li>
+<li>Brave, Chrome and Edge: H and Shift H move through every heading both ways; Shift H said &quot;no previous heading&quot;, and H could skip one (reported by a tester).</li>
+<li>Selecting a paragraph on a web page or in a message (Shift Option Up and Down) is read, as character, word and line selection are (reported by a tester).</li>
+<li>New to try: each thing to try opens into a list of its lines, to arrow through, instead of one long item (reported by a tester).</li>
+<li>In a one-line field (a search box, the To field), Up and Down read the field instead of only playing the edge sound (reported by a tester).</li>
+<li>&quot;New line&quot; on Return can be turned off: TurnOver menu, Preferences, Keyboard, Say new line on Return (reported by a tester).</li>
+<li>Reading quickly with the arrows no longer plays the edge sound in the middle of text (reported by a tester).</li>
+<li>Touch ID and password prompts (such as the App Store confirming your Apple Account) now say their message first, then their button, instead of &quot;coreautha, Untitled, window&quot;.</li>
+<li>Dialogs that are more like pages (the App Store&#x27;s account window) are read line by line with Up and Down, text as well as buttons; a web page inside a dialog is read in browse mode.</li>
+</ul>
 <h2>1.0, build 12</h2>
 <h3>New to try</h3>
 <ul>
