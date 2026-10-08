@@ -262,6 +262,14 @@ again. If it is still stuck after that, TurnOver restarts itself.
 TurnOver V always hands the application to VoiceOver. Quitting TurnOver (TurnOver Q, or the TurnOver menu, or
 the menu bar item) leaves VoiceOver in charge everywhere.
 
+If TurnOver goes silent (a voice you chose does not speak, or was removed), get VoiceOver back with Command
+Control T, then put the voice back from Terminal with this one line, and start TurnOver again; everything else
+you set is kept:
+  python3 -c "import json,os;p=os.path.expanduser('~/Library/Application Support/TurnOver/settings.json');d=json.load(open(p));d.setdefault('speech',{});d['speech']['voice']='com.apple.eloquence.en-GB.Reed';d['speech']['languageVoices']={};json.dump(d,open(p,'w'),indent=2)"
+To start completely afresh instead, quit TurnOver and delete the settings file; TurnOver makes a new one:
+  rm "$HOME/Library/Application Support/TurnOver/settings.json"
+From build 15, TurnOver notices a voice that stays silent and switches back to Reed by itself.
+
 
 SENDING FEEDBACK
 
