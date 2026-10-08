@@ -6,6 +6,63 @@
 <body><main>
 <h1>What's new in TurnOver</h1>
 <p>The newest build is first. &quot;Reported by a tester&quot; marks a fix for something a tester sent in. Thank you.</p>
+<h2>1.0, build 15</h2>
+<h3>New to try</h3>
+<ul>
+<li>Messages and WhatsApp (previews, off until you turn them on in the TurnOver menu, Applications). Your keyboard stays in the message box. Tab takes you to the messages, starting on the newest, and Shift Tab to the conversations. There, Up and Down move, Home and End go to the first and last, Return opens a conversation, and the shortcut menu (VO Shift M, or the right Option key in the Windows style) lists the message&#x27;s own actions: reply, tapback, copy and so on. Escape goes back to the message box. TurnOver 1 to 9 read the latest messages from anywhere in the window, 1 the newest. New messages in the open conversation are read as they arrive. With no conversation open (WhatsApp), Tab goes straight to the conversations. In WhatsApp, the shortcut menu on a message opens WhatsApp&#x27;s own menu for it (reply, react, forward and more), and Tab goes on from the chats to WhatsApp&#x27;s bar of sections (Chats, Updates, Communities, Calls, Archived, Starred): Return shows that section&#x27;s chats. The chats are found in whichever section is showing.</li>
+<li>Spelling errors anywhere: TurnOver E and TurnOver Shift E (VO Command E and VO Command Shift E in the Mac style) go to the next and previous misspelled word in any text, not just Word: TextEdit, Mail&#x27;s message body, and text boxes on web pages, such as AppleVis&#x27;s comment box.</li>
+<li>Braille: the display now shows what you&#x27;re on, not what TurnOver says. Try arrowing through Mail&#x27;s list, the TurnOver menu, a menu-bar menu, WhatsApp&#x27;s chats and Music&#x27;s shelves, and reading back through Terminal; try typing on the display in Claude&#x27;s prompt or a chat box.</li>
+<li>Document formatting has a new setting, &quot;Heading, link and button: say them&quot;: after the words, as VoiceOver (&quot;AppleVis, heading level 1&quot;), or before them, as NVDA. Out of the box it follows the keyboard style: after in the Mac style, before in the Windows style (requested by a tester).</li>
+<li>Notifications from other apps (a new message, a calendar alert) are read as they appear, as VoiceOver and NVDA do. Presentation has a switch for it (requested by a tester).</li>
+<li>Browse mode has NVDA&#x27;s &quot;screen layout&quot; setting: links flow with the text as on screen, or each goes on a line of its own (requested by a tester).</li>
+<li>Browse mode has NVDA&#x27;s automatic focus mode setting: a field taking the focus switches to focus mode by itself, or only when you ask (requested by a tester).</li>
+<li>The menu bar, as each style has it. Mac style: VO M lands on the Apple menu&#x27;s title, Left and Right go along the bar, Down opens the menu and Escape leaves, as VoiceOver. Windows style: Command on its own opens the Apple menu, and Up and Down move through it as a list, as NVDA. Both start at the Apple menu, as the Mac does. The status menus too: VO M twice in the Mac style lands on them, Left and Right move along, Down opens one; Option B in the Windows style lists them.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>A review of the whole code base (8 Oct 2026) fixed: feedback reports no longer include what the braille display showed, notification banners, page titles or speech in other languages; speech comes back by itself when headphones or AirPods connect (the audio engine stopped and stayed stopped); say all says &quot;end of document&quot; after blank lines and the next arrow no longer resumes it; the braille cursor shows at the end of a line; a held dot 7 stops deleting if the display drops; settings are saved atomically and a settings file that won&#x27;t read is kept beside the new one, not thrown away; a new setting can no longer wipe the list of apps TurnOver leads in; VoiceOver is started by opening VoiceOver.app if its shortcut doesn&#x27;t bring it back; the tester-key-withdrawn alert is read; switching into focus mode by itself always says so; a page that gets shorter no longer leaves Left and Right stuck; five crashes on odd accessibility answers (a window closing mid-read, a stale item index in Music, a shrinking Finder sidebar, position values that aren&#x27;t positions, Word&#x27;s table cells).</li>
+<li>Mail: Return in the search field now says how many results there are and goes to them (nothing was said, and Tab went to the toolbar). Command Option F no longer reads the whole message the focus passes through on its way to the search field.</li>
+<li>Music: Return on a song in the library says &quot;playing&quot;; VO Shift N in the library says what&#x27;s playing, not the table&#x27;s hint.</li>
+<li>Terminal, Mac style: VO Up and VO Down read back through the output, as VoiceOver reads the screen.</li>
+<li>Mac style: leaving the menu bar with Escape or VO M says where you are.</li>
+<li>Mail: Command Shift D says &quot;sent&quot; once the message has gone (reported by a tester).</li>
+<li>Status menus: items that give no name (Control Center&#x27;s on macOS 26) are named from their identifiers instead of all being &quot;Control Center&quot; (reported by a tester). In the Mac style, VO M twice lands on the status menus and Left and Right move along them, as VoiceOver.</li>
+<li>Menus: moving between menu-bar menus with Left and Right no longer reads the app&#x27;s focus (&quot;message body&quot;) in the gap between one menu closing and the next opening (reported by a tester).</li>
+<li>Mail&#x27;s shortcut menu: letters go to its search box, which filters the menu; TurnOver now says what you&#x27;ve typed, and &quot;no matches&quot; when nothing is left, instead of going quiet.</li>
+<li>Mail: VO arrows in a big message list slowed down with every key until VoiceOver took over. They now answer straight away, however many messages there are (reported by a tester).</li>
+<li>Next and previous spelling error (TurnOver E, TurnOver Shift E, VO Command E) work in any text: TextEdit, Mail&#x27;s message body and web pages&#x27; text boxes (AppleVis&#x27;s comment box), not just Word (reported by a tester).</li>
+<li>A voice that doesn&#x27;t speak in TurnOver no longer leaves it silent: TurnOver goes back to a voice that works and tells you (reported by a tester).</li>
+<li>Mail: a message opened in its own window could leave you stuck on its header, a blank field where the arrows read nothing. Reading now starts in the message.</li>
+<li>The cursor no longer says a heading&#x27;s name twice (&quot;Discover, heading, Discover&quot; in the App Store).</li>
+<li>Terminal: new output wasn&#x27;t read at all, and Return said &quot;new line&quot;. A macOS update changed how Terminal describes itself; TurnOver recognises it again.</li>
+<li>Podcasts: search results are read properly (no more just &quot;Explicit&quot;), Return opens a show, and a show&#x27;s page no longer reads the search results behind it. Follow, Play and the other header buttons are each their own item.</li>
+<li>Music, Podcasts and TV: Tab now reaches a fourth area, the tool bar, with Back, Share, More and Search. More opens the menu with Unfollow, Add to Library, Delete from Library and the rest.</li>
+<li>Music, Podcasts and TV: Space says what it did (playing, paused, stopped), and corrects itself if the app changes its mind. Live radio&#x27;s Stop and a played episode&#x27;s Replay are understood. If something doesn&#x27;t start (it may need a subscription or a download), TurnOver says so instead of &quot;playing&quot;.</li>
+<li>Music, Podcasts and TV: searching reads the results and puts you on them. &quot;Middle dot&quot; and &quot;bullet&quot; are no longer read in titles. Status lines such as &quot;Refreshing content&quot; and &quot;Loading…&quot; aren&#x27;t items any more.</li>
+<li>Music, Podcasts, TV and the App Store: opened from the Dock or Spotlight (not switched to), they now read the page as soon as it appears, instead of just the app&#x27;s name.</li>
+<li>Alerts in Music and the App Store (&quot;Delete these songs?&quot;) say each button as you Tab.</li>
+<li>WhatsApp: Tab in the search field goes to the results (chats, contacts and messages that match), even with a chat open.</li>
+<li>WhatsApp: Media is in the sections; Calls lists your calls; Settings works with Tab, the arrows and Caps Lock arrows, each page says its title, and Escape goes back a page or closes Settings (WhatsApp ignores Escape and Command W there).</li>
+<li>WhatsApp: coming back with Command Tab says where you are; opening a chat says the message box once, not twice; your own message isn&#x27;t read again when it changes from sent to delivered to read.</li>
+<li>Messages: Return in the message box says &quot;sent&quot;, not &quot;new line&quot;.</li>
+<li>Mac style: VO Right and VO Left read a window column by column (WhatsApp&#x27;s sidebar, chats and chat no longer interleave), and start with the window&#x27;s close, minimise and full screen buttons, as VoiceOver does. Text that keeps its words in a description (WhatsApp&#x27;s sidebar) is no longer skipped, and nested headings say their name.</li>
+<li>VO Space on something that opens and closes (WhatsApp&#x27;s More) says &quot;expanded&quot; or &quot;collapsed&quot;.</li>
+<li>Something focused inside a container of the same name (WhatsApp&#x27;s Settings) is said once.</li>
+<li>Word: closing Find with Escape reads what was found; Command Tab back to Word reads the line you&#x27;re on; dialogs and the Save sheet no longer say &quot;document&quot; between their fields; inserting a table no longer says &quot;out of table&quot;.</li>
+<li>Word, Mac style: VO Up and VO Down move by rows in a table, as VO Left and VO Right move by cells. In the page, VO Left and VO Right move by character, as VoiceOver, instead of jumping to the sidebar.</li>
+<li>Windows style: Caps Lock F reports the formatting, as NVDA+F. Find is Caps Lock Control F, with Caps Lock F3 and Shift F3 for the next and previous match.</li>
+<li>Formatting says the language by name (&quot;English (United Kingdom)&quot;), not its code.</li>
+<li>Return on a button in an alert sheet presses that button, not the alert&#x27;s default: in Claude&#x27;s &quot;Claude is still working&quot; alert, Return on &quot;Quit anyway&quot; pressed Cancel.</li>
+<li>Word: choosing a heading in the rotor (VO U) goes to it and reads it, instead of landing in the sidebar.</li>
+<li>Lists whose rows hold their name as a heading (System Settings, Privacy &amp; Security, Automation) read the name, not just &quot;collapsed&quot;.</li>
+<li>Braille: the display shows what you&#x27;re on, not what TurnOver says. &quot;New line&quot;, window names, &quot;selected …&quot; and &quot;end of document&quot; no longer cover the line for seconds; Mail&#x27;s list, the TurnOver menu, WhatsApp&#x27;s and Messages&#x27; chats and messages, and the shelves of Music, Podcasts, TV and the App Store all show on the display and stay there. Roles and states use NVDA&#x27;s short forms (btn, chk, lnk, h2). A message gives way as soon as you move.</li>
+<li>Braille in Word: the line you&#x27;re on shows as you type and move (it showed only &quot;doc&quot;).</li>
+<li>Braille: menu items show on the display as you arrow through a menu (a &quot;Mail menu&quot; message was hiding them), and the menu bar&#x27;s title no longer comes back after the menu closes. Terminal&#x27;s review lines show on the display as you read back.</li>
+<li>Word: Command B, I and U say &quot;bold on&quot;, &quot;italic off&quot; and so on once, not twice.</li>
+<li>Braille typing on a web page in browse mode, with the keyboard in a text field (after reading Claude&#x27;s reply with VO Command H), switches to focus mode in the field, so the display shows what you type.</li>
+<li>Braille typing: typing fast no longer jumps the focus to the Dock. A space that lands just after a letter, while you&#x27;re typing, types the letter and a space instead of running a command (&quot;a&quot; with space was &quot;previous item&quot;). Space with dots 3 4 says where you are, as in VoiceOver. Input help says plainly when a chord isn&#x27;t a command.</li>
+<li>Braille typing: a word whose last cell was pressed together with space (the word &quot;the&quot; with space a moment early) is typed, not lost. Dot 7 says what it deleted. Return or dot 8 that sends a message (Claude, chat boxes) no longer says &quot;new line&quot;.</li>
+</ul>
 <h2>1.0, build 14</h2>
 <h3>Fixed</h3>
 <ul>

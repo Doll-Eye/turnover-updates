@@ -1,8 +1,9 @@
 TURNOVER 1.0 BETA 1: A GUIDE FOR TESTERS
 
 TurnOver is a screen reader for the Mac, built in the shape of NVDA, that works alongside VoiceOver.
-This beta supports three applications: Mail, Safari and Terminal, with Microsoft Word, Finder, Claude and
-TextEdit as early previews that you turn on if you want to try them (see MICROSOFT WORD below). When one of them comes to the front,
+This beta supports three applications: Mail, Safari and Terminal, with Microsoft Word, Finder, the App Store,
+Music, Podcasts, TV, Messages, WhatsApp, Claude and TextEdit as previews that you turn on if you want to try
+them (TurnOver menu, Preferences, Applications). When one of them comes to the front,
 TurnOver switches VoiceOver off and takes over; when you leave it, VoiceOver comes back. Every other
 application stays with VoiceOver. It runs on macOS 14 or later, on Apple silicon and Intel Macs.
 
@@ -51,6 +52,8 @@ another key. (Pressed twice on its own, Caps Lock still turns capitals on and of
   TurnOver Tab          Says what has focus.
   TurnOver L            Reads the current line.
   TurnOver A            Reads from here to the end (say all).
+  TurnOver E / Shift E  Next / previous spelling error, in any text: Word, TextEdit, Mail, a web page's text box.
+                        (VO Command E and VO Command Shift E in the Mac style.)
   TurnOver Command C    Copies the last thing TurnOver said to the clipboard.
   TurnOver Q            Quits TurnOver.
   TurnOver Shift Escape Screen Curtain on or off (the screen goes black; TurnOver carries on as normal). VO Shift
@@ -66,7 +69,10 @@ another key. (Pressed twice on its own, Caps Lock still turns capitals on and of
 VoiceOver's commands. TurnOver uses VoiceOver's own commands (VO is Control and Option together), so
 what you already know works. The TurnOver key is either Caps Lock or VO to start with; to keep only one:
 TurnOver menu, Preferences, Keyboard, TurnOver key.
-  VO M                       The application's menus. VO M twice: the status menus at the right.
+  VO M                       The menu bar: lands on the Apple menu's title; Left and Right go along the bar,
+                             Down opens a menu, Escape leaves. VO M twice: the status menus at the right, the
+                             same way. (Windows style: Command alone opens the Apple menu, Option B lists the
+                             status menus.)
   VO D                       The Dock.
   VO Shift M                 The context menu.
   VO F3                      Describes the item with focus.
@@ -121,8 +127,28 @@ Shift Down, then TurnOver Right to the list, and TurnOver Enter. Return opens an
 MAIL
 
 Up and Down move through the message list; Home and End go to the first and last message. The
-message itself is read in browse mode (above). Settings windows: Up and Down move between the tabs
+message itself is read in browse mode (above). Tab goes from the message list to the message, and
+Shift Tab to the mailboxes. Searching (Command Option F): type, then Return says how many results
+and goes to them. Writing: Tab goes round every field, the From and Signature pop-ups included;
+Command Shift D sends and TurnOver says "sent". Settings windows: Up and Down move between the tabs
 at the top, Tab goes into the page, Shift Tab comes back to the tab.
+
+MESSAGES AND WHATSAPP (PREVIEWS)
+
+Your keyboard stays in the message box. Tab takes you to the messages, starting on the newest, and
+Shift Tab to the conversations: Up and Down move, Home and End go to the ends, Return opens a
+conversation, and the shortcut menu (VO Shift M, or the right Option key in the Windows style) lists a
+message's own actions. Escape goes back to the box. TurnOver 1 to 9 read the latest messages from
+anywhere, 1 the newest. In WhatsApp, Tab goes on from the chats to the sections (Chats, Updates, Calls,
+Archived, Starred); Return shows one. New messages in the open conversation are read as they arrive.
+
+MUSIC, PODCASTS AND TV (PREVIEWS)
+
+Up and Down move through everything on the page, shelf by shelf, reading further down as you go; Left
+and Right jump between shelves; a letter jumps to the next item starting with it. Tab moves between the
+sidebar, the page, the player and the tool bar (Back, Share, More, Search). Return opens or plays;
+Space plays and pauses and says which; Escape goes back; TurnOver Shift N says what is playing.
+Command F searches: Return reads the results.
 
 
 TERMINAL
@@ -208,8 +234,10 @@ Bluetooth: pair the display with VoiceOver first (VoiceOver Utility, VO F8, Brai
 TurnOver menu, Preferences, Braille, "Use a braille display paired over Bluetooth", and allow Bluetooth when
 macOS asks. TurnOver takes the display from VoiceOver's braille server when it leads; it can take a few
 seconds.
-What it shows: the line you are on (in browse mode and in text), or the item in focus (the selected message
-in Mail's list), and what TurnOver says by itself (messages, live updates such as Claude's progress).
+What it shows: the line you are on (in browse mode and in text), or the item you are on (the selected message
+in Mail's list, a menu item, a chat, a shelf item in Music), and briefly what TurnOver says by itself (messages,
+live updates such as Claude's progress), which give way as soon as you move. Roles and states use NVDA's short
+forms: btn, chk, lnk, h2.
   Panning keys, joystick left and right   Read along the line; at the ends, the previous or next line.
   Joystick up and down                    Previous or next line, or item in a list; spoken too.
   Routing keys                            The cursor to that character; on a link or button, press it.
