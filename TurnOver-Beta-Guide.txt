@@ -255,7 +255,28 @@ Settings: TurnOver menu, Preferences, Braille: the table (Unified English contra
 what is spoken while typing, messages and how long they stay, word wrap, the cursor, and more.
 
 
+PLUGINS (NOT IN THIS BUILD YET)
+
+Plugins are built and being tried on one Mac, and are held back from this build until they do enough to be worth your time. What follows is how they will work, so you know what is coming.
+
+A plugin makes one application work better with TurnOver, with no code: a folder with two JSON files. A plugin
+can give names to unlabelled controls, add TurnOver keys that press a control or choose a menu item, read an
+element when it changes, keep noisy elements quiet, and describe a whole app of a shape TurnOver already
+drives (a chat app like Messages, a media app like Music, or an app of parts like Notes: a sidebar, a list and
+the detail, with Tab round them). A plugin cannot run code, read your files, use the internet or touch any other
+application, and before one is installed TurnOver says what its keys can do to the app.
+
+In the TurnOver menu, Plugins: make a plugin for the app in front with Claude, ChatGPT or Gemini (TurnOver writes a
+brief describing the app and hands it over; copy the AI's answer and choose Install a plugin from the clipboard),
+or Write a plugin yourself: TurnOver makes a starter folder for the app in front, with the guide, a snapshot of the
+app's elements and its menus beside an empty plugin, and opens it in Finder; edit it, then choose Install the plugin
+you are writing. Open the plugin guide is there too. The list shows what is installed and names anything that would
+not load. The command-line tool
+/Applications/TurnOver.app/Contents/MacOS/bosun-plugin checks, installs and lists plugins.
+
 IF SOMETHING GOES WRONG
+
+Force quit, spoken. Command Option Escape lists the applications that are running (in the Windows style, Control Shift Escape does too). Choose one with the arrows and Return, then confirm: force quit it, ask it to quit normally, or cancel. The Mac's own Force Quit window is silent while VoiceOver is off, so TurnOver has its own. It is also in the TurnOver menu as "Force quit an application".
 
 If TurnOver stops responding, VoiceOver comes back by itself within a few seconds, and your keys work
 again. If it is still stuck after that, TurnOver restarts itself.

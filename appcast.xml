@@ -4,6 +4,58 @@
         <title>TurnOver</title>
         <item>
             <title>1.0</title>
+            <pubDate>Fri, 09 Oct 2026 06:14:13 +0100</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 16
+
+### New to try
+
+- A slider or other control read as its value changes now reads the new value, not the one it had when it took the
+  focus; a slider from 0 to 1 is said as a percentage.
+- Mac style: VO M twice, the status menus, now includes TurnOver's own item at the end.
+- Mac style: on a web page, typing while the reading position is on a text field goes into that field, as it does
+  once VoiceOver's cursor lands on one; the field takes the focus and focus mode starts. In the Windows style letters
+  stay quick-nav keys until Enter or Tab goes into the field, as in NVDA.
+- Tab on a web page no longer announces the group a control sits in ("Description of App, grouping" on AppleVis).
+- TurnOver Shift T reads the time, twice for the date, for Macs without an Insert key or the function keys (JC).
+- A short start-up tone when TurnOver starts while VoiceOver has the Mac, so with Open at login you know it is there
+  (Daniel).
+- Force quit, spoken. Command Option Escape (and Control Shift Escape in the Windows style) lists the running
+  applications; choose one, then confirm to force quit it or ask it to quit normally. The Mac's own Force Quit
+  window is silent with VoiceOver off. Also in the TurnOver menu as "Force quit an application".
+- Automatic language switching now works in any app, not only where the text is marked with its language: a line in another script (Arabic under an English voice, or the other way round) is read with that language's voice in TextEdit, Pages or anywhere else, and so is a single character when you move by character (reported by a tester).
+- The formatting key (VO T; TurnOver F in the Windows style) reports the first selected character when text is selected, and says "selected" first. Pressed twice, it gives the detail: colour, background colour, superscript or subscript, and alignment where the application reports it (requested by a tester).
+- Word tables: TurnOver Up and Down move by row and Left and Right by column from wherever the caret is, and the table's size is said once. A new switch in Preferences, Document formatting, "Table row and column headers" (requested by a tester).
+- Under the bonnet: Messages and WhatsApp are now described by small recipe files rather than code (the first step towards adding apps without a build, and towards plugins). You can put your own recipe for another chat app in ~/Library/Application Support/TurnOver/recipes; a file that won't load is named in the log.
+- Windows style: a review step (TurnOver and the arrows) onto a control took the keyboard focus with it, as VoiceOver's cursor does, so after reviewing TextEdit's toolbar the arrows had left the text. NVDA's review cursor never moves the focus, so it no longer does in the Windows style; a setting in Preferences, Keyboard ("Keyboard focus follows the cursor") chooses: by style, on, or off.
+- Safari: H on a heading long enough to wrap over two lines read only its first line, and the next H landed on its second line as if it were another heading (reported by Oliver). Quick navigation now reads the whole heading and skips to the next one.
+- Finder: Command Up and Command Down made TurnOver hand over to VoiceOver for a few seconds (macOS reported TurnOver's own process in front for a moment), which felt like a crash. TurnOver no longer hands over on account of its own process unless one of its own windows is showing (reported by a tester).
+- Mac style: VO M no longer has the focused item spoken over "Apple menu"; and after closing a menu with Escape, the focused item is read once, not three times (reported by a tester).
+- Under the bonnet, from this week's code review: TurnOver's keys are decided on its main thread now, so an application that stops answering can no longer make macOS switch TurnOver's keyboard off (a TurnOver chord's letter then landed in the document). Nothing changes in how the keys work; it should feel the same or quicker.
+- The App Store's End key (reading to the end of a long page) and Word's headings list (VO U) no longer hold TurnOver up while they wait for the application: "please wait" is said if they take long, and speech carries on meanwhile.
+
+### Fixed
+- Mac style: after reading from a field with the VO keys (VO Command Shift H from Claude's prompt), the first letter typed was taken as a quick-navigation key and only the later ones went into the field. A typed key now goes straight back to the field (reported by Oliver).
+- If a chosen voice went silent, the guide now says how to get speech back: Command Control T for VoiceOver, then one line in Terminal (under "If something goes wrong").
+- VO Right and VO Left along a big window (Music's grid, System Settings) asked the application thousands of questions a key; the answer is kept for a moment while you step along the same group.
+- The log's "ms after the last key" figure was nonsense before the first key.
+- TurnOver now has automated tests that run on every build, and a way of recording a window so an app can be tested without it running (TESTING.md).
+- Quitting TurnOver from outside (a kill, an installer) now tidies up as a quit from the menu does: the top row back to the media keys, the curtain off.
+- A BAUM display unplugged while TurnOver was using it could crash it later; fixed.
+- Switching TurnOver off and on again at once could leave its keyboard layer half torn down; each start now has a layer of its own.
+- A hand-over to VoiceOver that needed a second try could be read as you pinning the app to VoiceOver by hand; fixed.
+- The code that decides which focus reports to follow is now nineteen named rules, one per special case, with tests; it should behave exactly as before, so please report any app where the focus seems to go astray.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-16.zip" length="12708975" type="application/octet-stream" sparkle:edSignature="ZSQN4OmvDJWk1y07JoAsfT0v6TLEX3Dii6j3TmRijd8Dl2uBgs+BdtfAC/fR4ROfR12etV4bL0dEz2JpTRCsBA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver16-15.delta" sparkle:deltaFrom="15" length="5327922" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Rw1nDDo5kwml/C3Wpw+jHJBdDZD3qdO4UX0VuQ1Tr67YZcdNZZu93niO9VmK9HP3hkLIA9Uybi3kIG5LFSwOAw=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver16-14.delta" sparkle:deltaFrom="14" length="5973454" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Z+MK+UJc4bb/PE4dxoGVsyEBU/td1MGMPZSURGh+PTG7f2BSTanPUFfMWbuDFAuRCubGraVrVDpS6NoYxGRpDQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Thu, 08 Oct 2026 09:25:45 +0100</pubDate>
             <sparkle:version>15</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
@@ -93,51 +145,6 @@
             <sparkle:deltas>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver14-13.delta" sparkle:deltaFrom="13" length="1431978" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="D10AvcB263xVM0Dx46FuOMmk9Dj092OpvID07rmd4d7xHsksfs0RTZzg346hvR94FpFL+q7uW5fOph8A6rzFDQ=="/>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver14-12.delta" sparkle:deltaFrom="12" length="3178866" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9In4REfn6mxtk+DuMCaBHodRM/JejlvqYWlJk8Sn9pN1x1Bbya+A7JDfqLIOYZ8C8LeyV/ixB+w1SutcpQ4RCw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Wed, 07 Oct 2026 08:45:31 +0100</pubDate>
-            <sparkle:version>13</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 13
-
-### New to try
-- Your own tester key: the first time this build starts, TurnOver asks for the personal key in your email from Oliver. Open the link in that email, or paste the key into the box. Each beta build now works for 90 days, and every update starts that again. TurnOver menu, Tester key says whose key it is and until when this build works.
-- Hints, as in VoiceOver: pause on an item and TurnOver says what you can do with it ("Space presses it", "Return opens its page"), with hints of their own in Mail, Safari, Terminal, Word, Finder, Claude, TextEdit and the App Store. Turn them off in the TurnOver menu, Preferences, Presentation, Hints.
-- The App Store (preview, off until you turn it on in the TurnOver menu, Applications). Up and Down go through every app on the page, the whole of each shelf rather than three at a time; Left and Right jump between shelves, saying each one's name and size. Return opens an app's page, which reads in order: the app and its price, its rating, age rating, chart place, developer and size, the description, reviews, What's New, privacy, the developer's accessibility notes and more. Space presses the app's button (Open, Get, Update, Re-download), and so does Return on the app's own page; a price needs two presses, so nothing is bought by accident. Tab moves to the sidebar (Search, Discover, Arcade, Updates…); Command F searches and reads the results; Escape goes back.
-- Quick keys wrap round the page: after the last heading, H goes on from the top and says "wrapped to the top" (Shift H: "wrapped to the bottom"). Turn it off in the TurnOver menu, Preferences, Browse mode.
-- VoiceOver's way of moving, in the Mac style: VO Left and Right move within a group (a toolbar, a sidebar, a list, a pane) in the order things are on screen, and stop at its end; a group says how many items it holds ("tool bar, 9 items"), VO Shift Down goes into it and VO Shift Up comes back out. Tab and the arrows are unchanged. Turn it off in the TurnOver menu, Preferences, Keyboard.
-- TurnOver Left and Right now move through everything in the window, item by item, going in and out of groups by themselves, as Narrator's Caps Lock arrows do. Handy in alerts and dialogs where Tab misses things. TurnOver Shift with the arrows still works as before. The current word is TurnOver W, and the current sentence TurnOver Control S.
-- Mail: Escape leaves the message you're reading, as in Outlook on Windows: a message in its own window closes, and you're back in the message list.
-- Music, Podcasts and TV (previews, off until you turn them on in the TurnOver menu, Applications). Up and Down now go through the whole page, every shelf and every item on it, reading further down as you go; End goes to the very last item. Left and Right jump between shelves, Tab moves between the sidebar, the page and the player, Return opens or plays, and Escape goes back, landing on the item you opened. A video from Music's Radio page plays in its own player; Space plays and pauses, Escape leaves it.
-
-### Fixed
-- Braille tables in every language macOS has, not only your Mac's own: TurnOver menu, Preferences, Braille, Braille table, Other languages (Slovenian, Italian, Arabic and many more). (reported by a tester)
-- Finder's sidebar: move TurnOver's cursor into it (TurnOver Right in the Windows style, VO Shift Down in the Mac style), then Up and Down go through it, Return or Space opens that place, and Left and Right close and open its sections; Escape goes back. Finder never gives its sidebar the keyboard, so TurnOver works it for you. Tab and Shift Tab go round the window as in Windows Explorer: files, sidebar, toolbar, search, and back to the files. Elsewhere, when the cursor lands on something that can take the keyboard, the keyboard now goes there too, as in VoiceOver and Narrator. The toolbar's Back and Forward and its four view buttons are now items of their own.
-- More of VoiceOver's keys in the Mac style: VO Home and End (first and last item), VO Command Home and End (top and bottom of the window), VO Up and Down, VO Shift Escape, VO J (jump to the linked item), VO Return (select), VO Backslash (disclosure triangle), VO Shift Space (click), VO Shift H (help tag), VO Shift N (hint), VO Shift W (read the window), VO Shift U (link address), VO Command Space (actions) and VO F2 twice (window chooser).
-- The list of shortcuts (TurnOver Slash) shows the keys for the style you're using: in the Windows style, the VoiceOver keys were hiding some Windows ones.
-- Return on a button you've tabbed to in an alert now presses that button. macOS sends Return to the alert's default button whatever has the focus, so "Open System Settings" could press "Deny".
-- Claude: a summary line that stayed the same ("Ran 23 commands, compacted the session…") was read again every few seconds while Claude worked. A name is now read only when it changes.
-- Hints are only spoken for where you still are: a hint for the message list was said as a message window came up.
-- Mail: quoted text says its level as you read into it ("quote level 1", "quote level 2"), as VoiceOver does; and a message opened in its own window (with the preview pane hidden) starts reading in the message, not on the toolbar (reported by a tester).
-- Pages in two languages: TurnOver's own words ("link", "heading") are said by your main voice, not the other language's; text in another script is read by that language's voice even when the page doesn't say which language it is; and each language can have its own speech rate (TurnOver menu, Preferences, Speech, the language, Rate) (reported by a tester).
-- Hints are no longer spoken over a page being read out, and edit fields no longer get the obvious "Type to enter text".
-- Typing: after deleting a letter, the word is said as it now is ("think", Backspace, Space says "thin"), and Option Backspace says "deleted" and the word (reported by a tester).
-- Brave, Chrome and Edge: H and Shift H move through every heading both ways; Shift H said "no previous heading", and H could skip one (reported by a tester).
-- Selecting a paragraph on a web page or in a message (Shift Option Up and Down) is read, as character, word and line selection are (reported by a tester).
-- New to try: each thing to try opens into a list of its lines, to arrow through, instead of one long item (reported by a tester).
-- In a one-line field (a search box, the To field), Up and Down read the field instead of only playing the edge sound (reported by a tester).
-- "New line" on Return can be turned off: TurnOver menu, Preferences, Keyboard, Say new line on Return (reported by a tester).
-- Reading quickly with the arrows no longer plays the edge sound in the middle of text (reported by a tester).
-- Touch ID and password prompts (such as the App Store confirming your Apple Account) now say their message first, then their button, instead of "coreautha, Untitled, window".
-- Dialogs that are more like pages (the App Store's account window) are read line by line with Up and Down, text as well as buttons; a web page inside a dialog is read in browse mode.
-]]></description>
-            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-13.zip" length="9712348" type="application/octet-stream" sparkle:edSignature="7u+ljT9paEhtNHia3wDlK4JPGNUdLwAypOwYwqw1YM256JpkW4cSlZlec0hy8jfre0KCjvtyTXIHkFh06EBqBA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver13-12.delta" sparkle:deltaFrom="12" length="3107974" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Nwrt+FNEIlOXv2z9I+swXz3+IgZ9tuA7LdNbQidcbVO3D+gevaqIt0522QK9WvA0RnW1NOk5NKIFNB3IJj8QCA=="/>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver13-11.delta" sparkle:deltaFrom="11" length="3440202" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="QR5kc1P6Hehl93OFrKCgY9hElZ40wH6ZpzMzD4lIU4HYlK2rfV7CJEhfrolINRJ/FoEb5cH9LbJn2K/en9miAw=="/>
             </sparkle:deltas>
         </item>
     </channel>

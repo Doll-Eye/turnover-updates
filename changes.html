@@ -6,6 +6,40 @@
 <body><main>
 <h1>What's new in TurnOver</h1>
 <p>The newest build is first. &quot;Reported by a tester&quot; marks a fix for something a tester sent in. Thank you.</p>
+<h2>1.0, build 16</h2>
+<h3>New to try</h3>
+<ul>
+<li>A slider or other control read as its value changes now reads the new value, not the one it had when it took the</li>
+<li>Mac style: VO M twice, the status menus, now includes TurnOver&#x27;s own item at the end.</li>
+<li>Mac style: on a web page, typing while the reading position is on a text field goes into that field, as it does</li>
+<li>Tab on a web page no longer announces the group a control sits in (&quot;Description of App, grouping&quot; on AppleVis).</li>
+<li>TurnOver Shift T reads the time, twice for the date, for Macs without an Insert key or the function keys (JC).</li>
+<li>A short start-up tone when TurnOver starts while VoiceOver has the Mac, so with Open at login you know it is there</li>
+<li>Force quit, spoken. Command Option Escape (and Control Shift Escape in the Windows style) lists the running</li>
+<li>Automatic language switching now works in any app, not only where the text is marked with its language: a line in another script (Arabic under an English voice, or the other way round) is read with that language&#x27;s voice in TextEdit, Pages or anywhere else, and so is a single character when you move by character (reported by a tester).</li>
+<li>The formatting key (VO T; TurnOver F in the Windows style) reports the first selected character when text is selected, and says &quot;selected&quot; first. Pressed twice, it gives the detail: colour, background colour, superscript or subscript, and alignment where the application reports it (requested by a tester).</li>
+<li>Word tables: TurnOver Up and Down move by row and Left and Right by column from wherever the caret is, and the table&#x27;s size is said once. A new switch in Preferences, Document formatting, &quot;Table row and column headers&quot; (requested by a tester).</li>
+<li>Under the bonnet: Messages and WhatsApp are now described by small recipe files rather than code (the first step towards adding apps without a build, and towards plugins). You can put your own recipe for another chat app in ~/Library/Application Support/TurnOver/recipes; a file that won&#x27;t load is named in the log.</li>
+<li>Windows style: a review step (TurnOver and the arrows) onto a control took the keyboard focus with it, as VoiceOver&#x27;s cursor does, so after reviewing TextEdit&#x27;s toolbar the arrows had left the text. NVDA&#x27;s review cursor never moves the focus, so it no longer does in the Windows style; a setting in Preferences, Keyboard (&quot;Keyboard focus follows the cursor&quot;) chooses: by style, on, or off.</li>
+<li>Safari: H on a heading long enough to wrap over two lines read only its first line, and the next H landed on its second line as if it were another heading (reported by Oliver). Quick navigation now reads the whole heading and skips to the next one.</li>
+<li>Finder: Command Up and Command Down made TurnOver hand over to VoiceOver for a few seconds (macOS reported TurnOver&#x27;s own process in front for a moment), which felt like a crash. TurnOver no longer hands over on account of its own process unless one of its own windows is showing (reported by a tester).</li>
+<li>Mac style: VO M no longer has the focused item spoken over &quot;Apple menu&quot;; and after closing a menu with Escape, the focused item is read once, not three times (reported by a tester).</li>
+<li>Under the bonnet, from this week&#x27;s code review: TurnOver&#x27;s keys are decided on its main thread now, so an application that stops answering can no longer make macOS switch TurnOver&#x27;s keyboard off (a TurnOver chord&#x27;s letter then landed in the document). Nothing changes in how the keys work; it should feel the same or quicker.</li>
+<li>The App Store&#x27;s End key (reading to the end of a long page) and Word&#x27;s headings list (VO U) no longer hold TurnOver up while they wait for the application: &quot;please wait&quot; is said if they take long, and speech carries on meanwhile.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Mac style: after reading from a field with the VO keys (VO Command Shift H from Claude&#x27;s prompt), the first letter typed was taken as a quick-navigation key and only the later ones went into the field. A typed key now goes straight back to the field (reported by Oliver).</li>
+<li>If a chosen voice went silent, the guide now says how to get speech back: Command Control T for VoiceOver, then one line in Terminal (under &quot;If something goes wrong&quot;).</li>
+<li>VO Right and VO Left along a big window (Music&#x27;s grid, System Settings) asked the application thousands of questions a key; the answer is kept for a moment while you step along the same group.</li>
+<li>The log&#x27;s &quot;ms after the last key&quot; figure was nonsense before the first key.</li>
+<li>TurnOver now has automated tests that run on every build, and a way of recording a window so an app can be tested without it running (TESTING.md).</li>
+<li>Quitting TurnOver from outside (a kill, an installer) now tidies up as a quit from the menu does: the top row back to the media keys, the curtain off.</li>
+<li>A BAUM display unplugged while TurnOver was using it could crash it later; fixed.</li>
+<li>Switching TurnOver off and on again at once could leave its keyboard layer half torn down; each start now has a layer of its own.</li>
+<li>A hand-over to VoiceOver that needed a second try could be read as you pinning the app to VoiceOver by hand; fixed.</li>
+<li>The code that decides which focus reports to follow is now nineteen named rules, one per special case, with tests; it should behave exactly as before, so please report any app where the focus seems to go astray.</li>
+</ul>
 <h2>1.0, build 15</h2>
 <h3>New to try</h3>
 <ul>
