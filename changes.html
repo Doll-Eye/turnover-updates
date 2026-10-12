@@ -6,6 +6,89 @@
 <body><main>
 <h1>What's new in TurnOver</h1>
 <p>The newest build is first. &quot;Reported by a tester&quot; marks a fix for something a tester sent in. Thank you.</p>
+<h2>2.0, build 17 (in progress)</h2>
+<h3>Keys that moved: please read this first</h3>
+<ul>
+<li>**Command Control Comma, then N: the TurnOver menu.** In the Mac style, VO-N is now VoiceOver&#x27;s: the notifications</li>
+<li>**Command Control Comma, then T: hand the app in front back to VoiceOver** (or back to TurnOver), and remember it.</li>
+<li>**Command Control Period: start or quit TurnOver**, a single press, from anywhere (it was Command Control T).</li>
+<li>The other letters: **S** settings, **K** keyboard style, **J** &quot;that was wrong&quot;, **Slash** the shortcuts here,</li>
+<li>In the Mac style, VoiceOver&#x27;s own keys for these work too: VO-H twice the commands, VO-Slash a custom label (the</li>
+<li>**The latest messages in Messages and WhatsApp, and the parts of a window in apps with panes, are Command Control</li>
+<li>Windows style, as NVDA: Control stops speech and Shift pauses it; Caps Lock Up and Down Arrow move the review</li>
+</ul>
+<h3>New to try</h3>
+<ul>
+<li>**Keys have moved.** TurnOver&#x27;s own commands are Command Control Comma, then a letter, in both styles and any app:</li>
+<li>**The Mac style is VoiceOver&#x27;s.** 178 of the 189 commands in Apple&#x27;s VoiceOver guide behave as in VoiceOver, among</li>
+<li>**The Windows style is NVDA&#x27;s.** 114 of the 130 commands in NVDA&#x27;s reference: the review cursor, table navigation</li>
+<li>**The keypad.** Mac style: VoiceOver&#x27;s NumPad Commander, with VoiceOver&#x27;s own keys; VO-Clear turns it on. Windows</li>
+<li>**Audio ducking.** Other apps&#x27; sound is lowered while TurnOver speaks: Settings, Speech, or Caps Lock Shift D in the</li>
+<li>**Plugins.** Label an unnamed button, give an item a key, have it read when it changes, or keep it quiet: VO-Slash,</li>
+<li>**Google Docs, Sheets and Slides.** TurnOver reads Google&#x27;s own announcements as you move and type, as NVDA does.</li>
+<li>**System prompts.** Prompts that appear behind your app (&quot;would like to use your location&quot;) are read, and Tab and</li>
+<li>**The TurnOver menu is tidier.** This app first, then Settings, Apps, Keys, What to test, Send feedback, Tools,</li>
+<li>**Microsoft Excel.** Cells are read as you move, content then address (&quot;Monday, A2&quot;); selecting says the range.</li>
+<li>**Right Option T.** It says the time, and twice quickly the date.</li>
+<li>**Your own keys.** TurnOver menu, Keys: give any key to a command, or take one away.</li>
+<li>**Speech.** Capitals can be said at a higher pitch, and speech can play on a chosen device: Settings, Speech.</li>
+<li>**Messages, Finder and Safari.** In Messages, Command T opens the Tapback reactions as a list. Finder reads desktop</li>
+</ul>
+<h3>What to test</h3>
+<ul>
+<li>The layer key: Command Control Comma, then N, S, K, J; and in an app VoiceOver reads (Calculator, say).</li>
+<li>Your usual work in your usual style: anything a key did before that it no longer does, tell us.</li>
+<li>Google Docs or Sheets, with Google&#x27;s screen reader support on: moving, typing, the menus.</li>
+<li>The keypad, if you use one, in your style.</li>
+<li>A plugin: label an unnamed button in an app you use, then undo it.</li>
+<li>Ducking, with music playing.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Word: TurnOver no longer quits when you come back into a table you had just left (Mohammad).</li>
+<li>Typing straight after Backspace in Claude&#x27;s prompt (and other web text boxes) came late: each Backspace waited for</li>
+<li>System prompts that appear behind the app you&#x27;re in (&quot;would like access to record your system audio&quot;, &quot;would like</li>
+<li>In a dialog, Tab and VO-Space now agree: VO-Space presses the choice Tab reached (Oliver).</li>
+<li>VO-Command-C (next style change) gives up after a third of a second rather than holding TurnOver up in a long note.</li>
+<li>The keypad stops speech as other keys do, and leaves sleeping apps and &quot;pass next key&quot; alone.</li>
+<li>Sleep mode no longer traps TurnOver&#x27;s own menu over a sleeping app.</li>
+<li>&quot;That was wrong&quot; only marks the moment; pressing it twice no longer sends a report by itself.</li>
+<li>The clipboard (NVDA+C), link addresses and notifications are spoken but no longer written into the log or</li>
+<li>The shortcuts list shows only keys that really do what it says in the current style.</li>
+<li>TurnOver Shift T no longer says the time: it was a tester&#x27;s preference, not NVDA&#x27;s or VoiceOver&#x27;s (VO-Shift-T is a</li>
+<li>Keyboard help names the modifier keys as you press them: command, shift, option, control (left or right),</li>
+<li>Windows style: Control Right goes to the start of the next word and reads it, as NVDA does; it read the text</li>
+<li>Opening TurnOver from Finder or Spotlight no longer leaves you on TurnOver itself (&quot;TurnOver has no windows&quot;): it</li>
+<li>Feedback reports are kept in TurnOver&#x27;s own folder, the newest ten, not on the Desktop (a synced Desktop sent them</li>
+<li>The Voice menu lists voices for the languages set on your Mac, so a Spanish speaker can choose a Spanish voice for</li>
+<li>The function keys are never touched (build 16 could switch off &quot;Use F1, F2 as standard function keys&quot;; turn it back</li>
+<li>Reminders: Tab in a new reminder announced the window between the title and the notes. Tab out of the sidebar had</li>
+<li>Right and Left on a sidebar item answer at once (&quot;expanded&quot;, &quot;collapsed&quot;), with the edge sound where there is</li>
+<li>Text is never announced as &quot;text&quot;: iPhone apps on the Mac (Books, Audible) said &quot;Home, text, selected&quot;.</li>
+<li>Icon buttons with only a tooltip are named by it, as VoiceOver does (Cyberduck&#x27;s Back, Forward, Browser,</li>
+<li>Web pages inside apps (Bambu Studio&#x27;s release notes): list numbers say &quot;1&quot;, not &quot;unknown, 1&quot;; a heading is one</li>
+<li>After waking or unlocking the Mac, TurnOver could hear none of your keys for several seconds (the lock screen&#x27;s</li>
+<li>Chrome and Edge: tables are read once, by rows (they were read by rows, then by columns, then the header again);</li>
+<li>Excel opened fresh: its cells are read from the first arrow (it said nothing until Excel had been open a while).</li>
+<li>Switching to an app whose first focus has no name (Excel) no longer leaves the last app&#x27;s text box in charge: its</li>
+<li>Preview: pages are read as &quot;page&quot;, not &quot;unknown, unavailable&quot;; tool groups are &quot;grouping&quot;; lists and other</li>
+<li>A dot between words (Byword&#x27;s &quot;Markdown • 61 words&quot;) is read as a pause, not &quot;bullet&quot;. A value that repeats the</li>
+<li>Reminders: Tab between a reminder&#x27;s title and its notes said the window and the list before each field. The</li>
+<li>Tabs say which one is showing (&quot;Input, tab, selected, 2 of 2&quot;). On the Mac the arrows move between tabs without</li>
+<li>Switches say &quot;switch, on&quot; or &quot;switch, off&quot;, as VoiceOver does, not &quot;toggle button, pressed&quot;.</li>
+<li>A control reported twice (SwiftUI apps such as System Settings hand over two references for one) is read once.</li>
+<li>Review reads a row once: no more the row, then its cell, then each text in it (Reminders, Contacts, System</li>
+<li>Focus on a scroll area itself says what it holds (&quot;…, scroll area&quot;), where it was silent (Shortcuts&#x27; editor).</li>
+<li>Safari: Enter or Space on a button you have tabbed to (a cookie banner&#x27;s &quot;Accept all cookies&quot;) pressed the link</li>
+<li>Web pages: misspelled words in fields now say &quot;spelling error&quot;, and inside a line, not only at its start (Lorien).</li>
+<li>Live regions inside other live regions are said once, not twice (Mert, The Playroom).</li>
+<li>Finder: Command Down with nothing selected (after Command Up to the top) says so, rather than nothing (Stuart).</li>
+<li>WhatsApp with no chat open: the arrows go straight into the conversations (it said nothing until Tab), the</li>
+<li>Function keys: TurnOver no longer changes them at all. They behave as set in System Settings, Keyboard (&quot;Use</li>
+<li>TurnOver T reads the window&#x27;s title as it is now; after a Safari tab switch it said the old one (Mert).</li>
+<li>Space in Podcasts, Music and other lists now plays and pauses, and in Finder opens Quick Look: TurnOver only</li>
+<li>Speech follows the Mac&#x27;s output device: headphones or speakers chosen after TurnOver started now get its voice</li>
+</ul>
 <h2>1.0, build 16</h2>
 <h3>New to try</h3>
 <ul>
