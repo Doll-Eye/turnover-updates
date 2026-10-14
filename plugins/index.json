@@ -1,7 +1,7 @@
 {
-  "expires" : "2026-10-21T12:27:16Z",
+  "expires" : "2026-10-21T12:46:18Z",
   "format" : 1,
-  "issued" : "2026-10-14T12:27:16Z",
+  "issued" : "2026-10-14T12:46:18Z",
   "plugins" : [
     {
       "abilities" : [
@@ -40,7 +40,7 @@
       "author" : "TurnOver-For-Mac",
       "contact" : "oliver.kennett@gmail.com",
       "description" : "An example of what a plugin's keys can do, in an app every Mac has. Read the result, copy it, clear the entry, switch between basic and scientific, and open the history, each from a key. Every command is also in the plugin layer: Command Control Comma, P.",
-      "file" : "calculator-1.0.zip",
+      "file" : "calculator-1.1.zip",
       "id" : "calculator",
       "kind" : "profile",
       "level" : "Official",
@@ -48,10 +48,10 @@
       "minimumTurnOver" : "2.0",
       "name" : "Calculator",
       "privacy" : "Reads Calculator's window only, on your Mac. Nothing leaves your Mac.",
-      "sha256" : "c76b1a957061647070159243d93e5552fabeb383cec1d6dcf754435f0d03c87d",
-      "size" : 1528,
+      "sha256" : "4857512337196fc0dc04211e4fda3a2e8aa463fc66ee254928ff5e5d6396a7b7",
+      "size" : 1659,
       "summary" : "Calculator: keys to read and copy the result, clear, switch modes and open the history. An example plugin.",
-      "version" : "1.0"
+      "version" : "1.1"
     },
     {
       "abilities" : [
@@ -104,7 +104,7 @@
       "version" : "1.0"
     }
   ],
-  "sequence" : 11,
+  "sequence" : 12,
   "withdrawn" : [
     "game-speech"
   ]
