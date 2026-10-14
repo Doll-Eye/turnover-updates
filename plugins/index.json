@@ -1,7 +1,7 @@
 {
-  "expires" : "2026-10-21T10:42:57Z",
+  "expires" : "2026-10-21T10:59:32Z",
   "format" : 1,
-  "issued" : "2026-10-14T10:42:57Z",
+  "issued" : "2026-10-14T10:59:32Z",
   "plugins" : [
     {
       "abilities" : [
@@ -21,7 +21,7 @@
       "license" : "MIT",
       "name" : "Bambu Studio",
       "privacy" : "Reads Bambu Studio's window only; nothing leaves your Mac.",
-      "sha256" : "af59915f641aa251dd2b0810b487f8341fde3d75293da65597752c822a52980e",
+      "sha256" : "559316f2f81de7515e5d3ae45dd7e2f09c14c866a76152e393fcb29b610d2cb2",
       "size" : 1071,
       "summary" : "Names Bambu Studio's home page buttons, and adds keys for a new or existing project.",
       "version" : "0.1"
@@ -44,7 +44,7 @@
       "minimumTurnOver" : "2.0",
       "name" : "Steam speech",
       "privacy" : "Reads Steam's Big Picture through Steam's own debugging port on this Mac, and games you start with a debugging port. Nothing leaves your Mac.",
-      "sha256" : "869b2368d25fb9c8391143c8a6746602342fd5365330d33c6f33f4ddf0ebfd69",
+      "sha256" : "d4721117e69415bdc34e0dcabe6053775d4de98e4a0cb19406dee921d17afc8c",
       "size" : 767,
       "summary" : "Steam's Big Picture, and Steam games built on Electron, speak through TurnOver.",
       "version" : "1.0"
@@ -70,13 +70,13 @@
       "minimumTurnOver" : "2.0",
       "name" : "Xcode",
       "privacy" : "Reads Xcode's window only, on your Mac. Nothing leaves your Mac.",
-      "sha256" : "8c8f794b60f68afa727bff72c64d6c918e370007970f822d6d12ff6336174fe9",
+      "sha256" : "d0013b319712ea8c806087b55f8504544e5b794d7fac16f638eb7b6739ca6244",
       "size" : 1373,
       "summary" : "Xcode: build and test results said as they happen, and keys to build, run, test and hear the status.",
       "version" : "1.0"
     }
   ],
-  "sequence" : 5,
+  "sequence" : 6,
   "withdrawn" : [
     "game-speech"
   ]
