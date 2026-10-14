@@ -1,7 +1,7 @@
 {
-  "expires" : "2026-10-21T10:59:32Z",
+  "expires" : "2026-10-21T11:00:02Z",
   "format" : 1,
-  "issued" : "2026-10-14T10:59:32Z",
+  "issued" : "2026-10-14T11:00:02Z",
   "plugins" : [
     {
       "abilities" : [
@@ -21,10 +21,37 @@
       "license" : "MIT",
       "name" : "Bambu Studio",
       "privacy" : "Reads Bambu Studio's window only; nothing leaves your Mac.",
-      "sha256" : "559316f2f81de7515e5d3ae45dd7e2f09c14c866a76152e393fcb29b610d2cb2",
+      "sha256" : "fcd0e485630021a07037578382a00fffd98c30e6b530d8b787b499175979d7a7",
       "size" : 1071,
       "summary" : "Names Bambu Studio's home page buttons, and adds keys for a new or existing project.",
       "version" : "0.1"
+    },
+    {
+      "abilities" : [
+        "read",
+        "press",
+        "menu",
+        "keys",
+        "say"
+      ],
+      "apps" : [
+        "com.apple.calculator"
+      ],
+      "author" : "TurnOver-For-Mac",
+      "contact" : "oliver.kennett@gmail.com",
+      "description" : "An example of what a plugin's keys can do, in an app every Mac has. Read the result, copy it, clear the entry, switch between basic and scientific, and open the history, each from a key. Every command is also in the plugin layer: Command Control Comma, P.",
+      "file" : "calculator-1.0.zip",
+      "id" : "calculator",
+      "kind" : "profile",
+      "level" : "Official",
+      "license" : "MIT",
+      "minimumTurnOver" : "2.0",
+      "name" : "Calculator",
+      "privacy" : "Reads Calculator's window only, on your Mac. Nothing leaves your Mac.",
+      "sha256" : "c76b1a957061647070159243d93e5552fabeb383cec1d6dcf754435f0d03c87d",
+      "size" : 1528,
+      "summary" : "Calculator: keys to read and copy the result, clear, switch modes and open the history. An example plugin.",
+      "version" : "1.0"
     },
     {
       "abilities" : [
@@ -44,7 +71,7 @@
       "minimumTurnOver" : "2.0",
       "name" : "Steam speech",
       "privacy" : "Reads Steam's Big Picture through Steam's own debugging port on this Mac, and games you start with a debugging port. Nothing leaves your Mac.",
-      "sha256" : "d4721117e69415bdc34e0dcabe6053775d4de98e4a0cb19406dee921d17afc8c",
+      "sha256" : "ef7857d42cdeddbcca90f7191bb239b717706d49dba46f4161236d0c0310fa2c",
       "size" : 767,
       "summary" : "Steam's Big Picture, and Steam games built on Electron, speak through TurnOver.",
       "version" : "1.0"
@@ -70,13 +97,13 @@
       "minimumTurnOver" : "2.0",
       "name" : "Xcode",
       "privacy" : "Reads Xcode's window only, on your Mac. Nothing leaves your Mac.",
-      "sha256" : "d0013b319712ea8c806087b55f8504544e5b794d7fac16f638eb7b6739ca6244",
+      "sha256" : "a62e2378724315586a6263148a84004b4d3eb8a043049245508510ee50b08846",
       "size" : 1373,
       "summary" : "Xcode: build and test results said as they happen, and keys to build, run, test and hear the status.",
       "version" : "1.0"
     }
   ],
-  "sequence" : 6,
+  "sequence" : 8,
   "withdrawn" : [
     "game-speech"
   ]
