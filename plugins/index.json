@@ -1,7 +1,7 @@
 {
-  "expires" : "2026-10-21T10:19:27Z",
+  "expires" : "2026-10-21T10:34:38Z",
   "format" : 1,
-  "issued" : "2026-10-14T10:19:27Z",
+  "issued" : "2026-10-14T10:34:38Z",
   "plugins" : [
     {
       "abilities" : [
@@ -25,9 +25,32 @@
       "size" : 1071,
       "summary" : "Names Bambu Studio's home page buttons, and adds keys for a new or existing project.",
       "version" : "0.1"
+    },
+    {
+      "abilities" : [
+
+      ],
+      "apps" : [
+        "com.valvesoftware.steam"
+      ],
+      "author" : "TurnOver-For-Mac",
+      "contact" : "oliver.kennett@gmail.com",
+      "description" : "Steam's Big Picture speaks through TurnOver: the item you are on, as you move with the arrows or a controller. Games started with a debugging port (Electron games) speak their announcements too. Turn it off or on in the TurnOver menu, Preferences, Games.",
+      "file" : "game-speech-1.0.zip",
+      "id" : "game-speech",
+      "kind" : "profile",
+      "level" : "Official",
+      "license" : "MIT",
+      "minimumTurnOver" : "2.0",
+      "name" : "Game speech",
+      "privacy" : "Reads Steam's Big Picture through Steam's own debugging port on this Mac, and games you start with a debugging port. Nothing leaves your Mac.",
+      "sha256" : "37ce5387edbdf91c2760da1d4a9a66ff2ccc7bc0ad1bbcd02310d6ba1d14be25",
+      "size" : 759,
+      "summary" : "Steam's Big Picture and Electron games speak through TurnOver.",
+      "version" : "1.0"
     }
   ],
-  "sequence" : 2,
+  "sequence" : 3,
   "withdrawn" : [
 
   ]
