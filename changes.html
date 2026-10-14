@@ -6,7 +6,74 @@
 <body><main>
 <h1>What's new in TurnOver</h1>
 <p>The newest build is first. &quot;Reported by a tester&quot; marks a fix for something a tester sent in. Thank you.</p>
-<h2>2.0, build 17 (in progress)</h2>
+<h2>2.0, build 18</h2>
+<h3>New to try</h3>
+<ul>
+<li>**Who reads, everywhere at once.** Command Control Comma, then A, goes round three modes: TurnOver in its apps (as</li>
+<li>**Your keyboard language said.** Switching input source with Fn, the Globe key or Control Space says the new one,</li>
+<li>**Mail says its autocorrections** while you write: &quot;corrected to the&quot; (Chelsea).</li>
+<li>**Moving by formatting in documents.** VO-Command-B, I, U, K, O and P (with Shift for previous) find the next</li>
+<li>**The layer key&#x27;s list.** After Command Control Comma, Down Arrow lists TurnOver&#x27;s commands to arrow through;</li>
+<li>**The browse mode sound both ways.** TurnOver now plays a sound when it goes back to browse mode by itself, as well</li>
+<li>**For plugin makers:** the plugin listing (summary, contact, abilities, privacy, licence, changes) and</li>
+</ul>
+<h3>What to test</h3>
+<ul>
+<li>Safari: from Google&#x27;s search box, Command L, an address and Return; then a favourite. The new page should be</li>
+<li>Mail: in a reply, move through the quoted part (quote levels said), and Command &#x27; and Command Option &#x27;. Then</li>
+<li>Word: VO-Command-T to a table, then the arrows. A table with Arabic in it. VO-Command-B through bold text.</li>
+<li>Moving by character through a misspelled word: &quot;spelling error&quot; once going in, &quot;out of spelling error&quot; coming out.</li>
+<li>Command Control Comma, then T, in an app VoiceOver is reading: TurnOver should take it.</li>
+<li>ChatGPT or Brave: Shift H and Shift B back through a page.</li>
+<li>Arabic text in TextEdit: Right Arrow at the start of a paragraph. Typing Arabic in Safari or TextEdit: each letter</li>
+<li>Command Control Comma, then A, three times: round all three modes and back.</li>
+<li>Switching your keyboard language, if you have more than one.</li>
+<li>Word: VO-T twice: alignment and line spacing at the end.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Privacy, from the full review of 14 Oct: TurnOver&#x27;s log on disk now keeps only the length of what was said, not</li>
+<li>Say all no longer stops for good on empty lines in web editors, which then left the arrows silent.</li>
+<li>Escape in a web page ends the by-hand focus mode choice too, so the next field switches by itself again.</li>
+<li>Escape, the browse-mode key and Command Control Comma and Period can&#x27;t be taken away in the keys menu.</li>
+<li>Uninstall asks on a second list before removing anything.</li>
+<li>A word half typed on a braille display is dropped, with a tone, if the focus moves before it is finished, and typed</li>
+<li>Quitting from outside (TurnOver Key, an installer) tidies up without waiting on a stuck main thread.</li>
+<li>The hand-over to VoiceOver no longer toggles while VoiceOver is still starting or stopping.</li>
+<li>Faster: Word checks for a table once a second instead of before every arrow key; quick-navigation letters no longer</li>
+<li>Find (TurnOver F) lets you switch the keyboard language while the prompt is open, so you can search in Arabic or</li>
+<li>Desktop items whose kind Finder doesn&#x27;t give are named by their file extension instead of only &quot;2 of 2&quot; (Tyler).</li>
+<li>The battery report says whether the Mac is charging or on battery, and how long to full or how long is left</li>
+<li>Safari: a page opened afresh, or in a new tab, starts at the top; only Back and Forward return to where you were</li>
+<li>Safari: VO-Shift-M (Shift F10 in the Windows style) on a link opens the link&#x27;s own menu, with Open in New Tab and</li>
+<li>Arabic and other scripts read one letter at a time in their own voice, not named by the English voice (&quot;Arabic</li>
+<li>Apps that rest the focus on an unnamed group between items (Spring&#x27;s timeline) no longer have the list around them</li>
+<li>Up and Down at the top or bottom of a box holding one line (a reply, a message, a prompt) read the line, as in a</li>
+<li>Mail: coming back to Mail with the focus on the message&#x27;s scroll area now reads the message; the arrows only</li>
+<li>Marking a moment (Command Control Comma, then J) says just &quot;marked&quot;; the count climbing with each press sounded</li>
+<li>Safari: a new page starts in browse mode. Focus mode left over from the page before (Google&#x27;s search box) kept the</li>
+<li>Mail: quote levels are said while you write a reply, and Command &#x27; and Command Option &#x27; say the new level (Ashley).</li>
+<li>Word: VO-Command-T puts the cursor in the table&#x27;s first cell, so the arrows carry on from there (Mohammad).</li>
+<li>Arabic in a table cell (and anywhere TurnOver speaks text in another script: a name, a list item, a message) is</li>
+<li>Audio ducking now uses macOS&#x27;s own ducking, the way the system lowers sound for its voices: no &quot;record system</li>
+<li>WhatsApp and Messages: Tab and Shift Tab follow the screen: the sections (WhatsApp), the conversations, the</li>
+<li>WhatsApp and Messages: moving through the chats is quicker: TurnOver remembers where the list is while you arrow,</li>
+<li>WhatsApp: the chat you open no longer disappears from the list. WhatsApp shows the open chat&#x27;s row differently</li>
+<li>Marked moments can be forgotten without sending them: TurnOver menu, Send feedback, Forget the marked moments</li>
+<li>WhatsApp: after Return opens a chat, what you type in the message box is echoed again. WhatsApp moved its focus to</li>
+<li>Typed Arabic letters and short words are said in the Arabic voice in Safari, Brave and TextEdit (Mohammad).</li>
+<li>Word: VO-T pressed twice adds the paragraph&#x27;s alignment and line spacing (Mohammad).</li>
+<li>Moving by character, &quot;spelling error&quot; is said on entering a misspelled word and &quot;out of spelling error&quot; on leaving</li>
+<li>Right to left: Right Arrow at the start of an Arabic paragraph no longer gives the edge sound when it has moved</li>
+<li>ChatGPT, Brave and other Chromium apps: Shift H, Shift B and the other backward quick keys work (Mohammad).</li>
+<li>Command Control Comma, then T, follows who is reading: where VoiceOver reads an app, TurnOver takes it, even with</li>
+<li>Making a plugin with ChatGPT, Gemini or Claude no longer freezes TurnOver while it looks at the app: the freeze</li>
+<li>Say all: an arrow that carries say all on no longer reads the line twice.</li>
+<li>Settings: only TurnOver itself writes them; what was there before each change is kept (settings-previous.json),</li>
+<li>A full disk no longer stops TurnOver (its log writer gave up on it); log lines are lost instead.</li>
+<li>This build is smaller inside: the internal names programs carry are taken out before it is signed.</li>
+</ul>
+<h2>2.0, build 17</h2>
 <h3>Keys that moved: please read this first</h3>
 <ul>
 <li>**Command Control Comma, then N: the TurnOver menu.** In the Mac style, VO-N is now VoiceOver&#x27;s: the notifications</li>

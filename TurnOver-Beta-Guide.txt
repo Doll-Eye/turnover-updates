@@ -56,6 +56,7 @@ TurnOver's own commands: press Command Control Comma, hear "TurnOver", then pres
   K          Switches between the Mac and Windows keyboard styles.
   J          "That was wrong": marks this moment for your next feedback report.
   Slash      Every shortcut that works where you are, grouped. Enter runs one.
+  A          Who reads: TurnOver in its apps, TurnOver everywhere, or VoiceOver everywhere, in turn.
   P          The plugin maker: label the item you're on, give it a key, watch or silence it.
   C          Copies the last thing TurnOver said to the clipboard.
   H          This guide.
@@ -169,12 +170,13 @@ at the top, Tab goes into the page, Shift Tab comes back to the tab.
 
 MESSAGES AND WHATSAPP (PREVIEWS)
 
-Your keyboard stays in the message box. Tab takes you to the messages, starting on the newest, and
-Shift Tab to the conversations: Up and Down move, Home and End go to the ends, Return opens a
+Your keyboard stays in the message box. Tab and Shift Tab go round the parts in the order they are on
+screen: the conversations, the messages, the message box (in WhatsApp, the sections first). So Shift Tab
+from the box goes up to the messages, starting on the newest. Up and Down move, Home and End go to the ends, Return opens a
 conversation, and the shortcut menu (VO Shift M, or the right Option key in the Windows style) lists a
 message's own actions. Escape goes back to the box. Command Control 1 to 9 read the latest messages from
-anywhere, 1 the newest. In WhatsApp, Tab goes on from the chats to the sections (Chats, Updates, Calls,
-Archived, Starred); Return shows one. New messages in the open conversation are read as they arrive.
+anywhere, 1 the newest. In WhatsApp, the sections (Chats, Updates, Calls, Archived, Starred) come before the chats; Return shows
+one. New messages in the open conversation are read as they arrive.
 
 MUSIC, PODCASTS AND TV (PREVIEWS)
 

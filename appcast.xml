@@ -4,6 +4,134 @@
         <title>TurnOver</title>
         <item>
             <title>2.0</title>
+            <pubDate>Wed, 14 Oct 2026 10:10:33 +0100</pubDate>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 2.0, build 18
+
+A week of fixes from your reports, and safer settings.
+
+### New to try
+
+- **Who reads, everywhere at once.** Command Control Comma, then A, goes round three modes: TurnOver in its apps (as
+  now), TurnOver everywhere (VoiceOver keeps only the apps you give it), and VoiceOver everywhere (TurnOver steps
+  back but keeps running). Each mode remembers its own apps; Command Control Comma, then T, still switches the app in
+  front. Also in the TurnOver menu, Applications, Who reads (Mohammad, Ashley).
+- **Your keyboard language said.** Switching input source with Fn, the Globe key or Control Space says the new one,
+  as VoiceOver does (Mohammad).
+- **Mail says its autocorrections** while you write: "corrected to the" (Chelsea).
+- **Moving by formatting in documents.** VO-Command-B, I, U, K, O and P (with Shift for previous) find the next
+  bold, italic or underlined text, colour or font change, or plain text in Word and TextEdit, not only on web pages
+  (Mohammad).
+- **The layer key's list.** After Command Control Comma, Down Arrow lists TurnOver's commands to arrow through;
+  Return runs one.
+- **The browse mode sound both ways.** TurnOver now plays a sound when it goes back to browse mode by itself, as well
+  as into focus mode (Ashley).
+- **For plugin makers:** the plugin listing (summary, contact, abilities, privacy, licence, changes) and
+  `turnover-plugin check --listing`, which checks it and your keys without the app running (PLUGIN-GUIDE.md).
+
+### What to test
+
+- Safari: from Google's search box, Command L, an address and Return; then a favourite. The new page should be
+  announced once, in browse mode.
+- Mail: in a reply, move through the quoted part (quote levels said), and Command ' and Command Option '. Then
+  Command Shift D: "sent", straight away.
+- Word: VO-Command-T to a table, then the arrows. A table with Arabic in it. VO-Command-B through bold text.
+- Moving by character through a misspelled word: "spelling error" once going in, "out of spelling error" coming out.
+- Command Control Comma, then T, in an app VoiceOver is reading: TurnOver should take it.
+- ChatGPT or Brave: Shift H and Shift B back through a page.
+- Arabic text in TextEdit: Right Arrow at the start of a paragraph. Typing Arabic in Safari or TextEdit: each letter
+  and word said.
+- Command Control Comma, then A, three times: round all three modes and back.
+- Switching your keyboard language, if you have more than one.
+- Word: VO-T twice: alignment and line spacing at the end.
+
+### Fixed
+
+- Privacy, from the full review of 14 Oct: TurnOver's log on disk now keeps only the length of what was said, not
+  the words (the words go into a feedback report only when you choose "with what TurnOver said"); typing on a braille
+  display in a password field is never logged or echoed; what was spoken privately (a code from a notification) is
+  never written by the braille display either; the AI plugin brief carries no spoken text; screen recognition drops
+  its text when closed; the places remembered on web pages are stored without the page's address or search terms.
+- Say all no longer stops for good on empty lines in web editors, which then left the arrows silent.
+- Escape in a web page ends the by-hand focus mode choice too, so the next field switches by itself again.
+- Escape, the browse-mode key and Command Control Comma and Period can't be taken away in the keys menu.
+- Uninstall asks on a second list before removing anything.
+- A word half typed on a braille display is dropped, with a tone, if the focus moves before it is finished, and typed
+  before any command runs.
+- Quitting from outside (TurnOver Key, an installer) tidies up without waiting on a stuck main thread.
+- The hand-over to VoiceOver no longer toggles while VoiceOver is still starting or stopping.
+- Faster: Word checks for a table once a second instead of before every arrow key; quick-navigation letters no longer
+  rebuild a changing page on every press; a very long page says "page read in part"; each focus change costs half
+  the round trips; chat views ask the app for the window once in half a second.
+- Find (TurnOver F) lets you switch the keyboard language while the prompt is open, so you can search in Arabic or
+  any other language (Mohammad).
+- Desktop items whose kind Finder doesn't give are named by their file extension instead of only "2 of 2" (Tyler).
+- The battery report says whether the Mac is charging or on battery, and how long to full or how long is left
+  (Mohammad).
+- Safari: a page opened afresh, or in a new tab, starts at the top; only Back and Forward return to where you were
+  (Mohammad).
+- Safari: VO-Shift-M (Shift F10 in the Windows style) on a link opens the link's own menu, with Open in New Tab and
+  Copy Link (Mohammad).
+- Arabic and other scripts read one letter at a time in their own voice, not named by the English voice ("Arabic
+  letter alef"), in screen recognition and everywhere else (Mohammad).
+- Apps that rest the focus on an unnamed group between items (Spring's timeline) no longer have the list around them
+  said again and again ("Home, grouping" on every arrow; Oliver).
+- Up and Down at the top or bottom of a box holding one line (a reply, a message, a prompt) read the line, as in a
+  one-line field; documents still only bump. Apps whose line positions are wrong (Spring's reply box) are read by
+  paragraph instead of saying nothing (Oliver).
+- Mail: coming back to Mail with the focus on the message's scroll area now reads the message; the arrows only
+  scrolled it, silently (Oliver).
+- Marking a moment (Command Control Comma, then J) says just "marked"; the count climbing with each press sounded
+  like something going wrong (Oliver, JC). The count is in the TurnOver menu, Send feedback.
+- Safari: a new page starts in browse mode. Focus mode left over from the page before (Google's search box) kept the
+  new page from being announced, and the arrows went to the page (Ashley). The page title is said once, not twice,
+  and Return in the address bar no longer says "new line".
+- Mail: quote levels are said while you write a reply, and Command ' and Command Option ' say the new level (Ashley).
+  "Sent" is said as soon as the message goes, not after the window behind it (Oliver).
+- Word: VO-Command-T puts the cursor in the table's first cell, so the arrows carry on from there (Mohammad).
+- Arabic in a table cell (and anywhere TurnOver speaks text in another script: a name, a list item, a message) is
+  read by the Arabic voice; the English voice said nothing (Mohammad).
+- Audio ducking now uses macOS's own ducking, the way the system lowers sound for its voices: no "record system
+  audio" permission, no sound passing through TurnOver, less battery. TurnOver's voice stays at full volume (Choom,
+  on AppleVis).
+- WhatsApp and Messages: Tab and Shift Tab follow the screen: the sections (WhatsApp), the conversations, the
+  messages, the message box. Shift Tab from the box goes up to the messages (Oliver).
+- WhatsApp and Messages: moving through the chats is quicker: TurnOver remembers where the list is while you arrow,
+  instead of searching the window at every move (Oliver).
+- WhatsApp: the chat you open no longer disappears from the list. WhatsApp shows the open chat's row differently
+  (as text, not a button), and TurnOver left it out (Oliver).
+- Marked moments can be forgotten without sending them: TurnOver menu, Send feedback, Forget the marked moments
+  (Oliver, JC).
+- WhatsApp: after Return opens a chat, what you type in the message box is echoed again. WhatsApp moved its focus to
+  an unnamed group a moment later, and TurnOver followed it there, where typing isn't echoed (Oliver).
+- Typed Arabic letters and short words are said in the Arabic voice in Safari, Brave and TextEdit (Mohammad).
+- Word: VO-T pressed twice adds the paragraph's alignment and line spacing (Mohammad).
+- Moving by character, "spelling error" is said on entering a misspelled word and "out of spelling error" on leaving
+  it, in your main voice, not on every letter (Mohammad).
+- Right to left: Right Arrow at the start of an Arabic paragraph no longer gives the edge sound when it has moved
+  (Mohammad).
+- ChatGPT, Brave and other Chromium apps: Shift H, Shift B and the other backward quick keys work (Mohammad).
+- Command Control Comma, then T, follows who is reading: where VoiceOver reads an app, TurnOver takes it, even with
+  automatic switching off (JC).
+- Making a plugin with ChatGPT, Gemini or Claude no longer freezes TurnOver while it looks at the app: the freeze
+  handed the Mac to VoiceOver and, as Alex couldn't speak meanwhile, TurnOver switched the voice to Reed. A voice that
+  has spoken is never swapped now (Ashley).
+- Say all: an arrow that carries say all on no longer reads the line twice.
+- Settings: only TurnOver itself writes them; what was there before each change is kept (settings-previous.json),
+  and a copy a day for a week (settings-history), so a bad change can be undone.
+- A full disk no longer stops TurnOver (its log writer gave up on it); log lines are lost instead.
+- This build is smaller inside: the internal names programs carry are taken out before it is signed.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-2.0-build-18.zip" length="14033152" type="application/octet-stream" sparkle:edSignature="lU9XC49dOGhh+nn0i/Oy/5jucBTB3d9cwXi/5lRMaKL9s7UuJLXpcjXRiM7Y243DAoFTBHeZ8r2xRFRbjwjCDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver18-17.delta" sparkle:deltaFrom="17" length="3494014" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="HAuJrJmLQc4W1c/ZC27ue937sM221gnnKrt4/jfgsx0WTpC+mgPZa/XPF8v5y3sKtkV90MNdGqF02ShLRQ6gCQ=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver18-16.delta" sparkle:deltaFrom="16" length="8254442" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wgbs10CB6naVhxOtNo1xWrdfvllVsvJYLUFWMYjnb6q++lZraFBM87aQH3kQBr2844cQJ5Yau040MHz5ESo/BA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>2.0</title>
             <pubDate>Mon, 12 Oct 2026 16:21:53 +0100</pubDate>
             <sparkle:version>17</sparkle:version>
             <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
@@ -229,75 +357,6 @@ think of it**: Send feedback, or reply on AppleVis.
             <sparkle:deltas>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver16-15.delta" sparkle:deltaFrom="15" length="5327922" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Rw1nDDo5kwml/C3Wpw+jHJBdDZD3qdO4UX0VuQ1Tr67YZcdNZZu93niO9VmK9HP3hkLIA9Uybi3kIG5LFSwOAw=="/>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver16-14.delta" sparkle:deltaFrom="14" length="5973454" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Z+MK+UJc4bb/PE4dxoGVsyEBU/td1MGMPZSURGh+PTG7f2BSTanPUFfMWbuDFAuRCubGraVrVDpS6NoYxGRpDQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Thu, 08 Oct 2026 09:25:45 +0100</pubDate>
-            <sparkle:version>15</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# TurnOver 1.0, build 15
-
-### New to try
-- Messages and WhatsApp (previews, off until you turn them on in the TurnOver menu, Applications). Your keyboard stays in the message box. Tab takes you to the messages, starting on the newest, and Shift Tab to the conversations. There, Up and Down move, Home and End go to the first and last, Return opens a conversation, and the shortcut menu (VO Shift M, or the right Option key in the Windows style) lists the message's own actions: reply, tapback, copy and so on. Escape goes back to the message box. TurnOver 1 to 9 read the latest messages from anywhere in the window, 1 the newest. New messages in the open conversation are read as they arrive. With no conversation open (WhatsApp), Tab goes straight to the conversations. In WhatsApp, the shortcut menu on a message opens WhatsApp's own menu for it (reply, react, forward and more), and Tab goes on from the chats to WhatsApp's bar of sections (Chats, Updates, Communities, Calls, Archived, Starred): Return shows that section's chats. The chats are found in whichever section is showing.
-
-- Spelling errors anywhere: TurnOver E and TurnOver Shift E (VO Command E and VO Command Shift E in the Mac style) go to the next and previous misspelled word in any text, not just Word: TextEdit, Mail's message body, and text boxes on web pages, such as AppleVis's comment box.
-- Braille: the display now shows what you're on, not what TurnOver says. Try arrowing through Mail's list, the TurnOver menu, a menu-bar menu, WhatsApp's chats and Music's shelves, and reading back through Terminal; try typing on the display in Claude's prompt or a chat box.
-- Document formatting has a new setting, "Heading, link and button: say them": after the words, as VoiceOver ("AppleVis, heading level 1"), or before them, as NVDA. Out of the box it follows the keyboard style: after in the Mac style, before in the Windows style (requested by a tester).
-- Notifications from other apps (a new message, a calendar alert) are read as they appear, as VoiceOver and NVDA do. Presentation has a switch for it (requested by a tester).
-- Browse mode has NVDA's "screen layout" setting: links flow with the text as on screen, or each goes on a line of its own (requested by a tester).
-- Browse mode has NVDA's automatic focus mode setting: a field taking the focus switches to focus mode by itself, or only when you ask (requested by a tester).
-- The menu bar, as each style has it. Mac style: VO M lands on the Apple menu's title, Left and Right go along the bar, Down opens the menu and Escape leaves, as VoiceOver. Windows style: Command on its own opens the Apple menu, and Up and Down move through it as a list, as NVDA. Both start at the Apple menu, as the Mac does. The status menus too: VO M twice in the Mac style lands on them, Left and Right move along, Down opens one; Option B in the Windows style lists them.
-
-### Fixed
-- A review of the whole code base (8 Oct 2026) fixed: feedback reports no longer include what the braille display showed, notification banners, page titles or speech in other languages; speech comes back by itself when headphones or AirPods connect (the audio engine stopped and stayed stopped); say all says "end of document" after blank lines and the next arrow no longer resumes it; the braille cursor shows at the end of a line; a held dot 7 stops deleting if the display drops; settings are saved atomically and a settings file that won't read is kept beside the new one, not thrown away; a new setting can no longer wipe the list of apps TurnOver leads in; VoiceOver is started by opening VoiceOver.app if its shortcut doesn't bring it back; the tester-key-withdrawn alert is read; switching into focus mode by itself always says so; a page that gets shorter no longer leaves Left and Right stuck; five crashes on odd accessibility answers (a window closing mid-read, a stale item index in Music, a shrinking Finder sidebar, position values that aren't positions, Word's table cells).
-- Mail: Return in the search field now says how many results there are and goes to them (nothing was said, and Tab went to the toolbar). Command Option F no longer reads the whole message the focus passes through on its way to the search field.
-- Music: Return on a song in the library says "playing"; VO Shift N in the library says what's playing, not the table's hint.
-- Terminal, Mac style: VO Up and VO Down read back through the output, as VoiceOver reads the screen.
-- Mac style: leaving the menu bar with Escape or VO M says where you are.
-- Mail: Command Shift D says "sent" once the message has gone (reported by a tester).
-- Status menus: items that give no name (Control Center's on macOS 26) are named from their identifiers instead of all being "Control Center" (reported by a tester). In the Mac style, VO M twice lands on the status menus and Left and Right move along them, as VoiceOver.
-- Menus: moving between menu-bar menus with Left and Right no longer reads the app's focus ("message body") in the gap between one menu closing and the next opening (reported by a tester).
-- Mail's shortcut menu: letters go to its search box, which filters the menu; TurnOver now says what you've typed, and "no matches" when nothing is left, instead of going quiet.
-- Mail: VO arrows in a big message list slowed down with every key until VoiceOver took over. They now answer straight away, however many messages there are (reported by a tester).
-- Next and previous spelling error (TurnOver E, TurnOver Shift E, VO Command E) work in any text: TextEdit, Mail's message body and web pages' text boxes (AppleVis's comment box), not just Word (reported by a tester).
-- A voice that doesn't speak in TurnOver no longer leaves it silent: TurnOver goes back to a voice that works and tells you (reported by a tester).
-- Mail: a message opened in its own window could leave you stuck on its header, a blank field where the arrows read nothing. Reading now starts in the message.
-- The cursor no longer says a heading's name twice ("Discover, heading, Discover" in the App Store).
-- Terminal: new output wasn't read at all, and Return said "new line". A macOS update changed how Terminal describes itself; TurnOver recognises it again.
-- Podcasts: search results are read properly (no more just "Explicit"), Return opens a show, and a show's page no longer reads the search results behind it. Follow, Play and the other header buttons are each their own item.
-- Music, Podcasts and TV: Tab now reaches a fourth area, the tool bar, with Back, Share, More and Search. More opens the menu with Unfollow, Add to Library, Delete from Library and the rest.
-- Music, Podcasts and TV: Space says what it did (playing, paused, stopped), and corrects itself if the app changes its mind. Live radio's Stop and a played episode's Replay are understood. If something doesn't start (it may need a subscription or a download), TurnOver says so instead of "playing".
-- Music, Podcasts and TV: searching reads the results and puts you on them. "Middle dot" and "bullet" are no longer read in titles. Status lines such as "Refreshing content" and "Loading…" aren't items any more.
-- Music, Podcasts, TV and the App Store: opened from the Dock or Spotlight (not switched to), they now read the page as soon as it appears, instead of just the app's name.
-- Alerts in Music and the App Store ("Delete these songs?") say each button as you Tab.
-- WhatsApp: Tab in the search field goes to the results (chats, contacts and messages that match), even with a chat open.
-- WhatsApp: Media is in the sections; Calls lists your calls; Settings works with Tab, the arrows and Caps Lock arrows, each page says its title, and Escape goes back a page or closes Settings (WhatsApp ignores Escape and Command W there).
-- WhatsApp: coming back with Command Tab says where you are; opening a chat says the message box once, not twice; your own message isn't read again when it changes from sent to delivered to read.
-- Messages: Return in the message box says "sent", not "new line".
-- Mac style: VO Right and VO Left read a window column by column (WhatsApp's sidebar, chats and chat no longer interleave), and start with the window's close, minimise and full screen buttons, as VoiceOver does. Text that keeps its words in a description (WhatsApp's sidebar) is no longer skipped, and nested headings say their name.
-- VO Space on something that opens and closes (WhatsApp's More) says "expanded" or "collapsed".
-- Something focused inside a container of the same name (WhatsApp's Settings) is said once.
-- Word: closing Find with Escape reads what was found; Command Tab back to Word reads the line you're on; dialogs and the Save sheet no longer say "document" between their fields; inserting a table no longer says "out of table".
-- Word, Mac style: VO Up and VO Down move by rows in a table, as VO Left and VO Right move by cells. In the page, VO Left and VO Right move by character, as VoiceOver, instead of jumping to the sidebar.
-- Windows style: Caps Lock F reports the formatting, as NVDA+F. Find is Caps Lock Control F, with Caps Lock F3 and Shift F3 for the next and previous match.
-- Formatting says the language by name ("English (United Kingdom)"), not its code.
-- Return on a button in an alert sheet presses that button, not the alert's default: in Claude's "Claude is still working" alert, Return on "Quit anyway" pressed Cancel.
-- Word: choosing a heading in the rotor (VO U) goes to it and reads it, instead of landing in the sidebar.
-- Lists whose rows hold their name as a heading (System Settings, Privacy & Security, Automation) read the name, not just "collapsed".
-- Braille: the display shows what you're on, not what TurnOver says. "New line", window names, "selected …" and "end of document" no longer cover the line for seconds; Mail's list, the TurnOver menu, WhatsApp's and Messages' chats and messages, and the shelves of Music, Podcasts, TV and the App Store all show on the display and stay there. Roles and states use NVDA's short forms (btn, chk, lnk, h2). A message gives way as soon as you move.
-- Braille in Word: the line you're on shows as you type and move (it showed only "doc").
-- Braille: menu items show on the display as you arrow through a menu (a "Mail menu" message was hiding them), and the menu bar's title no longer comes back after the menu closes. Terminal's review lines show on the display as you read back.
-- Word: Command B, I and U say "bold on", "italic off" and so on once, not twice.
-- Braille typing on a web page in browse mode, with the keyboard in a text field (after reading Claude's reply with VO Command H), switches to focus mode in the field, so the display shows what you type.
-- Braille typing: typing fast no longer jumps the focus to the Dock. A space that lands just after a letter, while you're typing, types the letter and a space instead of running a command ("a" with space was "previous item"). Space with dots 3 4 says where you are, as in VoiceOver. Input help says plainly when a chord isn't a command.
-- Braille typing: a word whose last cell was pressed together with space (the word "the" with space a moment early) is typed, not lost. Dot 7 says what it deleted. Return or dot 8 that sends a message (Claude, chat boxes) no longer says "new line".
-]]></description>
-            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-1.0-build-15.zip" length="10420542" type="application/octet-stream" sparkle:edSignature="XrTlDIgoQl0yUbS0vEzu84reJkq0nxtrv19WKyPC4uWWNGNUmCqUh3FkHD1KrT/6PtE8trzEkKzZ9X3fP7NhAQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver15-14.delta" sparkle:deltaFrom="14" length="3090758" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ppG6oPlfVxtd72CojJzQOKq0r7URR7/z5XWaGWs+vKKsd79lhMhfUJBNFH2YviWNDiWCWMKSuDDQTPlzu8VGCA=="/>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver15-13.delta" sparkle:deltaFrom="13" length="3182618" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Hnz6pbOFTOWALLsr6CVCrSjJKJanEclnG5zizCFgHHWiQwveFl9/hLOw8fNi1dALgyl820IOiOPFPsrYpHUPAA=="/>
             </sparkle:deltas>
         </item>
     </channel>
