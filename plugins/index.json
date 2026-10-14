@@ -1,7 +1,7 @@
 {
-  "expires" : "2026-10-21T11:00:02Z",
+  "expires" : "2026-10-21T11:18:57Z",
   "format" : 1,
-  "issued" : "2026-10-14T11:00:02Z",
+  "issued" : "2026-10-14T11:18:57Z",
   "plugins" : [
     {
       "abilities" : [
@@ -103,7 +103,7 @@
       "version" : "1.0"
     }
   ],
-  "sequence" : 8,
+  "sequence" : 9,
   "withdrawn" : [
     "game-speech"
   ]
