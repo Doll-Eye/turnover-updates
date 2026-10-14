@@ -1,7 +1,7 @@
 {
-  "expires" : "2026-10-21T10:18:08Z",
+  "expires" : "2026-10-21T10:19:27Z",
   "format" : 1,
-  "issued" : "2026-10-14T10:18:08Z",
+  "issued" : "2026-10-14T10:19:27Z",
   "plugins" : [
     {
       "abilities" : [
@@ -11,7 +11,7 @@
       "apps" : [
         "com.bambulab.bambu-studio"
       ],
-      "author" : "Doll-Eye",
+      "author" : "TurnOver-For-Mac",
       "contact" : "oliver.kennett@gmail.com",
       "description" : "Names the home page's buttons, and adds keys for a new project and opening a project.",
       "file" : "bambustudio-profile-0.1.zip",
@@ -21,13 +21,13 @@
       "license" : "MIT",
       "name" : "Bambu Studio",
       "privacy" : "Reads Bambu Studio's window only; nothing leaves your Mac.",
-      "sha256" : "5bb9d395c78304fe11f280f8591393e00ac0f3ee0f61d1537430b2ad86667071",
+      "sha256" : "af59915f641aa251dd2b0810b487f8341fde3d75293da65597752c822a52980e",
       "size" : 1071,
       "summary" : "Names Bambu Studio's home page buttons, and adds keys for a new or existing project.",
       "version" : "0.1"
     }
   ],
-  "sequence" : 1,
+  "sequence" : 2,
   "withdrawn" : [
 
   ]
