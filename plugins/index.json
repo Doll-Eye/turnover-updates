@@ -1,11 +1,133 @@
 {
-  "expires" : "2026-10-21T17:24:05Z",
+  "expires" : "2026-10-21T18:05:49Z",
   "format" : 1,
-  "issued" : "2026-10-14T17:24:05Z",
+  "issued" : "2026-10-14T18:05:49Z",
   "plugins" : [
+    {
+      "abilities" : [
+        "read",
+        "menu"
+      ],
+      "apps" : [
+        "com.bambulab.bambu-studio"
+      ],
+      "author" : "TurnOver-For-Mac",
+      "contact" : "oliver.kennett@gmail.com",
+      "description" : "Names the home page's buttons, and adds keys for a new project and opening a project.",
+      "file" : "bambustudio-profile-0.1.zip",
+      "id" : "bambustudio-profile",
+      "kind" : "profile",
+      "level" : "Official",
+      "license" : "MIT",
+      "name" : "Bambu Studio",
+      "privacy" : "Reads Bambu Studio's window only; nothing leaves your Mac.",
+      "sha256" : "fcd0e485630021a07037578382a00fffd98c30e6b530d8b787b499175979d7a7",
+      "size" : 1071,
+      "summary" : "Names Bambu Studio's home page buttons, and adds keys for a new or existing project.",
+      "version" : "0.1"
+    },
+    {
+      "abilities" : [
+        "read",
+        "press",
+        "menu",
+        "keys",
+        "say"
+      ],
+      "apps" : [
+        "com.apple.calculator"
+      ],
+      "author" : "TurnOver-For-Mac",
+      "contact" : "oliver.kennett@gmail.com",
+      "description" : "An example of what a plugin's keys can do, in an app every Mac has. Read the result, copy it, clear the entry, switch between basic and scientific, and open the history, each from a key. Every command is also in the plugin layer: Command Control Comma, P.",
+      "file" : "calculator-1.1.zip",
+      "id" : "calculator",
+      "kind" : "profile",
+      "level" : "Official",
+      "license" : "MIT",
+      "minimumTurnOver" : "2.0",
+      "name" : "Calculator",
+      "privacy" : "Reads Calculator's window only, on your Mac. Nothing leaves your Mac.",
+      "sha256" : "4857512337196fc0dc04211e4fda3a2e8aa463fc66ee254928ff5e5d6396a7b7",
+      "size" : 1659,
+      "summary" : "Calculator: keys to read and copy the result, clear, switch modes and open the history. An example plugin.",
+      "version" : "1.1"
+    },
+    {
+      "abilities" : [
+        "read",
+        "press"
+      ],
+      "apps" : [
+        "org.libation.macos"
+      ],
+      "author" : "Doll-Eye",
+      "contact" : "oliver.kennett@gmail.com",
+      "description" : "Libation is built with Avalonia, which gives several controls their programming class names or no name at all. This names the library search box, the button that shows or hides the Process Queue, the Books at once and Download limit spinners, and the Liberate button at the start of each book row, and keeps the unnamed cover pictures quiet. The book list, which tells TurnOver nothing as the arrows move, is walked by TurnOver itself: Up and Down read each book, Return presses its download button.",
+      "file" : "libation-profile-1.0.zip",
+      "id" : "libation-profile",
+      "kind" : "profile",
+      "level" : "Community",
+      "license" : "MIT",
+      "name" : "Libation",
+      "privacy" : "Reads Libation's window only; nothing leaves your Mac.",
+      "sha256" : "c63f00c20957c77dd7707cc7fd2b2b7a54fbede172ce8c9442b8487249ad95de",
+      "size" : 1570,
+      "summary" : "Libation's book list read as you arrow through it, and its search box, queue controls and download buttons named.",
+      "version" : "1.0"
+    },
+    {
+      "abilities" : [
 
+      ],
+      "apps" : [
+        "com.valvesoftware.steam",
+        "com.valvesoftware.steam.helper"
+      ],
+      "author" : "TurnOver-For-Mac",
+      "contact" : "oliver.kennett@gmail.com",
+      "description" : "Its program is open: github.com\/TurnOver-For-Mac\/turnover-plugins, helpers\/steam-speech. Steam's Big Picture speaks through TurnOver: the item you are on, as you move with the arrows or a controller. Steam games built on Electron, started with a debugging port, speak their announcements too. Turn it off or on in the TurnOver menu, Preferences, Games.",
+      "file" : "steam-speech-1.1.zip",
+      "id" : "steam-speech",
+      "kind" : "profile",
+      "level" : "Official",
+      "license" : "MIT",
+      "minimumTurnOver" : "2.0",
+      "name" : "Steam speech",
+      "privacy" : "Reads Steam's Big Picture through Steam's own debugging port on this Mac, and games you start with a debugging port. Nothing leaves your Mac.",
+      "sha256" : "587b016bbad7ccd102bca7a19df4b14946ae9756d74e67cb0ad3888e41a955f0",
+      "size" : 867,
+      "summary" : "Steam's Big Picture, and Steam games built on Electron, speak through TurnOver.",
+      "version" : "1.1"
+    },
+    {
+      "abilities" : [
+        "read",
+        "press",
+        "menu",
+        "say"
+      ],
+      "apps" : [
+        "com.apple.dt.Xcode"
+      ],
+      "author" : "TurnOver-For-Mac",
+      "contact" : "oliver.kennett@gmail.com",
+      "description" : "Says when a build or test run succeeds or fails, without looking for it. Keys to hear the build status, the scheme and run destination, to build, run, test and stop, and to go to the issues. Names the jump bar and the navigator's filter button. Every command is also in the plugin layer: Command Control Comma, P.",
+      "file" : "xcode-1.0.zip",
+      "id" : "xcode",
+      "kind" : "profile",
+      "level" : "Official",
+      "license" : "MIT",
+      "minimumTurnOver" : "2.0",
+      "name" : "Xcode",
+      "privacy" : "Reads Xcode's window only, on your Mac. Nothing leaves your Mac.",
+      "sha256" : "a62e2378724315586a6263148a84004b4d3eb8a043049245508510ee50b08846",
+      "size" : 1373,
+      "summary" : "Xcode: build and test results said as they happen, and keys to build, run, test and hear the status.",
+      "version" : "1.0"
+    }
   ],
-  "sequence" : 15,
+  "sequence" : 16,
   "withdrawn" : [
     "game-speech"
   ]
