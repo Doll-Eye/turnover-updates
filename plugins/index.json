@@ -1,7 +1,7 @@
 {
-  "expires" : "2026-10-21T10:34:38Z",
+  "expires" : "2026-10-21T10:37:16Z",
   "format" : 1,
-  "issued" : "2026-10-14T10:34:38Z",
+  "issued" : "2026-10-14T10:37:16Z",
   "plugins" : [
     {
       "abilities" : [
@@ -48,9 +48,35 @@
       "size" : 759,
       "summary" : "Steam's Big Picture and Electron games speak through TurnOver.",
       "version" : "1.0"
+    },
+    {
+      "abilities" : [
+        "read",
+        "press",
+        "menu",
+        "say"
+      ],
+      "apps" : [
+        "com.apple.dt.Xcode"
+      ],
+      "author" : "TurnOver-For-Mac",
+      "contact" : "oliver.kennett@gmail.com",
+      "description" : "Says when a build or test run succeeds or fails, without looking for it. Keys to hear the build status, the scheme and run destination, to build, run, test and stop, and to go to the issues. Names the jump bar and the navigator's filter button. Every command is also in the plugin layer: Command Control Comma, P.",
+      "file" : "xcode-1.0.zip",
+      "id" : "xcode",
+      "kind" : "profile",
+      "level" : "Official",
+      "license" : "MIT",
+      "minimumTurnOver" : "2.0",
+      "name" : "Xcode",
+      "privacy" : "Reads Xcode's window only, on your Mac. Nothing leaves your Mac.",
+      "sha256" : "945b11ceac4413468b7457cf0293e9756dc9789de35fbcefad2222bdecd4d77c",
+      "size" : 1373,
+      "summary" : "Xcode: build and test results said as they happen, and keys to build, run, test and hear the status.",
+      "version" : "1.0"
     }
   ],
-  "sequence" : 3,
+  "sequence" : 4,
   "withdrawn" : [
 
   ]
