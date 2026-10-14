@@ -1,11 +1,11 @@
 {
-  "expires" : "2026-10-21T16:23:57Z",
+  "expires" : "2026-10-21T17:24:05Z",
   "format" : 1,
-  "issued" : "2026-10-14T16:23:57Z",
+  "issued" : "2026-10-14T17:24:05Z",
   "plugins" : [
 
   ],
-  "sequence" : 14,
+  "sequence" : 15,
   "withdrawn" : [
     "game-speech"
   ]
