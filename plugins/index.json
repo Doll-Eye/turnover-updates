@@ -1,0 +1,34 @@
+{
+  "expires" : "2026-10-21T10:18:08Z",
+  "format" : 1,
+  "issued" : "2026-10-14T10:18:08Z",
+  "plugins" : [
+    {
+      "abilities" : [
+        "read",
+        "menu"
+      ],
+      "apps" : [
+        "com.bambulab.bambu-studio"
+      ],
+      "author" : "Doll-Eye",
+      "contact" : "oliver.kennett@gmail.com",
+      "description" : "Names the home page's buttons, and adds keys for a new project and opening a project.",
+      "file" : "bambustudio-profile-0.1.zip",
+      "id" : "bambustudio-profile",
+      "kind" : "profile",
+      "level" : "Official",
+      "license" : "MIT",
+      "name" : "Bambu Studio",
+      "privacy" : "Reads Bambu Studio's window only; nothing leaves your Mac.",
+      "sha256" : "5bb9d395c78304fe11f280f8591393e00ac0f3ee0f61d1537430b2ad86667071",
+      "size" : 1071,
+      "summary" : "Names Bambu Studio's home page buttons, and adds keys for a new or existing project.",
+      "version" : "0.1"
+    }
+  ],
+  "sequence" : 1,
+  "withdrawn" : [
+
+  ]
+}
