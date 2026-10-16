@@ -25,7 +25,7 @@ A small build on the heels of 18, for one bug worth having at once.
             <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-2.0-build-18.1.zip" length="14033869" type="application/octet-stream" sparkle:edSignature="boeoPMKlCBxWrKWgt4gwWdcwFKir835bopDnvpDN6MZ/OTlC2oSo0qNKaLhmHOThV8ofdk0z1T3CKfNhHGpvAg=="/>
             <sparkle:deltas>
                 <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver18.1-18.delta" sparkle:deltaFrom="18" length="887742" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="k2STDNuXXqZ7+F6e7s+Z59UMB2Gwui86YnmxDu5kd0CBuR/I8gEvWXqx5zAC+mRH63XMw2QjE8/1J6miyg91BQ=="/>
-                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver18.1-17.delta" sparkle:deltaFrom="17" length="3500822" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="qAp2e79XyjT/FvhxcEgrBDhSY5rKAQgm6iD4zKiYszFuLuuugLZfpU2yOwxM6D5ZleuCS0cjXW8ZZ0YO/KmZBg=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver18.1-2.delta" sparkle:deltaFrom="2" length="3305858" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="DkAAhS/E3nPOpw16jRqvvbSS0FZMeNvhfPXf1VAfGOQlpJuK+cjxCirGxh1nv0BgCer5qptM7/GSGBra7iZ4Dg=="/>
             </sparkle:deltas>
         </item>
         <item>

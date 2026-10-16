@@ -57,7 +57,8 @@ TurnOver's own commands: press Command Control Comma, hear "TurnOver", then pres
   J          "That was wrong": marks this moment for your next feedback report.
   Slash      Every shortcut that works where you are, grouped. Enter runs one.
   A          Who reads: TurnOver in its apps, TurnOver everywhere, or VoiceOver everywhere, in turn.
-  P          The plugin maker: label the item you're on, give it a key, watch or silence it.
+  P          Plugin commands: the commands of the plugins in this app, by their letter, or Down Arrow for a list.
+  M          The plugin maker: label the item you're on, give it a key, watch or silence it.
   C          Copies the last thing TurnOver said to the clipboard.
   H          This guide.
   I          Describes the picture under TurnOver's cursor.
@@ -85,8 +86,8 @@ keypad 0 held is its modifier). In the Windows style, NVDA's desktop keypad keys
 characters in review, Plus say all, keypad 0 held as the NVDA key); Clear switches between those and typing numbers,
 as Num Lock does on a PC. TurnOver menu, Settings, Keyboard has both.
 
-  Screen Curtain: TurnOver Shift Escape (VO Shift F11 in the Mac style, Caps Lock Control Escape in the Windows
-  style). If VoiceOver's curtain is on, TurnOver keeps it on when it takes over. To choose: TurnOver menu, Settings,
+  Screen Curtain: VO Shift Underscore or VO Shift F11 in the Mac style, as VoiceOver; Caps Lock Control Escape in
+  the Windows style, as NVDA. If VoiceOver's curtain is on, TurnOver keeps it on when it takes over. To choose: TurnOver menu, Settings,
   Sounds and alerts, Screen Curtain while TurnOver reads.
 
 VoiceOver's commands. TurnOver uses VoiceOver's own commands (VO is Control and Option together), so
@@ -129,8 +130,19 @@ SAFARI (AND MAIL MESSAGES): BROWSE MODE
 
 Web pages and email messages are read as a document, like NVDA's browse mode.
   Up / Down arrows       Line by line.        Option arrows: word by word.
-  H / Shift H            Next / previous heading. 1 to 6: headings of that level.
-  K, B, E, F, L, T, D    Link, button, edit field, form field, list, table, landmark (Shift goes back).
+Single letters move through the page, each style with its own reader's letters; Shift goes back.
+Mac style, VoiceOver's single-key Quick Nav:
+  H heading, 1 to 6 headings of that level, M heading at the same level, L link, V visited link,
+  F text field, J control, B button, C check box, R radio group, X list, T table, G graphic, N landmark,
+  D different item.
+Windows style, NVDA's:
+  H heading, 1 to 9 headings of that level, K link, U / V unvisited / visited link, F form field, E edit field,
+  B button, X check box, C combo box, R radio button, L list, I list item, T table, G graphic, Q block quote,
+  D landmark, M frame, S separator, O embedded object (a video or audio player, a dialog), A annotation,
+  W spelling error, P paragraph of text, N the text after a block of links.
+  Comma / Shift Comma    Past the end of the list, table or other container you are in / to its start.
+  Caps Lock Shift Space  Single-letter navigation off or on for this page, so its own keys work.
+  Caps Lock F7           The page's headings, links, form fields and landmarks in a list.
   Enter                  Activates a link or button.
   TurnOver Space         Switches between browse mode and typing into the page (focus mode).
   Shift with arrows      Selects text; Command C copies it.
@@ -245,6 +257,37 @@ Turn it on in the TurnOver menu, Apps, Read by VoiceOver, App Store.
 - Command F goes to search; type, press Return, and the results are read.
 - A letter jumps to the next item starting with it.
 
+SETTINGS PROFILES (VOICEOVER'S ACTIVITIES, NVDA'S CONFIGURATION PROFILES)
+
+VO X in the Mac style, Caps Lock Control P in the Windows style. A profile is a set of speech, verbosity, typing,
+web page and braille settings. Make one from the settings you have now (or one for the app in front), then change
+what you like while it is on: the changes go into the profile, and your normal settings are kept as they were.
+A profile can be switched on by hand, or used whenever its apps are in front.
+
+MORE OF EACH READER'S KEYS (BUILD 19)
+
+Mac style, as VoiceOver:
+  VO Shift Q, or Left and Right Arrow together   Arrow-key Quick Nav on or off. With it on, Left and Right move the
+                         VoiceOver cursor; Up and Down move by the Quick Nav kind, or item by item. Up and Down
+                         together: the item's action. Right and Down: interact; Left and Down: stop interacting.
+                         Left or Right with Up: the previous or next Quick Nav kind (headings, links, form controls…).
+                         On web pages too.
+  VO Home / VO End       In text, the start / end of the text. VO Shift Home / End: the first / last word in view.
+  VO Return              In a text field, starts and then ends a selection.
+  VO A                   The VoiceOver cursor's contents. VO F3: the item in the VoiceOver cursor.
+  VO F4 twice            More about the focus; in text, where the insertion point is.
+  VO F7 three times      The network.  VO Shift S: scroll with the arrows and Page keys; Escape stops.
+Windows style, as NVDA:
+  Caps Lock S            Speech mode: talk, beeps, off, on demand.
+  Caps Lock Control T    Braille follows: automatically, the focus, or the review cursor.
+  Caps Lock Command T    Braille follows the cursors, or shows what is spoken.
+  Caps Lock Command K    Braille auto scroll on or off; Command L faster, Command J slower.
+  Caps Lock Control Shift F1   Marks the log; again, copies the log from the mark.
+  Excel: Caps Lock Command C the cell's note; Caps Lock F7 sheets and notes; Caps Lock Space reads cells around,
+  protected ones too.
+  The desktop layout (Settings, Keyboard) adds NVDA's desktop keys: Caps Lock End the status bar, Caps Lock Shift S
+  sleep, Caps Lock Page Up and Down review by page, Caps Lock Control arrows the speech settings ring.
+
 APPLICATION CHOOSER
 
 Every app with a window, including system alerts that Command Tab doesn't show (macOS asking to allow Screen Recording, a password prompt). Arrow to one and press Return to switch to it; an app with several windows has them in a submenu.
@@ -296,7 +339,7 @@ what is spoken while typing, messages and how long they stay, word wrap, the cur
 
 PLUGINS
 
-The quickest way in: on an unnamed button, press VO-Slash (Mac style) or Command Control Comma then P (either style).
+The quickest way in: on an unnamed button, press VO-Slash (Mac style) or Command Control Comma then M (either style).
 Choose What is this?, Label this item, Give this item a key, Read this when it changes, or Don't announce this. Your
 changes are kept as your own plugin for that app; Undo the last change takes one back, and they can be shared.
 
