@@ -1,11 +1,86 @@
 {
-  "expires" : "2026-10-23T08:19:39Z",
+  "expires" : "2026-10-23T09:28:26Z",
   "format" : 1,
-  "issued" : "2026-10-16T08:19:39Z",
+  "issued" : "2026-10-16T09:28:26Z",
   "plugins" : [
-
+    {
+      "abilities" : [
+        "read",
+        "menu"
+      ],
+      "apps" : [
+        "com.bambulab.bambu-studio"
+      ],
+      "author" : "TurnOver-For-Mac",
+      "contact" : "oliver.kennett@gmail.com",
+      "description" : "Names the home page's buttons, and adds keys for a new project and opening a project.",
+      "file" : "bambustudio-profile-0.1.zip",
+      "id" : "bambustudio-profile",
+      "kind" : "profile",
+      "level" : "Official",
+      "license" : "MIT",
+      "name" : "Bambu Studio",
+      "privacy" : "Reads Bambu Studio's window only; nothing leaves your Mac.",
+      "sha256" : "fcd0e485630021a07037578382a00fffd98c30e6b530d8b787b499175979d7a7",
+      "size" : 1071,
+      "summary" : "Names Bambu Studio's home page buttons, and adds keys for a new or existing project.",
+      "version" : "0.1"
+    },
+    {
+      "abilities" : [
+        "read",
+        "press",
+        "menu",
+        "keys",
+        "say"
+      ],
+      "apps" : [
+        "com.apple.calculator"
+      ],
+      "author" : "TurnOver-For-Mac",
+      "contact" : "oliver.kennett@gmail.com",
+      "description" : "An example of what a plugin's keys can do, in an app every Mac has. Read the result, copy it, clear the entry, switch between basic and scientific, and open the history, each from a key. Every command is also in the plugin layer: Command Control Comma, P.",
+      "file" : "calculator-1.1.zip",
+      "id" : "calculator",
+      "kind" : "profile",
+      "level" : "Official",
+      "license" : "MIT",
+      "minimumTurnOver" : "2.0",
+      "name" : "Calculator",
+      "privacy" : "Reads Calculator's window only, on your Mac. Nothing leaves your Mac.",
+      "sha256" : "4857512337196fc0dc04211e4fda3a2e8aa463fc66ee254928ff5e5d6396a7b7",
+      "size" : 1659,
+      "summary" : "Calculator: keys to read and copy the result, clear, switch modes and open the history. An example plugin.",
+      "version" : "1.1"
+    },
+    {
+      "abilities" : [
+        "read",
+        "press",
+        "menu",
+        "say"
+      ],
+      "apps" : [
+        "com.apple.dt.Xcode"
+      ],
+      "author" : "TurnOver-For-Mac",
+      "contact" : "oliver.kennett@gmail.com",
+      "description" : "Says when a build or test run succeeds or fails, without looking for it. Keys to hear the build status, the scheme and run destination, to build, run, test and stop, and to go to the issues. Names the jump bar and the navigator's filter button. Every command is also in the plugin layer: Command Control Comma, P.",
+      "file" : "xcode-1.0.zip",
+      "id" : "xcode",
+      "kind" : "profile",
+      "level" : "Official",
+      "license" : "MIT",
+      "minimumTurnOver" : "2.0",
+      "name" : "Xcode",
+      "privacy" : "Reads Xcode's window only, on your Mac. Nothing leaves your Mac.",
+      "sha256" : "a62e2378724315586a6263148a84004b4d3eb8a043049245508510ee50b08846",
+      "size" : 1373,
+      "summary" : "Xcode: build and test results said as they happen, and keys to build, run, test and hear the status.",
+      "version" : "1.0"
+    }
   ],
-  "sequence" : 20,
+  "sequence" : 21,
   "withdrawn" : [
     "game-speech"
   ]
