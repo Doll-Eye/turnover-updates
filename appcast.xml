@@ -1,0 +1,99 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>TurnOver</title>
+        <item>
+            <title>2.0</title>
+            <pubDate>Tue, 20 Oct 2026 13:41:14 +0100</pubDate>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 2.0, build 21
+
+### New to try
+
+- TurnOver is free and open source: the code is at github.com/TurnOver-For-Mac/turnover, no tester key is needed any
+  more, Send feedback opens TurnOver's problem form on GitHub, and Support TurnOver in the menu opens Ko-fi.
+- Plugins are back on for everyone: the TurnOver menu, Tools, Plugins. Shared as pull requests to the plugins
+  repository, checked and reviewed before the library carries them.
+- TurnOver reads every app by default; VoiceOver still handles passwords and macOS's own prompts. Command Control
+  Shift T gives the app in front to VoiceOver, or back to TurnOver, straight away (the layer's T still does too).
+- JAWS keys (Command Control Comma, then K, until you hear "JAWS keys"): JAWS's laptop layout with Caps Lock as the
+  JAWS key. The reading grid (Caps U I O for lines, J K L for words, M comma period for characters, Y H N for
+  sentences, Control U I O for paragraphs), Caps Shift J and L for the line up to and from the cursor, Caps Z for the
+  virtual cursor, Caps F5 F6 F7 for the lists, Caps P and semicolon for the JAWS and PC cursors, Caps 8 and 9 to
+  click, Caps Control H for speech history, Caps Control V for the app's version, Caps Control F12 for the time with
+  seconds. During say all, Left and Right go back and on a sentence, and Page Up and Page Down change the speed for
+  that say all. Every other key is the Windows style's.
+
+### Fixed
+
+- Waking the Mac at the lock screen no longer ends in several TurnOvers speaking at once: while the Mac is asleep,
+  locked or just awake, a stuck voice is left to come back rather than restarted; a restart after a hang ends the
+  stuck copy, so there is only ever one. Reported by a tester.
+- Giving a key to a command: the list of commands stays open for the next one; Escape leaves it. Reported by a tester.
+- Command Tab doing nothing until TurnOver was turned off and on: a modifier the Mac thought was still held is
+  released before Command Tab passes, and the log records both states.
+- When the Mac's audio system hangs (it did for a few minutes on 20 Oct), TurnOver no longer hangs with it and
+  restarts over and over: the fresh voice is built off the main thread, nothing waits on the speech queue, the
+  device list is read on its own queue, and the log says which audio call stuck.
+- Screen recognition no longer freezes TurnOver (it could restart itself on a slow read). Reported by a tester.
+
+- The Windows style (NVDA, Narrator and JAWS keys): no more pauses between the pieces of what TurnOver says
+  ("Settings submenu 3 of 9", "OK button"), as NVDA says them. The Mac style keeps VoiceOver's way. Reported by a
+  tester.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-2.0-build-21.zip" length="19166462" type="application/octet-stream" sparkle:edSignature="8WH9B3iTeqQrzgLjIVjY4V2/ejJeoa7u/INpxgneCA0h7BRovnHaer2+oRpqmEG12HUEcgAIWwyPclALpJ2BCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver21-20.2.delta" sparkle:deltaFrom="20.2" length="3364506" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="74fzVxDqkdzCy4NvOBRR90AqcC+BG91r8NURxPAPdy3dSzpi2j1OdDAEGDeOGbv+v4cb3HZer32r/CRhI1K3DA=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver21-20.1.delta" sparkle:deltaFrom="20.1" length="3518490" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="LXyGBM1zfjStsGd1Ue961T+RsUsA1JRVkEqMBAYO5Huv26j9ohXh1Ijx3hmuVis0p92yPjL3nndkFlfCmM3XBA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>2.0</title>
+            <pubDate>Mon, 19 Oct 2026 22:33:06 +0100</pubDate>
+            <sparkle:version>20.2</sparkle:version>
+            <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 2.0, build 20.2
+
+### Fixed
+
+- TurnOver restarting itself ("TurnOver's voice stopped"), most often after say all and an arrow key: the speech could
+  wait for ever on the Mac's audio player. It no longer can, and if speech ever does stick, a fresh voice takes over
+  within a few seconds instead of a restart. Reported by a tester.
+- Context menus: Right Arrow on an item with no submenu no longer closes the menu or freezes TurnOver, and Right on
+  Open With opens it. Reported by a tester.
+- Word: every table in a document moves by row and column, not only the first. Reported by a tester.
+- Your own keys: VoiceOver's and NVDA's commands (next paragraph, next table and the rest) are listed whatever the
+  keyboard style, and keys given to them work; right Option keys you set work with VoiceOver's Option Commander off.
+  Reported by a tester.
+- Command Control Period switches TurnOver off and on again after an update; it had quit TurnOver instead.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-2.0-build-20.2.zip" length="19095873" type="application/octet-stream" sparkle:edSignature="vJ8iXAJKsTRsEStAX0TtS+nsNAwxn9sNfBskgmU8MzDxzvW3A2j8KsRbzMNRrzaax7XRQ3AGhlwoC6pY1c8BDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver20.2-20.1.delta" sparkle:deltaFrom="20.1" length="2218322" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="+gtHOU/tLzYCEpYBPMd2Ibp/P0z9QyLbdXi3UvoKUhzelcbsW3jJBMOMnrC/FaK7DZk4Z3vmomOUg5QfVVtgAA=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver20.2-20.delta" sparkle:deltaFrom="20" length="2354370" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="8md/ndn7AjKwJPGNjfeQi8mGt8rTA/+0rc1FCH7k4tTy9APibPLWZ6qZADD7SN0Y2V4Pznd/wee4hOQuti8pCQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>2.0</title>
+            <pubDate>Mon, 19 Oct 2026 17:40:14 +0100</pubDate>
+            <sparkle:version>20.1</sparkle:version>
+            <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 2.0, build 20.1
+
+### Fixed
+
+- The Dock, status menus and Spotlight: the arrows move through them again with a TurnOver app in front (in build 20
+  they went to the app behind).
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-2.0-build-20.1.zip" length="19054635" type="application/octet-stream" sparkle:edSignature="jLoV+abRhP/WUQSglTVPwiWLF6XK/Z78hWsHoB5XGW1QY29YqUJIoIKUWi6hekMw/Qo9rCNA7/2GRim092bZAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver20.1-20.delta" sparkle:deltaFrom="20" length="1732818" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="GuMMoWbwzOs1Djxx/CE+iVq6nymHJNnkpmvee4sAF5b0/7Bf+lu1rP2ckmztQijSd4QndZOM8DfpkGqazRWyAA=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver20.1-19.delta" sparkle:deltaFrom="19" length="7695782" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="c79NxNkfbe5pg8M576sMoVN/xsZNYNkffcHcyQWkwGH3e0rFW9p5oevVxaiaJ91grqLKw/gza8Ou3CIZphN0Aw=="/>
+            </sparkle:deltas>
+        </item>
+    </channel>
+</rss>
