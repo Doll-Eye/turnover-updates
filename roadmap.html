@@ -3,10 +3,11 @@
 <meta name="robots" content="noindex, nofollow"><title>What&#x27;s coming to TurnOver</title></head>
 <body><main>
 <h1>What's coming to TurnOver</h1>
-<p>TurnOver is free and open source, made in spare time. This is what's being worked on and what people have asked for. Requests are weighed, not queued, and there are no dates or promises: things arrive when they're solid, and sooner if someone sends a fix. To ask for something, use the idea form on GitHub (Send feedback in the TurnOver menu opens it).</p>
-<p>TurnOver works alongside VoiceOver. VoiceOver stays on: TurnOver reads every app by default, and Command Control Shift T gives the app in front to VoiceOver, or back. VoiceOver always handles security (password fields, Touch ID, macOS's own prompts). There are keyboard styles for VoiceOver's keys and NVDA's, with Narrator's and JAWS's on the way.</p>
-<h2>Plugins: coming back, in the open</h2>
-<p>Plugins are the reading rules, keys and labels for an app, written as data. They were parked while TurnOver was closed, because a way to load other people's rules into a screen reader needs care. In the open, plugins arrive as pull requests to the repository, where anyone can read them and they are reviewed before they ship with TurnOver. PLUGIN-GUIDE.md says how to write one.</p>
+<p>TurnOver is in beta. This is what's being worked on and what testers have asked for. What comes next is decided by TurnOver's developer: requests are weighed, not queued. No dates: things arrive when they're solid. To ask for something, use Send feedback in the TurnOver menu.</p>
+<p>TurnOver works alongside VoiceOver. VoiceOver stays on: TurnOver reads the apps where it can do better, and VoiceOver reads the rest. VoiceOver always handles security (password fields, Touch ID, macOS's own prompts). Command Control Comma, then T, gives the app in front to either one. There are two keyboard styles: the Mac style, with VoiceOver's keys, and the Windows style, with NVDA's.</p>
+<h2>Plugins: parked, and why</h2>
+<p>Plugins (reading rules, keys and labels for an app, made by hand or with an AI) are parked. They are still in the code, but no longer offered in the menu, the library's hourly checks have stopped, and nothing new is being built on them for now.</p>
+<p>The reason is the one people raised: a screen reader runs with deep access to the Mac, and a way to load other people's rules into it needs more care than it has had: a reviewed format, a clear line on what a plugin can and cannot do, signing, and someone other than the developer looking at the result. Nobody had made one yet, so nothing is lost by waiting. The plugin files have been taken down for now, and the idea comes back when it can be done properly.</p>
 <h2>Next</h2>
 <ul>
 <li><strong>The Windows style everywhere, even where VoiceOver reads.</strong> NVDA's keys on top of VoiceOver in every app, not only in TurnOver's. You could even let VoiceOver read every app and still use the Windows style's keys.</li>
@@ -15,7 +16,8 @@
 </ul>
 <h2>Soon</h2>
 <ul>
-<li><strong>A shortcuts manager</strong> in the Settings window: every command by category with its keys; add, change or remove keys; clashes with VoiceOver's or NVDA's keys pointed out.</li>
+<li><strong>A key mapping manager</strong> in the Settings window: every command by category with its keys; add, change or remove keys; clashes with VoiceOver's or NVDA's keys pointed out; hybrids of the styles, saved as profiles; a quick switch between profiles, or a profile that comes on by itself for an app, as VoiceOver's Activities do.</li>
+<li><strong>A verbosity manager</strong>: the order in which an item's pieces are said, and which are said at all, set per app. In Mail, for example, subject first, then sender, then the time, or any order you like; the same for lists in other apps.</li>
 <li><strong>Your VoiceOver scripts, on keys.</strong> AppleScripts written for VoiceOver ("tell application VoiceOver to output") run as they are with TurnOver speaking, and each can go on a key, as with VoiceOver's Keyboard Commander.</li>
 <li><strong>Voices.</strong> A tidy list (the voices for your languages, best quality first), and changing voice, rate and pitch on the fly with VoiceOver's or NVDA's own keys.</li>
 <li><strong>Sounds one by one.</strong> Each of TurnOver's sounds on or off, or your own; positional sound with an off switch.</li>
@@ -26,7 +28,6 @@
 </ul>
 <h2>Later, asked for</h2>
 <ul>
-<li><strong>Reset, backup and restore:</strong> reset keys, settings or everything; back up to a file and restore it.</li>
 <li><strong>Word:</strong> arrows inside table cells with several lines.</li>
 <li><strong>Google Docs, Sheets and Slides:</strong> the Windows style's cursor keys everywhere in them.</li>
 <li><strong>Image descriptions</strong> on more web pages.</li>
