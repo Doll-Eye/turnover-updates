@@ -1,0 +1,208 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>TurnOver</title>
+        <item>
+            <title>2.0</title>
+            <pubDate>Mon, 09 Nov 2026 12:25:57 +0000</pubDate>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 2.0, build 24
+
+### New to try
+
+- Help improve this app, in the TurnOver menu under This app: tell us what's wrong in the app in front, with a short
+  form already filled in with the app and how it is built (never what's in it); fix the item you're on; build a fix
+  with your own AI assistant (Claude Code, Codex or Gemini CLI) or by hand; or ask for something new from TurnOver
+  itself. It takes over from Ask for this app to be tuned. The guide, Helping TurnOver read your apps, has the steps.
+- Share the fixes you make: after labelling an item, giving it a key, or keeping it quiet (VO-Slash with VoiceOver
+  keys, or This app, Change the item I'm on), choose Share my changes on GitHub. TurnOver copies them and opens a
+  short form. Fixes the project accepts come with TurnOver for everyone who uses that app.
+- The welcome pages read like little web pages: Up and Down read a page a line at a time, Return goes on, Escape
+  skips the rest. The two keys everything hangs on come straight after the welcome: Command Control Period turns
+  TurnOver on and off, and Command Control Comma is the way in to everything.
+- VO-J and the window spots work as VoiceOver's do. VO-J goes from a sidebar to its content and back, and from Mail's
+  message list into the message; in Music, Podcasts and TV it goes between the sidebar and the page. VO-Right Bracket
+  and VO-Left Bracket go through the window's main parts. Wherever you land, the arrows carry on from there. In
+  Safari, VO-J goes between a page's main parts, such as a site's sidebar and its content, and from the address bar
+  into the page.
+- Spotify: in its focus mode, Command with the arrows says what it did: louder, quieter, previous track or next track.
+- TurnOver has its own icon, and the menu bar shows a matching symbol instead of the name.
+- Help make TurnOver, in the TurnOver menu under Help: the ways to help, from a sentence of feedback to writing code,
+  with a button that opens TurnOver on GitHub, and TurnOver's Discord. It opens once by itself after this update.
+
+### Changed
+
+- If you build TurnOver yourself, it installs as TurnOver Developer beside TurnOver, so the TurnOver you have keeps
+  its permissions and its updates. The TurnOver menu switches between them, and Command Control Period follows
+  whichever you used last.
+- The guides describe TurnOver as a second choice beside VoiceOver: one reader at a time, with some apps kept for
+  VoiceOver, which Command Control Shift T does on its own.
+- Turkish: every string new in builds 23 and 24 is translated.
+- Russian: every string is translated, including the settings and the permission prompts.
+
+### Fixed
+
+- Uninstall completely also removes TurnOver Developer, when it is installed.
+- Command F4 quits the app in the NVDA and JAWS styles, also when the top row is media keys. It uses the app's own
+  Quit, and says so when Quit is dimmed.
+- Terminal: the text area is read on a Mac in any language, not only English.
+- With secure input on, as in a password field, Command, Option and Shift let go after a shortcut no longer count as
+  pressed on their own, so a Command shortcut no longer opens the menu bar in the Windows styles.
+- Preview: the first Down Arrow in a PDF no longer waits while the PDF's notes are read.
+- TurnOver Settings: a slider's value is said once as it changes, not several times.
+- System Settings on macOS 27.2: Control Command 1, 2 and 3 find the sidebar, the settings pane and the search field
+  again.
+- System Settings: a permission row says its switch and whether it is on, not only the app's name.
+- TV: Return on a sidebar item waits for TV to open it, instead of saying it could not; on a heading, such as
+  Library, it says it can't be opened.
+- Long pages, such as a long chat in the ChatGPT app, are read to the end. TurnOver used to stop at the six
+  thousandth item and say bottom part way down; now Down Arrow, the quick navigation letters, Command Down Arrow and
+  Say All read on from where it stopped.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-2.0-build-24.zip" length="37975206" type="application/octet-stream" sparkle:edSignature="VnuTktFoB0kq+4flMcdACmVz3SYLwlGSXSGrDWbDP98Ag9v9v+/3ccnk12LXusOqDkP9jN6OxarbXbllnWRuDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver24-23.delta" sparkle:deltaFrom="23" length="5958146" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="TbksuL58uSm31GbPjLEPEhgJdPb/1vdtyvUf1oiF/7Eg18qIqa1cqeHXFrm1QPKxutDrZVspgmb3h5xGOjVMCA=="/>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver24-22.5.delta" sparkle:deltaFrom="22.5" length="19620574" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Dq70ZnrsfXVTtMCd8ylwFIShlH9NIBClVegLDDO88Ova/js1K46e9QBLgQR4z5WfUgd7Ps/Ly43fdIqeDI4pDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>2.0</title>
+            <pubDate>Fri, 06 Nov 2026 09:47:56 +0000</pubDate>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 2.0, build 23
+
+Features wait for a whole build; point releases carry fixes only (27 Oct 2026).
+
+### New to try
+
+- Searching in the App Store, Music and Podcasts: Return in the search field reads the results as a plain list, from
+  Apple's public catalog, and Return on one opens its page. The App Store's own results page couldn't be read reliably
+  on macOS 27.2. When the catalog can't answer, the page is read instead. TV keeps its own page, as Apple TV+ isn't in
+  the catalog.
+- Screen recognition finds a window's controls as well as its text: the recognition key pressed twice (VO-Shift-Y,
+  or TurnOver R) finds them, in under a second; pressed once, it reads the text. Each row is a control ("Save,
+  button") and Return clicks it. It uses Apple's on-device recognition and, with Apple Intelligence on, the Mac's own
+  model, which is given a few seconds to add what it sees; nothing leaves the Mac. macOS 26 or later.
+- After Return clicks something in a screen recognition result, the screen is recognised again a moment later, so a
+  dialog's OK is followed by the screen that comes after it without pressing the key again. Settings, Screen
+  recognition, "After Return clicks something, recognise again" turns it off, and the result closes after a click
+  as before.
+- Screen recognition can recognise again whenever the screen changes: Settings, Screen recognition, "Recognise again
+  when the screen changes" (it was "Read new text as it appears"). The window is looked at each second, and when it
+  has changed, the result is updated and what is new is read; for controls too. Off by default.
+- Screen recognition reads cards side by side as cards: a name over a button, four across, was "Download Download
+  Download Download" and then the four names (Parallels' installation assistant, issue 73); now each card is a row,
+  top to bottom, and Tab moves between them. The controls result reads in the same order as text: a sidebar before
+  the pane beside it.
+- A screen recognition result that comes back after you've moved to another app no longer opens over it.
+- Natural voices for everyone: 25 English voices made on your Mac, on Apple silicon with macOS 15 or later. In
+  Settings, Speech, beside Voice, choose Download natural voices (about 170 MB, once; Remove natural voices takes them
+  off again). Then pick one under Voice to speak everything,
+  with the rate, volume and EQ as for any voice, or under Natural voice for say all only. Other languages keep your Mac
+  voice. They are Phonon's voices; Kokoro's, the first natural voices, are gone, and a Kokoro voice chosen before
+  becomes Maeve.
+- Progress bars beep as they move, as in NVDA: a short beep for each percent, rising in pitch from low at 0 to high
+  at 100. To hear the percentage instead (as before), both, or nothing, choose in Settings, Sounds, or in the
+  Verbosity list (VO-V). With NVDA keys, NVDA+U goes through them. A bar's beeps keep up with it as it moves, rather
+  than once a second. App Store downloads follow the same choice: beeps, or the app's name and percentage every 10
+  percent while the App Store is in front (it was every quarter, wherever you were), and "installed" at the end, as
+  before. A page's progress bar is now a line in browse
+  mode, so it can be read and followed.
+
+### Changed
+
+- Settings has a Sounds section: whose sounds, the sounds as you move and press, what you hear as TurnOver takes over,
+  progress bars, and lowering other sounds while TurnOver speaks (from General and Speech). With NVDA keys,
+  NVDA+Control+U opens it, as it opens NVDA's Audio settings.
+- Settings, Speech: "In the rotor", under Voice, puts the voice chosen there among the voices VO-Command-Shift steps
+  through, or takes it out, without going through every voice's switch below.
+- In a menu, a letter that leaves the same item highlighted (r, then u, for Russell) says that item again, where it
+  said nothing.
+- The speech settings ring ends at punctuation: its last stop, sync with VoiceOver, has gone. VoiceOver's settings
+  are copied from the TurnOver menu, Copy VoiceOver settings.
+- The Games item has gone from the TurnOver menu's Tools: game reading is always on, and Steam's Big Picture switch and
+  Restart Steam are in Settings, Other apps' speech.
+- Braille: panning to another line moves the caret there, so the arrows carry on from the line read. The Braille section of Settings offers Line by line (the default), To the text shown, or Off. Tethered to review, panning moves only the review cursor.
+- Braille: Apple USB and HID drivers are polled and written on the braille thread, as Bluetooth drivers are, so a
+  display does not hold up speech. Reads and writes cannot enter each other while a driver waits, the latest
+  pending frame is kept, and handing back to VoiceOver waits for the driver to unload.
+
+- VoiceOver keys: VO-Shift-L only describes: the picture under the cursor, or anywhere else what the window looks
+  like. VO-Shift-Y, a key of TurnOver's own (VoiceOver has none for it), recognises the window's text to read and
+  click, which VO-Shift-L used to do away from a picture. The notice for a window with nothing to read names both.
+  Describing a window needs the Mac's on-device model (Apple Intelligence on). Where VoiceOver reads an app,
+  VO-Shift-Y is VoiceOver's; the TurnOver layer's R (Command Control Comma, then R) recognises there.
+- An app whose window accessibility doesn't report at all (Parallels Desktop's virtual machine) is treated as a window
+  with nothing to read: TurnOver says so and names the screen recognition key, and screen recognition reads that
+  app's window, not the whole screen with the windows behind it.
+- A window with nothing TurnOver can read (a custom-drawn or OpenGL window: Parallels' installation assistant, Bambu
+  Studio's plate) says so a moment after it comes to the front, and names the key for screen recognition in the
+  keyboard style in use: VO-Shift-Y with VoiceOver keys (and VO-Shift-L to describe it), the TurnOver key with R with
+  NVDA or JAWS keys. It said
+  "window" and then nothing. Issue 74.
+- The verbosity manager: Settings, Item details now lists what is said about an item, in the order it is said (name,
+  kind, value, state, help text, keyboard shortcut, position, level), each on or off, moved up or down with a button.
+  "For" chooses the list for everywhere or for the app last in front. (It orders an item's pieces; a Mail message's
+  sender, subject and time come as one name, so their order isn't changed by it.) The three old switches (help text, shortcut, position) are rows of the
+  list now; a settings file from before keeps their values.
+
+### Fixed
+
+- An app allowed to speak through TurnOver could speak once after you'd switched away: the line that asked is now said
+  only with the app still in front. Issue 56.
+- A web page cut short at the reader's size limit said nothing and was taken as complete; it now says "page read in
+  part", as a page cut at the time limit does. Issue 58.
+- Notification banners went unread after Notification Centre restarted, until VO-O was pressed. Issue 80.
+- A Settings window left open across an install knocked on the new TurnOver every two seconds; it now stops and says to
+  open Settings again. Issue 77.
+- With NVDA or JAWS keys where VoiceOver reads, a style change could leave the key layer without its tap. Issue 53.
+- Settings, Sounds, "Whose sounds" counted only in part with VoiceOver off: choosing VoiceOver's left the boundary,
+  headings, moving and pressing on TurnOver's set. VoiceOver's now plays VoiceOver's own sounds for links, misspellings,
+  boundaries, pop-ups, a braille display and the rest it has, and TurnOver's set for what VoiceOver says instead
+  (headings, lists, moving and pressing, the modes); TurnOver's is the set throughout. Until you choose, VoiceOver's, as
+  before; with VoiceOver off that now means its boundary and braille display sounds too.
+- VoiceOver's sounds were quieter than TurnOver's own, by 5 to 10 dB for most, so a link's blip all but vanished: each
+  now plays at the set's loudness. A page loaded plays VoiceOver's "web area loaded" sound, the one in its own list.
+- Copy VoiceOver settings copied nothing on macOS 27.2 when VoiceOver's export kept its voice in a new place; it now
+  finds the voice there and copies the rate, verbosity and typing echo with it. Issue 221. Reported by a tester.
+- Settings, Speech: the voices for other languages and the rotor's voices couldn't be reached from the keyboard. Each
+  list is now behind a switch that Tab stops on. Issue 225. Reported by a tester.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-2.0-build-23.zip" length="33156674" type="application/octet-stream" sparkle:edSignature="NCwDhHIwKMylZdtXhfRv/k5yl3TXHeYhGvV/7AsnwePPmFcm7efEIjxHsE2EcjtVaDq5ZPCAC0LAK/6fZQ9jBg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver23-22.5.delta" sparkle:deltaFrom="22.5" length="16050218" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="+2fQJJsecRQd4wxcmF9GgIx1ukgU4HvTPZs4VyJ0DXKOub3x3yMH7/dwDvZctg6813Fz5M3/+uSYBheY+g+OBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>2.0</title>
+            <pubDate>Sun, 01 Nov 2026 16:01:57 +0000</pubDate>
+            <sparkle:version>22.5</sparkle:version>
+            <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# TurnOver 2.0, build 22.5
+
+### Fixed
+
+- Command-B and Command-I report bold and italic on/off in TextEdit rich text and Ulysses with Markdown XL,
+  where those shortcuts were silent. Requires the apps’ English menus. Reported by the maintainer. Issue 212.
+- After unlocking, VoiceOver stays available until an ordinary app and keyboard input are ready. A failed return
+  to TurnOver retains a bounded retry; another lock or a deliberate reader choice cancels stale restoration.
+  VoiceOver already on before sleep remains on. Issue 204.
+- In JAWS keyboard style, Caps Lock U, O, J, L, M and Period move the text cursor as their arrow equivalents do,
+  rather than only moving the review cursor. Rapid reading commands keep their order, the keys work where
+  VoiceOver reads, and assigning one of these commands to its own arrow no longer causes a crash. Issue 144.
+- Text fields such as System Settings’ search field are read and respond to review keys when the app first
+  reports a temporary stand-in before the actual focused field. The focus check does not copy the field’s full
+  text. Issue 195.
+- Returning to an app in browse mode keeps the reading position and mode when the same control regains focus
+  on the same page. Enter and Space act at that reading position instead of jumping back to the focused control.
+  Issue 200.
+]]></description>
+            <enclosure url="https://doll-eye.github.io/turnover-updates/TurnOver-2.0-build-22.5.zip" length="22267900" type="application/octet-stream" sparkle:edSignature="itQ9cYsAYMDaQ5SoaIXVf+ijG3v69MQ3hkl5itKT4sHGcWCUOTTLwbMI2UkFxyaO7r/9TNesRuqdSKipAknEBg=="/>
+        </item>
+    </channel>
+</rss>
